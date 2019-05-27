@@ -6,7 +6,7 @@ features:
 - title: UI Core
   details: 非表现型核心样式。
 - title: Logic Only
-  details: 用任意 Js 语言实现逻辑「 react、vue、jquery ...」。
+  details: Js 只实现逻辑部分「 react、vue、jquery ...」。
 - title: Skin library
   details: 想要 UI，引入 Skin 文件或自定义。
 footer: MIT Licensed | Copyright © 2019-present YFE-TEAM
