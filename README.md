@@ -1,10 +1,31 @@
-## nu-system
+---
+home: true
+actionText: Start →
+actionLink: /guide/develop
+features:
+- title: UI Core
+  details: 非表现型核心样式。
+- title: Logic Only
+  details: 用任意 Js 语言实现逻辑「 react、vue、jquery ...」。
+- title: Skin library
+  details: 想要 UI，引入 Skin 文件或自定义。
+footer: MIT Licensed | Copyright © 2019-present YFE-TEAM
+---
 
-No UI 组件库系统，因为其自身并没有自带任何表现型样式，但是限制了规范和拓展方式。所以 nu-system 更像是一套组件库的设计规范和核心库。
+# NU-system
 
-nu-system 里面的所有的组件，都不是着眼于组件本身的效果。拿按钮组件举例，你选择 nu-button 意味着你只需要做一点点的定制，就可以得到一整套的按钮系统。而不是只是得到一个按钮的样式而已。
+No UI 组件库系统 nu-system，是一个 UI 和 Logic 完全分离的组件系统。主要由 UI Core + Logic only + Skin library 三部分组成。
 
-## Feature
+## UI Core
 
-- nu-button
-- nu-dialog
+UI Core 是指非表现型样式，是对于通用UI的进一步抽象，以便于其他人在定义 Skin library 可以写更少样式代码。
+   
+## Logic Only
+  
+因为逻辑和 UI 的分离，意味着可以使用任意的 JS 框架去实现，UI core 的规范。
+
+同理也可以基于 Logic only 的规范创建 UI Core。
+
+## Skin Library
+
+我们希望 UI Core 和 Login Only 输出的是更具工程化的规范，以至于符合规范的任意 Skin 之间可以互换，甚至是作为一种资源被其它人使用。

@@ -1,0 +1,22 @@
+{
+  "name": "@y-fe/nu-dialog",
+  "version": "0.0.4",
+  "description": "No UI 组件库系统「 弹窗组件 」",
+  "main": "css/core.css",
+  "repository": "https://github.com/yued-fe/nu-system/tree/master/components/dialog",
+  "author": "ziven27",
+  "license": "MIT",
+  "files": [
+    "css/"
+  ],
+  "keywords": [
+    "!ui",
+    "dialog",
+    "dialog-system",
+    "css"
+  ],
+  "bugs": {
+    "url": "https://github.com/yued-fe/nu-system/issues"
+  },
+  "homepage": "https://yued-fe.github.io/nu-system/"
+}

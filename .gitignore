@@ -6,6 +6,8 @@
 .idea
 /lib
 
+/.vuepress/dist
+node_modules/
 # testing
 /coverage
 

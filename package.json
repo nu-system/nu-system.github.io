@@ -1,0 +1,32 @@
+{
+  "name": "@y-fe/nu-system",
+  "version": "0.0.1",
+  "description": "No UI 组件库系统",
+  "main": "css/core.css",
+  "repository": "git@github.com:yued-fe/nu-system.git",
+  "author": "ziven27",
+  "license": "MIT",
+  "keywords": [
+    "!ui",
+    "nu",
+    "ui",
+    "ui-system",
+    "css"
+  ],
+  "bugs": {
+    "url": "https://github.com/yued-fe/nu-system/issues"
+  },
+  "homepage": "https://yued-fe.github.io/nu-system/",
+  "scripts": {
+    "docs:dev": "vuepress dev .",
+    "docs:build": "vuepress build ."
+  },
+  "devDependencies": {
+    "vuepress": "^0.14.11",
+    "del": "^4.1.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-less": "^4.0.1"
+  }
+}
