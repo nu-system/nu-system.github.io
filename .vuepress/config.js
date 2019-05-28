@@ -9,20 +9,11 @@ module.exports = {
         lastUpdated: '上次更新',
         editLinkText: '帮助我们改善此页面！',
         sidebarDepth: 3,
-        nav: [
-            {
-                text: 'Components',
-                items: [
-                    { text: 'Button', link: '/packages/button/' },
-                    { text: "Dialog", link: '/packages/dialog/' },
-                ],
-            },
-        ],
         sidebar: [
             {
                 title: '指南',
                 collapsable: false,
-                children: ['/guide/develop','/guide/deploy']
+                children: ['/docs/develop','/docs/deploy']
             },
             {
                 title: 'Components',

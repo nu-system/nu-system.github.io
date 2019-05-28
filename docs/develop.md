@@ -39,5 +39,5 @@ NU-system 本身并没有对语言做限制，所以可以使用任意 JS 语言
     └── index.js
 ```
 
-基于以上目录结构在 `nu-[component]-[frame]/packages` 目录下创建组件，目前因为框架构建方式不同，实际packages文件夹位置按照对应项目查看。
+基于以上目录结构在 `nu-[component]-[frame]/packages` 目录下创建组件。
 

@@ -1,7 +1,7 @@
 ---
 home: true
 actionText: Start →
-actionLink: /guide/develop
+actionLink: /docs/develop
 features:
 - title: UI Core
   details: 非表现型核心样式。
@@ -28,7 +28,7 @@ UI Core 是指非表现型样式，是对于通用UI的进一步抽象，以便�
   
 因为逻辑和 UI 的分离，意味着可以使用任意的 JS 框架去实现，UI core 的规范。
 
-同理也可以基于 Logic only 的规范创建 UI Core。
+同理也可以基于 Logic Only 的规范创建 UI Core。
 
 - [nu-vue](https://yued-fe.github.io/nu-vue/) 是 Logic Only 的 vue 实现版本。
 - [nu-react](https://yued-fe.github.io/nu-react/) 是 Logic Only 的 React 实现版本。

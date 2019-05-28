@@ -15,9 +15,6 @@ title: 发布
   "repository": "https://github.com/yued-fe/nu-system/tree/master/components/[component]",
   "author": "YFE-TEAM",
   "license": "MIT",
-  "files": [
-    "css/"
-  ],
   "keywords": [
     "!ui",
     "ui",
@@ -59,16 +56,11 @@ $ yarn add @y-fe/nu-[component]
   "repository": "git@github.com:yued-fe/nu-[frame].git",
   "author": "yfe-team",
   "license": "MIT",
-  "files": [
-    "lib"
-  ],
   "bugs": {
     "url": "https://github.com/yued-fe/nu-[frame]/issues"
   },
-  "homepage": "https://yued-fe.github.io/nu-[frame]/example/packages/button",
-  "dependencies": {
-    
-  },
+  "homepage": "https://yued-fe.github.io/nu-[frame]/example/packages/[component]",
+  "dependencies": {},
   "keywords": [
     "ui",
     "no-ui",

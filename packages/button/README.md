@@ -1,4 +1,4 @@
-## nu-button
+# nu-button
 
 ```HTML
 <a href="##" class="nu_btn _primary _ghost _large">大号的幽灵主按钮</a>
