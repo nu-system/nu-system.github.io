@@ -80,16 +80,10 @@ $ yarn add @y-fe/nu-button
 
 ## API
 
-- **功能 | 颜色**: `primary`、`secondary`、`warning`、`success`、`danger`
-- **变体 | 形状**: `fill`、`ghost`、`link`
-- **状态**: `disabled`、`loading`
-- **尺寸**: `largex`、`large`、`middle`、`small`、`smallx`
-- **其它**：`block`、`circle`、`capsule`
-
-| 选择器      |  功能 |
+| 选择器 |  功能 |
 |:-------------|------:|
 | .nu_btn | 默认的按钮选择器 |
-| ._default | 默认主题样式 |
+| ._default | 默认按钮颜色 |
 | ._primary | 主按钮 |
 | ._secondary | 次级按钮 |
 | ._warning | 警告按钮 |
@@ -109,7 +103,16 @@ $ yarn add @y-fe/nu-button
 | ._block | 占一行的按钮 |
 | ._circle | 正圆按钮 ⭕️ |
 
+- **功能 | 颜色**: `_default`、`_primary`、`_secondary`、`_warning`、`_success`、`_danger`
+- **变体 | 形状**: `_fill`、`_ghost`、`_link`
+- **尺寸**: `_large`、`_middle`、`_small`
+- **其它**: `:disabled`、`_loading`、`_block`、`_circle`、`_capsule`
+
 除了 颜色、形状、和尺寸是互斥的三个状态，其它选择器都是可以相互组合的。
+
+约定变体默认状态是 `_fill`。
+
+默认按钮大小，建议在`large`和 `middle`之间。
 
 ## 如何修改主题?
 
@@ -119,7 +122,15 @@ $ yarn add @y-fe/nu-button
 }
 ```
 
-主题修改非常简单，只需要设定颜色即可。
+主题修改非常简单，只需要设定颜色即可，对于边框和背景颜色，组件内部会自动实现。
+
+```css
+.nu_btn._ghost._primary{
+    border-color: red;    
+}
+```
+
+如果自动实现的代码不能满足你的需求，你可以这样定制。这里我们将 ghost 主按钮的边框改成了红色。
 
 ## 如何修改大小？
 

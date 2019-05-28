@@ -1,3 +1,7 @@
+._default{
+  color: #333;
+}
+
 .nu_btn {
   position: relative;
   // a 链接默认为inline元素，但也有可能显示为按钮所以设置 inline-block 属性
@@ -14,7 +18,7 @@
 
   // 为非可选标签，添加鼠标手型。大多数浏览器对于 a 标签和 button 标签默认是有这个属性的，但其它标签就不一定了
   cursor: pointer;
-  
+
   // 从张老师那里拷贝的
   overflow: visible;
 
@@ -32,12 +36,11 @@
   // font-family:inherit;
 
   transition: border-color 200ms, color 200ms, background-color 200ms, transform 200ms;
-  
+
   // 默认大小
   font-size: 1em;
   line-height: 1;
   padding: 0.75em 2em;
-  color: #333;
   background-color: currentColor;
   border: 1px solid currentColor;
 }
@@ -73,7 +76,7 @@
 }
 
 // 幽灵按钮
-.nu_btn._ghost, .nu_btn._link{  
+.nu_btn._ghost, .nu_btn._link{
   background-color: transparent;
   background-image: none;
 }
