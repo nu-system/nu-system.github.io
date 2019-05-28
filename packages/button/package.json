@@ -1,6 +1,6 @@
 {
   "name": "@y-fe/nu-button",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "No UI 组件库系统「 按钮组件 」",
   "main": "css/core.css",
   "repository": "https://github.com/yued-fe/nu-system/tree/master/components/button",

@@ -1,7 +1,3 @@
----
-title: Button
----
-
 ## nu-button
 
 ```HTML
@@ -148,7 +144,7 @@ $ yarn add @y-fe/nu-button
 ```
 
 
-## Logic
+## Logic Only
 
-- [nu-button-react](https://yued-fe.github.io/nu-react/)
-- [nu-button-vue](https://yued-fe.github.io/nu-vue/)
+- [nu-button-react](https://yued-fe.github.io/nu-react/packages/button)
+- [nu-button-vue](https://yued-fe.github.io/nu-vue/packages/button)

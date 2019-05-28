@@ -1,7 +1,3 @@
----
-title: Dialog
----
-
 # nu-dialog
 
 <iframe height="600" style="width: 100%;" scrolling="no" title="nu-dialog-js" src="//codepen.io/ziven27/embed/joKGvJ/?height=265&theme-id=dark&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
@@ -119,7 +115,7 @@ nu-dialog Api 因为简单，你甚至可以通过 `:checked` 属性实现纯 CS
 我们更希望提供的是一个规范，这样才能在不同的项目中定制属于自己的 UI 。
 
 
-## Logic
+## Logic Only
 
-- [nu-dialog-react](https://yued-fe.github.io/nu-react/)
-- [nu-dialog-vue](https://yued-fe.github.io/nu-vue/)
+- [nu-dialog-react](https://yued-fe.github.io/nu-react/packages/button)
+- [nu-dialog-vue](https://yued-fe.github.io/nu-vue/packages/dialog)

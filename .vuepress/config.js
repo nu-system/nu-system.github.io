@@ -3,12 +3,12 @@ module.exports = {
     title: 'NU-system',
     description: '一个 UI 和 Logic 完全分离的组件库系统',
     themeConfig: {
-        lastUpdated: 'Last Updated',
         repo: 'yued-fe/nu-system',
         repoLabel: 'GitHub',
         editLinks: true,
+        lastUpdated: '上次更新',
         editLinkText: '帮助我们改善此页面！',
-        sidebarDepth: 2,
+        sidebarDepth: 3,
         nav: [
             {
                 text: 'Components',
