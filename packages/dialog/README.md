@@ -24,6 +24,17 @@ $ yarn add @y-fe/nu-dialog
 <link src="https://cdn.jsdelivr.net/npm/@y-fe/nu-dialog/css/position/middle.min.css">
 ```
 
+```
+@y-fe/nu-dialog/css
+├── core.css        // 核心代码
+└── position
+    ├── top.css     // 居上显示
+    ├── right.css   // 居右显示
+    ├── bottom.css  // 居底显示
+    ├── left.css    // 居左显示
+    └── middle.css  // 居中显示
+```
+
 因为组件只有最基础的交互样式，所以在实际使用需要根据设计需求进行二次样式封装。
 
 ## 子组件
