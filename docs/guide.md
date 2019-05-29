@@ -1,15 +1,5 @@
 # 指南
 
-NU-system 是一个 UI 和 Logic 分离的理念，它应该更像是一个平台，我们希望有更多人可以加入。
-
-只要你设计的组件符合我们的规范，就可以和我们一起将它丰富起来。
-
-虽然 NU-system 分为 UI Core + Logic only + Skin library 三部分。
-
-为了开发和使用便利。目前 UI Core 和 Skin library 部分以及文档都放在了 [nu-system](https://github.com/yued-fe/nu-system) 仓库中。
-
-NU-system 本身并没有对语言做限制，所以可以使用任意 JS 语言创建逻辑。只是目前能力有限，支持的语言框架只有 [nu-react](https://github.com/yued-fe/nu-react) 和 [ni-vue](https://github.com/yued-fe/nu-vue) 。
-
 ## 创建
 
 以下以 `button` 组件为例，解释目录结构和规则。
