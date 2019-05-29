@@ -1,7 +1,7 @@
 ---
 home: true
 actionText: Start →
-actionLink: /docs/develop
+actionLink: /docs/guide
 features:
 - title: UI Core
   details: 非表现型核心样式。

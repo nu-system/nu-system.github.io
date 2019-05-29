@@ -11,9 +11,9 @@ module.exports = {
         sidebarDepth: 3,
         sidebar: [
             {
-                title: '指南',
+                title: '介绍',
                 collapsable: false,
-                children: ['/docs/develop','/docs/deploy']
+                children: ['/docs/guide']
             },
             {
                 title: 'Components',

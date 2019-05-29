@@ -3,7 +3,7 @@
   "version": "0.0.3",
   "description": "No UI 组件库系统「 按钮组件 」",
   "main": "css/core.css",
-  "repository": "https://github.com/yued-fe/nu-system/tree/master/components/button",
+  "repository": "git@github.com:yued-fe/nu-system.git",
   "author": "ziven27",
   "license": "MIT",
   "files": [
