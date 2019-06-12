@@ -1,19 +1,20 @@
 {
-  "name": "@y-fe/nu-dialog",
-  "version": "0.0.4",
-  "description": "NU 「 no-ui 」 组件库系统 nu-system「 弹窗组件 」",
+  "name": "@y-fe/nu-toast",
+  "version": "0.0.1",
+  "description": "NU 「 no-ui 」 组件库系统 nu-system 「 Toast 组件 」",
   "main": "css/core.css",
   "repository": "git@github.com:yued-fe/nu-system.git",
-  "author": "ziven27",
+  "author": "yfe-team",
   "license": "MIT",
-  "files": [
-    "css/"
-  ],
   "keywords": [
     "!ui",
-    "dialog",
-    "dialog-system",
-    "css"
+    "css",
+    "css-component",
+    "ui",
+    "no-ui",
+    "nu-system",
+    "toast",
+    "messgate"
   ],
   "bugs": {
     "url": "https://github.com/yued-fe/nu-system/issues"
