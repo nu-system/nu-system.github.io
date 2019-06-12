@@ -18,7 +18,11 @@ module.exports = {
             {
                 title: 'Components',
                 collapsable: false,
-                children: ['/packages/button/','/packages/dialog/']
+                children: [
+                    '/packages/button/',
+                    '/packages/dialog/',
+                    '/packages/toast/'
+                ]
             }
         ]
     },
