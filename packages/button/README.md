@@ -89,7 +89,7 @@ $ yarn add @y-fe/nu-button
 | ._warning | 警告按钮 |
 | ._success | 成功按钮 |
 | ._danger | 危险按钮 |
-| ._disabled,:disabled | 不可用按钮 |
+| ._disabled | 不可用按钮 |
 | ._loading | loading按钮 |
 | ._largex | 超大号按钮 |
 | ._large | 大号按钮 |

@@ -1,13 +1,14 @@
 {
   "name": "@y-fe/nu-button",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "NU 「 no-ui 」 组件库系统 nu-system 「 按钮组件 」",
   "main": "css/core.css",
   "repository": "git@github.com:yued-fe/nu-system.git",
   "author": "ziven27",
   "license": "MIT",
   "files": [
-    "css/"
+    "css",
+    "example"
   ],
   "keywords": [
     "!ui",
