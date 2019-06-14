@@ -1,6 +1,3 @@
-._default {
-  color: #333;
-}
 .nu_btn {
   position: relative;
   display: inline-block;
@@ -25,6 +22,9 @@
   padding: 0.75em 2em;
   background-color: currentColor;
   border: 1px solid currentColor;
+}
+.nu_btn._default {
+  color: #333;
 }
 .nu_btn._fill > span {
   color: #ffffff;

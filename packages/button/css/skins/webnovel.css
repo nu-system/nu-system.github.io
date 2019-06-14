@@ -1,17 +1,17 @@
-._primary {
+.nu_btn {
+  background-repeat: no-repeat;
+}
+.nu_btn._primary {
   background-image: linear-gradient(45deg, #6da0fb 0%, #3b66f5 100%);
   color: #3b66f5;
 }
-._warning {
+.nu_btn._warning {
   background-image: -webkit-gradient(linear, left top, right top, from(#ffc152), to(#ff8d29));
   background-image: linear-gradient(90deg, #ffc152 0%, #ff8d29 100%);
   color: #ff8d29;
 }
-._secondary {
+.nu_btn._secondary {
   color: #6c757d;
-}
-.nu_btn {
-  background-repeat: no-repeat;
 }
 .nu_btn._fill {
   border: none 0;
