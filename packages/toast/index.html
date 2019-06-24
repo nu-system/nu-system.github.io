@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>nu-toast | NU-system</title>
+    <meta name="description" content="一个 UI 和 Logic 完全分离的组件库系统">
+    
+    
+    <link rel="preload" href="/vanilla/assets/css/0.styles.489dc6a4.css" as="style"><link rel="preload" href="/vanilla/assets/js/app.3719ce3b.js" as="script"><link rel="preload" href="/vanilla/assets/js/7.f090b8c3.js" as="script"><link rel="prefetch" href="/vanilla/assets/js/2.a61b4523.js"><link rel="prefetch" href="/vanilla/assets/js/3.f880d620.js"><link rel="prefetch" href="/vanilla/assets/js/4.38e25b72.js"><link rel="prefetch" href="/vanilla/assets/js/5.4be2f20b.js"><link rel="prefetch" href="/vanilla/assets/js/6.2085d271.js"><link rel="prefetch" href="/vanilla/assets/js/8.a88ca30a.js">
+    <link rel="stylesheet" href="/vanilla/assets/css/0.styles.489dc6a4.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/vanilla/" class="home-link router-link-active"><!----> <span class="site-name">NU-system</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"> <a href="https://github.com/yued-fe/nu-system" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"> <a href="https://github.com/yued-fe/nu-system" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first"><p class="sidebar-heading"><span>介绍</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/vanilla/docs/guide.html" class="sidebar-link">指南</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading open"><span>Components</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/vanilla/packages/button/" class="sidebar-link">nu-button</a></li><li><a href="/vanilla/packages/dialog/" class="sidebar-link">nu-dialog</a></li><li><a href="/vanilla/packages/toast/" class="active sidebar-link">nu-toast</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/vanilla/packages/toast/#怎么用" class="sidebar-link">怎么用?</a></li><li class="sidebar-sub-header"><a href="/vanilla/packages/toast/#dom-结构" class="sidebar-link">Dom 结构</a></li><li class="sidebar-sub-header"><a href="/vanilla/packages/toast/#api" class="sidebar-link">Api</a></li><li class="sidebar-sub-header"><a href="/vanilla/packages/toast/#如何添加动效" class="sidebar-link">如何添加动效?</a></li><li class="sidebar-sub-header"><a href="/vanilla/packages/toast/#如何添加皮肤-？" class="sidebar-link">如何添加皮肤 ？</a></li><li class="sidebar-sub-header"><a href="/vanilla/packages/toast/#logic-only" class="sidebar-link">Logic Only</a></li></ul></li></ul></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="nu-toast"><a href="#nu-toast" aria-hidden="true" class="header-anchor">#</a> nu-toast</h1> <iframe height="400" scrolling="no" title="nu-toast" src="//codepen.io/ziven27/embed/mZyprq/?height=265&theme-id=0&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="allowfullscreen" style="width: 100%;">
+  See the Pen <a href="https://codepen.io/ziven27/pen/mZyprq/">nu-toast</a> by ziven27
+  (<a href="https://codepen.io/ziven27">@ziven27</a>) on <a href="https://codepen.io">CodePen</a>.
+</iframe> <p>NU 「 no-ui 」 组件库系统 nu-system 「 Toast 组件 」</p> <h2 id="怎么用"><a href="#怎么用" aria-hidden="true" class="header-anchor">#</a> 怎么用?</h2> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">npm</span> i @y-fe/nu-toast
+</code></pre></div><div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">yarn</span> <span class="token function">add</span> @y-fe/nu-toast
+</code></pre></div><div class="language-HTML extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>https://cdn.jsdelivr.net/npm/@y-fe/nu-toast/css/core.min.css<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>https://cdn.jsdelivr.net/npm/@y-fe/nu-toast/css/skins/bootstrap.min.css<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>@y-fe/nu-toast/css
+├── core.css           // 核心样式
+└── skins
+    └── bootstrap.css  // 借用 bootstrap alert 的样式
+</code></pre></div><p>因为组件只有最基础的交互样式，所以在实际使用需要根据设计需求进行二次样式封装。</p> <h2 id="dom-结构"><a href="#dom-结构" aria-hidden="true" class="header-anchor">#</a> Dom 结构</h2> <div class="language-HTML extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>nu_toast<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>nu_toast_in<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token comment">&lt;!-- 这是放toast文字的地方 --&gt;</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>为了拓展性这边约定需要创建两层 dom 并且名称为 <code>nu_toast</code> 和 <code>nu_toast_in</code>。</p> <h2 id="api"><a href="#api" aria-hidden="true" class="header-anchor">#</a> Api</h2> <table><thead><tr><th style="text-align:left">选择器</th> <th style="text-align:right">功能</th></tr></thead> <tbody><tr><td style="text-align:left"><code>.nu_toast._open</code></td> <td style="text-align:right">是否显示toast</td></tr> <tr><td style="text-align:left"><code>.nu_dialog._[skins]</code></td> <td style="text-align:right">toast 的皮肤</td></tr></tbody></table> <p>这边约定用 <code>_open</code> 来控制 toast 的显示隐藏。</p> <p>对于设计系统我们推荐 UI 是收敛的，所以建议只需要实现 <code>_success</code>,<code>_warning</code>,<code>_danger</code> 即可。</p> <p>当然如果你有自定义需求，建议采用 bootstrap 的颜色方案：</p> <p><code>_priamry</code>,<code>_secondary</code>,<code>_success</code>,<code>_warning</code>,<code>_danger</code>,<code>_info</code>,<code>_light</code>,<code>_dark</code>。</p> <h2 id="如何添加动效"><a href="#如何添加动效" aria-hidden="true" class="header-anchor">#</a> 如何添加动效?</h2> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.nu_toast</span><span class="token punctuation">{</span>
+  <span class="token property">visibility</span><span class="token punctuation">:</span> hidden<span class="token punctuation">;</span>
+  <span class="token property">opacity</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translate</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> -10px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">transition</span><span class="token punctuation">:</span> 200ms<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.nu_toast._open</span> <span class="token punctuation">{</span>
+  <span class="token property">visibility</span><span class="token punctuation">:</span> visible<span class="token punctuation">;</span>
+  <span class="token property">opacity</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span>
+  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translate</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="如何添加皮肤-？"><a href="#如何添加皮肤-？" aria-hidden="true" class="header-anchor">#</a> 如何添加皮肤 ？</h2> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.nu_toast</span> <span class="token punctuation">{</span>
+  <span class="token property">border-radius</span><span class="token punctuation">:</span> .25rem<span class="token punctuation">;</span>
+  <span class="token property">padding</span><span class="token punctuation">:</span> .75rem 1.25rem<span class="token punctuation">;</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> #004085<span class="token punctuation">;</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> #cce5ff<span class="token punctuation">;</span>
+  <span class="token property">border</span><span class="token punctuation">:</span> 1px solid #b8daff<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.nu_toast._danger</span> <span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> #721c24<span class="token punctuation">;</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> #f8d7da<span class="token punctuation">;</span>
+  <span class="token property">border-color</span><span class="token punctuation">:</span> #f5c6cb<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.nu_toast._warning</span> <span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> #856404<span class="token punctuation">;</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> #fff3cd<span class="token punctuation">;</span>
+  <span class="token property">border-color</span><span class="token punctuation">:</span> #ffeeba<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.nu_toast._success</span> <span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> #155724<span class="token punctuation">;</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> #d4edda<span class="token punctuation">;</span>
+  <span class="token property">border-color</span><span class="token punctuation">:</span> #c3e6cb<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="logic-only"><a href="#logic-only" aria-hidden="true" class="header-anchor">#</a> Logic Only</h2> <ul><li><a href="https://yued-fe.github.io/nu-react/packages/toast" target="_blank" rel="noopener noreferrer">nu-toast-react<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div> <div class="page-edit"><div class="edit-link"><a href="https://github.com/yued-fe/nu-system/edit/master/packages/toast/README.md" target="_blank" rel="noopener noreferrer">帮助我们改善此页面！</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <div class="last-updated"><span class="prefix">上次更新: </span> <span class="time">6/24/2019, 9:10:05 PM</span></div></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/vanilla/packages/dialog/" class="prev">
+          nu-dialog
+        </a></span> <!----></p></div> </div> <!----></div></div>
+    <script src="/vanilla/assets/js/app.3719ce3b.js" defer></script><script src="/vanilla/assets/js/7.f090b8c3.js" defer></script>
+  </body>
+</html>
