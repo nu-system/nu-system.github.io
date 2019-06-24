@@ -1,3 +1,9 @@
 [submodule "packages/button"]
 	path = packages/button
 	url = git@github.com:nu-system/button.git
+[submodule "packages/toast"]
+	path = packages/toast
+	url = git@github.com:nu-system/toast.git
+[submodule "packages/dialog"]
+	path = packages/dialog
+	url = git@github.com:nu-system/dialog.git
