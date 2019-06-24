@@ -15,15 +15,6 @@ $ npm i @y-fe/nu-dialog
 $ yarn add @y-fe/nu-dialog
 ```
 
-```HTML
-<link src="https://cdn.jsdelivr.net/npm/@y-fe/nu-dialog/css/core.min.css" />
-<link src="https://cdn.jsdelivr.net/npm/@y-fe/nu-dialog/css/position/top.min.css">
-<link src="https://cdn.jsdelivr.net/npm/@y-fe/nu-dialog/css/position/right.min.css">
-<link src="https://cdn.jsdelivr.net/npm/@y-fe/nu-dialog/css/position/bottom.min.css">
-<link src="https://cdn.jsdelivr.net/npm/@y-fe/nu-dialog/css/position/left.min.css">
-<link src="https://cdn.jsdelivr.net/npm/@y-fe/nu-dialog/css/position/middle.min.css">
-```
-
 ```
 @y-fe/nu-dialog/css
 ├── core.css        // 核心代码
@@ -46,12 +37,13 @@ $ yarn add @y-fe/nu-dialog
 | `.nu_dialog` | 弹窗主体 |
 | `.nu_dialog_close` | 弹窗关闭按钮 |
 
-和其它 UI 库的弹窗组件不同的是，在 Nu-system 中，我们并没有将 `title`,`header`,`body`,`footer` 列为弹窗的范畴。在我们看来这几个组件的覆盖面都太小了。
+和其它 UI 库的弹窗组件不同的是，在 Nu-system 中，我们并没有将 `title`,`header`,`body`,`footer` 列为弹窗的范畴。
+在我们看来这几个组件的覆盖面都太小了。
 
 ## API
 
 ```HTML
-<div class="nu_dialog_wrap _middle _on">
+<div class="nu_dialog_wrap _middle _open">
   <label class="nu_dialog_mask" title="mask"></label>
   <div class="nu_dialog">
     <label class="nu_dialog_close" title="close">&times;</label>
@@ -64,7 +56,7 @@ $ yarn add @y-fe/nu-dialog
 
 | 选择器   |   功能   |
 |:----------|-------------:|
-| `.nu_dialog_wrap._on .nu_dialog` |  控制弹窗的显示隐藏 |
+| `.nu_dialog_wrap._open .nu_dialog` |  控制弹窗的显示隐藏 |
 | `.nu_dialog_wrap._top .nu_dialog` |  弹窗居上 |
 | `.nu_dialog_wrap._right .nu_dialog` |  弹窗居右 |
 | `.nu_dialog_wrap._bottom .nu_dialog` |  弹窗居下 |
@@ -74,17 +66,15 @@ $ yarn add @y-fe/nu-dialog
 
 nu-dialog 这边只是约定了 几个 CSS Hooks 的方案，所以对于使用方来说，可以使用任意js框架（原生js，jquery, react, vue ...）去切换这些API的属性即可。
 
-
-
-**注**: 为了防止底层滚动条滚动，可以在弹窗显示的时候在 `body` 上添加 `.nu_dialog_open`。
+**注**: 为了防止底层滚动条滚动，可以在弹窗显示的时候在滚动容器上添加 `body` | `html`  上添加 `.nu_dialog_open`。
 
 ## 如何添加动效?
 
 ```css
-.nu_dialog_warp._middle .nu_dialog{
+.nu_dialog_wrap._middle .nu_dialog{
     transform:  rotate(360deg) translate3D(0, 20%, 0);
 }
-.nu_dialog_warp._middle._on .nu_dialog{
+.nu_dialog_wrap._middle._open .nu_dialog{
     transform:  rotate(0) translate3D(0, 0, 0);
 }
 ```
@@ -130,3 +120,15 @@ nu-dialog Api 因为简单，你甚至可以通过 `:checked` 属性实现纯 CS
 
 - [nu-dialog-react](https://yued-fe.github.io/nu-react/packages/button)
 - [nu-dialog-vue](https://yued-fe.github.io/nu-vue/packages/dialog)
+
+
+## Npm CDN
+
+```HTML
+<link src="https://cdn.jsdelivr.net/npm/@y-fe/nu-dialog/css/core.min.css" />
+<link src="https://cdn.jsdelivr.net/npm/@y-fe/nu-dialog/css/position/top.min.css">
+<link src="https://cdn.jsdelivr.net/npm/@y-fe/nu-dialog/css/position/right.min.css">
+<link src="https://cdn.jsdelivr.net/npm/@y-fe/nu-dialog/css/position/bottom.min.css">
+<link src="https://cdn.jsdelivr.net/npm/@y-fe/nu-dialog/css/position/left.min.css">
+<link src="https://cdn.jsdelivr.net/npm/@y-fe/nu-dialog/css/position/middle.min.css">
+```

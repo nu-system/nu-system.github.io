@@ -12,13 +12,20 @@
     <link rel="stylesheet" href="../css/position/bottom.css">
     <link rel="stylesheet" href="../css/position/left.css">
     <link rel="stylesheet" href="../css/position/middle.css">
-    <link rel="stylesheet" href="../css/skins/webnovel.css">
     <style>
+        body, html{
+            height: 100%;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
         .text-area{
             padding: 5em 1em;
             text-align: center;
         }
-
         .btn-show-dialog{
             display: inline-block;
             font-size: 100%;
@@ -28,78 +35,16 @@
             border-radius: 2px;
             border: none;
             cursor: pointer;
+            margin: 0.5em;
         }
     </style>
 </head>
 <body>
-    <h3>CSS 方式显示弹窗</h3>
-    <label class="btn-show-dialog" for="dialogMiddleCssSwitch">居中弹窗</label>
-    <input id="dialogMiddleCssSwitch" type="checkbox" class="nu_dialog_switch">
-    <div class="nu_dialog_wrap _middle">
-        <label for="dialogMiddleCssSwitch" class="nu_dialog_mask"></label>
-        <div class="nu_dialog">
-            <label for="dialogMiddleCssSwitch" class="nu_dialog_close">&times;</label>
-            <div class="text-area">
-                这是用 CSS 方式触发的居中显示的弹窗
-            </div>
-        </div>
-    </div>
-
-    <label class="btn-show-dialog" for="dialogTopCssSwitch">居上弹窗</label>
-    <input id="dialogTopCssSwitch" type="checkbox" class="nu_dialog_switch">
-    <div class="nu_dialog_wrap _top">
-        <label for="dialogTopCssSwitch" class="nu_dialog_mask"></label>
-        <div class="nu_dialog">
-            <label for="dialogTopCssSwitch" class="nu_dialog_close">&times;</label>
-            <div class="text-area">
-                这是用 CSS 方式触发居上显示的弹窗
-            </div>
-        </div>
-    </div>
-
-    <label class="btn-show-dialog" for="dialogRightCssSwitch">居右弹窗</label>
-    <input id="dialogRightCssSwitch" type="checkbox" class="nu_dialog_switch">
-    <div class="nu_dialog_wrap _right">
-        <label for="dialogRightCssSwitch" class="nu_dialog_mask"></label>
-        <div class="nu_dialog">
-            <label for="dialogRightCssSwitch" class="nu_dialog_close">&times;</label>
-            <div class="text-area">
-                这是用 CSS 方式触发居右显示的弹窗
-            </div>
-        </div>
-    </div>
-
-    <label class="btn-show-dialog" for="dialogBottomCssSwitch">居下弹窗</label>
-    <input id="dialogBottomCssSwitch" type="checkbox" class="nu_dialog_switch">
-    <div class="nu_dialog_wrap _bottom">
-        <label for="dialogBottomCssSwitch" class="nu_dialog_mask"></label>
-        <div class="nu_dialog">
-            <label for="dialogBottomCssSwitch" class="nu_dialog_close">&times;</label>
-            <div class="text-area">
-                这是用 CSS 方式触发居下显示的弹窗
-            </div>
-        </div>
-    </div>
-
-    <label class="btn-show-dialog" for="dialogLeftCssSwitch">居左弹窗</label>
-    <input id="dialogLeftCssSwitch" type="checkbox" class="nu_dialog_switch">
-    <div class="nu_dialog_wrap _left">
-        <label for="dialogLeftCssSwitch" class="nu_dialog_mask"></label>
-        <div class="nu_dialog">
-            <label for="dialogLeftCssSwitch" class="nu_dialog_close">&times;</label>
-            <div class="text-area">
-                这是用 CSS 方式触发居左显示的弹窗
-            </div>
-        </div>
-    </div>
-
-
-    <h3>JS 方式显示弹窗</h3>
-    <button class="btn-show-dialog" type="button" onclick="dialogMiddleJs.classList.add('_on');" >居中弹窗</button>
+    <button class="btn-show-dialog" type="button" onclick="dialogMiddleJs.classList.add('_open');" >居中弹窗</button>
     <div id="dialogMiddleJs" class="nu_dialog_wrap _middle">
-        <label onclick="dialogMiddleJs.classList.remove('_on');" href="javascript:;" title="遮罩" class="nu_dialog_mask"></label>
+        <label onclick="dialogMiddleJs.classList.remove('_open');" href="javascript:;" title="遮罩" class="nu_dialog_mask"></label>
         <div class="nu_dialog">
-            <label onclick="dialogMiddleJs.classList.remove('_on');" href="javascript:;" title="关闭" class="nu_dialog_close">
+            <label onclick="dialogMiddleJs.classList.remove('_open');" href="javascript:;" title="关闭" class="nu_dialog_close">
                 &times;
             </label>
             <div class="text-area">
@@ -108,11 +53,11 @@
         </div>
     </div>
 
-    <button class="btn-show-dialog" type="button" onclick="dialogTopJs.classList.add('_on');" >居上弹窗</button>
+    <button class="btn-show-dialog" type="button" onclick="dialogTopJs.classList.add('_open');" >居上弹窗</button>
     <div id="dialogTopJs" class="nu_dialog_wrap _top">
-        <label onclick="dialogTopJs.classList.remove('_on');" href="javascript:;" title="遮罩" class="nu_dialog_mask"></label>
+        <label onclick="dialogTopJs.classList.remove('_open');" href="javascript:;" title="遮罩" class="nu_dialog_mask"></label>
         <div class="nu_dialog">
-            <label onclick="dialogTopJs.classList.remove('_on');" href="javascript:;" title="关闭" class="nu_dialog_close">
+            <label onclick="dialogTopJs.classList.remove('_open');" href="javascript:;" title="关闭" class="nu_dialog_close">
                 &times;
             </label>
             <div class="text-area">
@@ -121,11 +66,11 @@
         </div>
     </div>
 
-    <button class="btn-show-dialog" type="button" onclick="dialogRightJs.classList.add('_on');" >居右弹窗</button>
+    <button class="btn-show-dialog" type="button" onclick="dialogRightJs.classList.add('_open');" >居右弹窗</button>
     <div id="dialogRightJs" class="nu_dialog_wrap _right">
-        <label onclick="dialogRightJs.classList.remove('_on');" href="javascript:;" title="遮罩" class="nu_dialog_mask"></label>
+        <label onclick="dialogRightJs.classList.remove('_open');" href="javascript:;" title="遮罩" class="nu_dialog_mask"></label>
         <div class="nu_dialog">
-            <label onclick="dialogRightJs.classList.remove('_on');" href="javascript:;" title="关闭" class="nu_dialog_close">
+            <label onclick="dialogRightJs.classList.remove('_open');" href="javascript:;" title="关闭" class="nu_dialog_close">
                 &times;
             </label>
             <div class="text-area">
@@ -134,11 +79,11 @@
         </div>
     </div>
 
-    <button class="btn-show-dialog" type="button" onclick="dialogBottomJs.classList.add('_on');" >居底弹窗</button>
+    <button class="btn-show-dialog" type="button" onclick="dialogBottomJs.classList.add('_open');" >居底弹窗</button>
     <div id="dialogBottomJs" class="nu_dialog_wrap _bottom">
-        <label onclick="dialogBottomJs.classList.remove('_on');" href="javascript:;" title="遮罩" class="nu_dialog_mask"></label>
+        <label onclick="dialogBottomJs.classList.remove('_open');" href="javascript:;" title="遮罩" class="nu_dialog_mask"></label>
         <div class="nu_dialog">
-            <label onclick="dialogBottomJs.classList.remove('_on');" href="javascript:;" title="关闭" class="nu_dialog_close">
+            <label onclick="dialogBottomJs.classList.remove('_open');" href="javascript:;" title="关闭" class="nu_dialog_close">
                 &times;
             </label>
             <div class="text-area">
@@ -147,11 +92,11 @@
         </div>
     </div>
 
-    <button class="btn-show-dialog" type="button" onclick="dialogLeftJs.classList.add('_on');" >居左弹窗</button>
+    <button class="btn-show-dialog" type="button" onclick="dialogLeftJs.classList.add('_open');" >居左弹窗</button>
     <div id="dialogLeftJs" class="nu_dialog_wrap _left">
-        <label onclick="dialogLeftJs.classList.remove('_on');" href="javascript:;" title="遮罩" class="nu_dialog_mask"></label>
+        <label onclick="dialogLeftJs.classList.remove('_open');" href="javascript:;" title="遮罩" class="nu_dialog_mask"></label>
         <div class="nu_dialog">
-            <label onclick="dialogLeftJs.classList.remove('_on');" href="javascript:;" title="关闭" class="nu_dialog_close">
+            <label onclick="dialogLeftJs.classList.remove('_open');" href="javascript:;" title="关闭" class="nu_dialog_close">
                 &times;
             </label>
             <div class="text-area">
@@ -159,6 +104,5 @@
             </div>
         </div>
     </div>
-</div>
 </body>
 </html>
