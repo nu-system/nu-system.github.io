@@ -36,13 +36,13 @@ nu-system/packages/button
   "version": "0.0.1",
   "description": "No UI 组件库系统 nu-system, 弹窗组件",
   "main": "css/core.css",
-  "repository": "git@github.com:yued-fe/nu-system.git",
-  "author": "YFE-TEAM",
-  "license": "MIT",  
+  "repository": "git@github.com:nu-system/[component].git",
+  "author": "yfe-team",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/yued-fe/nu-system/issues"
+    "url": "https://github.com/nu-system/[component]/issues"
   },
-  "homepage": "https://yued-fe.github.io/nu-system/example/packages/[component]",
+  "homepage": "https://nu-system.github.io/vanilla/[component]/",
   "keywords": [
       "!ui",
       "ui",

@@ -5,65 +5,65 @@ module.exports = {
     head: [
         ['link', {rel: 'icon', href: '/logo.png'}]
     ],
-    serviceWorker:true,
+    serviceWorker: true,
     themeConfig: {
         repo: 'nu-system',
         repoLabel: 'GitHub',
         editLinks: true,
         lastUpdated: '上次更新',
         editLinkText: '帮助我们改善此页面！',
-        sidebarDepth: 3,
+        sidebarDepth: 1,
         nav: [
             {
                 text: 'Vanilla',
-                items:[
+                items: [
                     {
-                        text:'button',
+                        text: 'button',
                         link: 'vanilla/button/'
                     }, {
-                        text:'dialog',
+                        text: 'dialog',
                         link: 'vanilla/dialog/'
                     }, {
-                        text:'toast',
+                        text: 'toast',
                         link: 'vanilla/toast/'
                     }
                 ]
-            },{
+            }, {
                 text: 'React',
-                items:[
+                items: [
                     {
-                        text:'button',
+                        text: 'button',
                         link: 'react/button/'
                     }, {
-                        text:'dialog',
+                        text: 'dialog',
                         link: 'react/dialog/'
                     }, {
-                        text:'toast',
+                        text: 'toast',
                         link: 'react/toast/'
                     }
                 ]
-            },{
+            }, {
                 text: 'Vue',
-                items:[
+                items: [
                     {
-                        text:'button',
+                        text: 'button',
                         link: 'vue/button/'
                     }, {
-                        text:'dialog',
+                        text: 'dialog',
                         link: 'vue/dialog/'
                     }, {
-                        text:'axios-form',
+                        text: 'axios-form',
                         link: 'vue/axios-form/'
                     }
                 ]
-            },{
+            }, {
                 text: 'React-native',
-                items:[
+                items: [
                     {
-                        text:'acss',
+                        text: 'acss',
                         link: 'react-native/acss/'
                     }, {
-                        text:'grid',
+                        text: 'grid',
                         link: 'react-native/grid/'
                     }
                 ]
@@ -77,7 +77,7 @@ module.exports = {
                     'vanilla/',
                     'vanilla/button/',
                     'vanilla/dialog/',
-                    'vanilla/toast/'
+                    'vanilla/toast/',
                 ]
             },
             {

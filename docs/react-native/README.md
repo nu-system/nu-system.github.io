@@ -1,10 +1,10 @@
-# nu-react
+# nu-react-native
 
 No UI 组件库系统 nu-system，是一个 推崇 UI 和 Logic 完全分离的组件系统。
 
 主要由 UI Just + Logic only 两部分组成，UI 和 Logic 由对应接口关联，也可以完全独立。
 
-nu-react 是 nu-system 的 React 实现。
+nu-react-native 是 nu-system 的 React native 实现。
 
 
 ## 创建
@@ -18,46 +18,32 @@ NU-system 是一个 UI 和 Logic 分离的理念，它应该更像是一个平�
 以下以 `button` 组件为例，解释目录结构和规则。
 
 ```bash
-nu-react/packages/button
+nu-react-native/packages/button
 ├── README.md         // 介绍你的组件
-├── package.json      // 组件配置
-├── nwb.config.js     // nwb 配置文件
-├── es                // build esmodule目录
-│   └── index.js
 ├── lib               // build 目录
 │   └── index.js
-└── src               // 原始代码文件夹
-    └── index.js      // react 组件入口文件
+└── package.json      // 组件配置
 ```
 
 实际创建将 `button` 修改为你的组件名即可。
 
-## 构建
-
-```bash
-cd packages/[component]
-yarn build
-```
-
-nu-react 目前是以 [nwb](https://github.com/insin/nwb/blob/master/docs/guides/ReactComponents.md#developing-react-components-and-libraries-with-nwb) 作为打包工具。
-
 ## 发布
 
-nu-react 中的每个组件都是独立进行维护的，所以需要独立发布到 npm 中。
+nu-react-native 中的每个组件都是独立进行维护的，所以需要独立发布到 npm 中。
 
 ```json
 {
-  "name": "@y-fe/nu-[component]-react",
+  "name": "@y-fe/nu-[component]-react-native",
   "version": "0.0.1",
-  "description": "No ui 组件库系统 nu-system，[component]组件，react 实现",
+  "description": "No ui 组件库系统 nu-system，[component]组件，react native 实现",
   "main": "lib/index.js",
-  "repository": "git@github.com:nu-system/[component]-react.git",
+  "repository": "git@github.com:nu-system/[component]-react-native.git",
   "author": "yfe-team",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nu-system/[component]-react/issues"
+    "url": "https://github.com/nu-system/[component]-react-native/issues"
   },
-  "homepage": "https://nu-system.github.io/react/[component]/",
+  "homepage": "https://nu-system.github.io/react-native/[component]/",
   "dependencies": {},
   "keywords": [
     "react-component",

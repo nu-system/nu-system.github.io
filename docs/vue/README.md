@@ -74,13 +74,13 @@ nu-vue 中的每个组件都是独立进行维护的，所以需要独立发布�
   "version": "0.0.1",
   "description": "No ui 组件库系统 nu-system，[component]组件，vue 实现",
   "main": "lib/index.js",
-  "repository": "git@github.com:yued-fe/nu-vue.git",
+  "repository": "git@github.com:nu-system/[component]-vue.git",
   "author": "yfe-team",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/yued-fe/nu-vue/issues"
+    "url": "https://github.com/nu-system/[component]-vue/issues"
   },
-  "homepage": "https://yued-fe.github.io/nu-vue/example/packages/[component]",
+  "homepage": "https://nu-system.github.io/vue/[component]/",
   "dependencies": {},
   "keywords": [
     "ui",
