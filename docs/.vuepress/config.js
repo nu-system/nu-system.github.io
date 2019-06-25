@@ -19,13 +19,13 @@ module.exports = {
                 items:[
                     {
                         text:'button',
-                        link: '../vanilla/button/'
+                        link: 'vanilla/button/'
                     }, {
                         text:'dialog',
-                        link: '../vanilla/dialog/'
+                        link: 'vanilla/dialog/'
                     }, {
                         text:'toast',
-                        link: '../vanilla/toast/'
+                        link: 'vanilla/toast/'
                     }
                 ]
             },{
@@ -33,13 +33,13 @@ module.exports = {
                 items:[
                     {
                         text:'button',
-                        link: '../react/button/'
+                        link: 'react/button/'
                     }, {
                         text:'dialog',
-                        link: '../react/dialog/'
+                        link: 'react/dialog/'
                     }, {
                         text:'toast',
-                        link: '../react/toast/'
+                        link: 'react/toast/'
                     }
                 ]
             },{
@@ -47,13 +47,13 @@ module.exports = {
                 items:[
                     {
                         text:'button',
-                        link: '../vue/button/'
+                        link: 'vue/button/'
                     }, {
                         text:'dialog',
-                        link: '../vue/dialog/'
+                        link: 'vue/dialog/'
                     }, {
                         text:'axios-form',
-                        link: '../vue/axios-form/'
+                        link: 'vue/axios-form/'
                     }
                 ]
             },{
@@ -61,10 +61,10 @@ module.exports = {
                 items:[
                     {
                         text:'acss',
-                        link: '../react-native/acss/'
+                        link: 'react-native/acss/'
                     }, {
                         text:'grid',
-                        link: '../react-native/grid/'
+                        link: 'react-native/grid/'
                     }
                 ]
             },
@@ -74,39 +74,39 @@ module.exports = {
                 title: 'Vanilla',
                 collapsable: false,
                 children: [
-                    '../vanilla/',
-                    '../vanilla/button/',
-                    '../vanilla/dialog/',
-                    '../vanilla/toast/'
+                    'vanilla/',
+                    'vanilla/button/',
+                    'vanilla/dialog/',
+                    'vanilla/toast/'
                 ]
             },
             {
                 title: 'React',
                 collapsable: false,
                 children: [
-                    '../react/',
-                    '../react/button/',
-                    '../react/dialog/',
-                    '../react/toast/'
+                    'react/',
+                    'react/button/',
+                    'react/dialog/',
+                    'react/toast/'
                 ]
             },
             {
                 title: 'VUE',
                 collapsable: false,
                 children: [
-                    '../vue/',
-                    '../vue/button/',
-                    '../vue/dialog/',
-                    '../vue/axios-form/'
+                    'vue/',
+                    'vue/button/',
+                    'vue/dialog/',
+                    'vue/axios-form/'
                 ]
             },
             {
                 title: 'React Native',
                 collapsable: false,
                 children: [
-                    '../react-native/',
-                    '../react-native/acss/',
-                    '../react-native/grid/'
+                    'react-native/',
+                    'react-native/acss/',
+                    'react-native/grid/'
                 ]
             },
         ]

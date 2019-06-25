@@ -9,21 +9,34 @@
     "!ui",
     "nu",
     "ui",
+    "nu-system",
     "ui-system",
-    "css"
+    "css",
+    "components",
+    "react-components",
+    "vue-components",
+    "vanilla-components",
+    "react-native-components"
   ],
   "bugs": {
     "url": "https://github.com/yued-fe/nu-system/issues"
   },
   "homepage": "https://yued-fe.github.io/nu-system/",
   "scripts": {
-    "docs:dev": "vuepress dev .",
-    "docs:build": "vuepress build ."
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
   },
   "devDependencies": {
-    "del": "^4.1.0",
-    "vuepress": "^0.14.11",
     "@y-fe/nu-button": "^0.0.5",
-    "@y-fe/nu-dialog": "^0.0.3"
+    "@y-fe/nu-dialog": "^0.0.3",
+    "del": "^4.1.0",
+    "vuepress": "^0.14.11"
+  },
+  "dependencies": {
+    "@y-fe/nu-axios-form-vue": "^0.0.2",
+    "@y-fe/nu-button-vue": "^0.0.7",
+    "@y-fe/nu-dialog-vue": "^0.0.12",
+    "add": "^2.0.6",
+    "yarn": "^1.16.0"
   }
 }

@@ -1,6 +1,6 @@
 <script>
   // import NuDialog from "@y-fe/nu-dialog-vue"
-  import NuDialog from "../../vue/dialog/src/index"
+  import NuDialog from "@y-fe/nu-dialog-vue"
   import "@y-fe/nu-dialog"
   import "@y-fe/nu-dialog/css/position/middle.css"
   import "@y-fe/nu-dialog/css/position/top.css"

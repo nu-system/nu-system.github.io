@@ -1,5 +1,5 @@
 <script>
-  import NuButton from "../../vue/button/src/index";
+  import NuButton from "@y-fe/nu-button-vue";
   import "@y-fe/nu-button/css/core.css";
   import "@y-fe/nu-button/css/skins/bootstrap.css";
   import "@y-fe/nu-button/css/skins/loading.css";

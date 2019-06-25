@@ -10,6 +10,7 @@
 node_modules/
 # testing
 /coverage
+./vue/axios-form/node_modules
 
 # production
 /build
