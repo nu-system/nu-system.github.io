@@ -1,4 +1,4 @@
-# 指南
+# nu-vanilla
 
 ## 创建
 
@@ -24,7 +24,7 @@ nu-system/packages/button
 
 它就会将对应的样式文件夹构建到对应 css 目录。不管是`less`还是 `sass`。
 
-![koala](../.vuepress/public/koala.png)
+![koalo](../.vuepress/public/koala.png)
 
 当然你也可以用你自己喜欢的工具构建你的样式，只是 `dist` 文件要叫 `css` 即可。
 

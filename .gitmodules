@@ -1,0 +1,33 @@
+[submodule "vue/dialog"]
+	path = vue/dialog
+	url = https://github.com/nu-system/dialog-vue
+[submodule "vue/axios-form"]
+	path = vue/axios-form
+	url = https://github.com/nu-system/axios-form-vue
+[submodule "vue/button"]
+	path = vue/button
+	url = https://github.com/nu-system/button-vue
+[submodule "react/dialog"]
+	path = react/dialog
+	url = https://github.com/nu-system/dialog-react
+[submodule "react/button"]
+	path = react/button
+	url = https://github.com/nu-system/button-react
+[submodule "react/toast"]
+	path = react/toast
+	url = https://github.com/nu-system/toast-react
+[submodule "vanilla/dialog"]
+	path = vanilla/dialog
+	url = https://github.com/nu-system/dialog
+[submodule "vanilla/toast"]
+	path = vanilla/toast
+	url = https://github.com/nu-system/toast
+[submodule "vanilla/button"]
+	path = vanilla/button
+	url = https://github.com/nu-system/button
+[submodule "react-native/acss"]
+	path = react-native/acss
+	url = https://github.com/nu-system/acss-react-native
+[submodule "react-native/grid"]
+	path = react-native/grid
+	url = https://github.com/nu-system/grid-react-native

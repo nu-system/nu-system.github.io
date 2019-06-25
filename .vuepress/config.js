@@ -1,9 +1,8 @@
 module.exports = {
-    base:'/vanilla/',
     title: 'NU-system',
     description: '一个 UI 和 Logic 完全分离的组件库系统',
     themeConfig: {
-        repo: 'yued-fe/nu-system',
+        repo: 'nu-system',
         repoLabel: 'GitHub',
         editLinks: true,
         lastUpdated: '上次更新',
@@ -11,19 +10,44 @@ module.exports = {
         sidebarDepth: 3,
         sidebar: [
             {
-                title: '介绍',
-                collapsable: false,
-                children: ['/docs/guide']
-            },
-            {
-                title: 'Components',
+                title: 'Vanilla',
                 collapsable: false,
                 children: [
-                    '/packages/button/',
-                    '/packages/dialog/',
-                    '/packages/toast/'
+                    '../vanilla/',
+                    '../vanilla/button/',
+                    '../vanilla/dialog/',
+                    '../vanilla/toast/'
                 ]
-            }
+            },
+            {
+                title: 'React',
+                collapsable: false,
+                children: [
+                    '../react/',
+                    '../react/button/',
+                    '../react/dialog/',
+                    '../react/toast/'
+                ]
+            },
+            {
+                title: 'VUE',
+                collapsable: false,
+                children: [
+                    '../vue/',
+                    '../vue/button/',
+                    '../vue/dialog/',
+                    '../vue/axios-form/'
+                ]
+            },
+            {
+                title: 'React Native',
+                collapsable: false,
+                children: [
+                    '../react-native/',
+                    '../react-native/acss/',
+                    '../react-native/grid/'
+                ]
+            },
         ]
     },
-}
+};

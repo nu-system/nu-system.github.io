@@ -1,7 +1,7 @@
 ---
 home: true
 actionText: Start →
-actionLink: /docs/guide
+actionLink: /vanilla/
 features:
 - title: UI Just
   details: UI Just UI， UI 只做 UI 该做的事情
