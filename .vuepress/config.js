@@ -1,5 +1,5 @@
 module.exports = {
-    base:'/',
+    base:'/vanilla/',
     title: 'NU-system',
     description: '一个 UI 和 Logic 完全分离的组件库系统',
     themeConfig: {

@@ -1,9 +1,0 @@
-[submodule "packages/button"]
-	path = packages/button
-	url = https://github.com/nu-system/button
-[submodule "packages/toast"]
-	path = packages/toast
-	url = https://github.com/nu-system/toast
-[submodule "packages/dialog"]
-	path = packages/dialog
-	url =  https://github.com/nu-system/dialog
