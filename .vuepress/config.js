@@ -1,6 +1,11 @@
 module.exports = {
     title: 'NU-system',
     description: '一个 UI 和 Logic 完全分离的组件库系统',
+    ga: 'UA-142729357-1',
+    head: [
+        ['link', {rel: 'icon', href: '/logo.png'}]
+    ],
+    serviceWorker:true,
     themeConfig: {
         repo: 'nu-system',
         repoLabel: 'GitHub',
