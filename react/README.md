@@ -6,9 +6,6 @@ No UI 组件库系统 nu-system，是一个 推崇 UI 和 Logic 完全分离的�
 
 nu-react 是 nu-system 的 React 实现。
 
-- [nu-system](https://yued-fe.github.io/nu-system/) 一个 UI 和 Logic 完全分离的组件库系统。
-- [nu-vue](https://yued-fe.github.io/nu-vue/) 是 nu-system 的 Vue 实现。
-
 
 ## 创建
 

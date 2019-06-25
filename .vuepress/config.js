@@ -13,6 +13,62 @@ module.exports = {
         lastUpdated: '上次更新',
         editLinkText: '帮助我们改善此页面！',
         sidebarDepth: 3,
+        nav: [
+            {
+                text: 'Vanilla',
+                items:[
+                    {
+                        text:'button',
+                        link: '../vanilla/button/'
+                    }, {
+                        text:'dialog',
+                        link: '../vanilla/dialog/'
+                    }, {
+                        text:'toast',
+                        link: '../vanilla/toast/'
+                    }
+                ]
+            },{
+                text: 'React',
+                items:[
+                    {
+                        text:'button',
+                        link: '../react/button/'
+                    }, {
+                        text:'dialog',
+                        link: '../react/dialog/'
+                    }, {
+                        text:'toast',
+                        link: '../react/toast/'
+                    }
+                ]
+            },{
+                text: 'Vue',
+                items:[
+                    {
+                        text:'button',
+                        link: '../vue/button/'
+                    }, {
+                        text:'dialog',
+                        link: '../vue/dialog/'
+                    }, {
+                        text:'axios-form',
+                        link: '../vue/axios-form/'
+                    }
+                ]
+            },{
+                text: 'React-native',
+                items:[
+                    {
+                        text:'acss',
+                        link: '../react-native/acss/'
+                    }, {
+                        text:'grid',
+                        link: '../react-native/grid/'
+                    }
+                ]
+            },
+        ],
         sidebar: [
             {
                 title: 'Vanilla',
