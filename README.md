@@ -30,7 +30,6 @@ NU-system 本身并没有对 UI 语言做限制，所以可以使用任意 UI �
 只是目前 CSS 比较容易实现这套理念，所以 ui-system 目前提供 css 的方式。
 
 - [nu-vanilla](https://nu-system.github.io/vanilla/) ;
-- nu-css-in-js 规划之中；
    
 ## Logic Only
   
@@ -43,5 +42,5 @@ NU-system 本身并没有对逻辑语言做限制，所以可以使用任意 JS 
 - [nu-vue](https://nu-system.github.io/vue/) ;
 - [nu-react](https://nu-system.github.io/react/);
 - [nu-react-native](https://nu-system.github.io/react-native/);
-- nu-jquery 规划之中;
 - nu-js 规划之中;
+- nu-css-in-js 规划之中；

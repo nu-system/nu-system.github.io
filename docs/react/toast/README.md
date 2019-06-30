@@ -1,30 +1,26 @@
-# nu-toast-react
+# Toast
 
 [![npm package][npm-badge]][npm]
 
 [npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
-[npm]: https://www.npmjs.org/package/@y-fe/nu-toast-react
+[npm]: https://www.npmjs.org/package/@_nu/react-toast
 
 <iframe src="https://codesandbox.io/embed/new-night-9e4kp?fontsize=14&hidenavigation=1" title="nu-toast-react" allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 
 NU 「 no-ui 」组件库系统 nu-system，Toast 组件 React 实现。
 
-`@y-fe/nu-toast-react` 本身不会输出任何样式。
+`NuToast` 本身不会输出任何样式。
 
 ## 怎么用？
 
 ```
-npm i @y-fe/nu-toast-react 
-```
-
-```
-yarn add @y-fe/nu-toast-react
+yarn add @_nu/react-toast
 ```
 
 ### 二次封装
 
 ```JSX
-import NuToast from "@y-fe/nu-toast-react";
+import NuToast from "@_nu/react-toast";
 import "./style.css";
 
 const Toast = NuToast.setDefault({
@@ -106,7 +102,7 @@ export default App;
 `NuToast.setDefault` 默认有 `['danger','warning','success']` 三个状态，当然你可以基于自己的业务创建属于自己的 Toast 系统。
 
 ```JSX
-import NuToast from "@y-fe/nu-toast-react";
+import NuToast from "@_nu/react-toast";
 
 const Toast = NuToast.setDefault({
     status:['myToast'],

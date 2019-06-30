@@ -14,7 +14,7 @@
 </template>
 
 <script>
-    import NuAjaxForm from "@y-fe/nu-axios-form-vue";
+    import NuAjaxForm from "@_nu/vue-axios-form";
 
     export default {
         components: {NuAjaxForm},

@@ -1,11 +1,11 @@
-# nu-vanilla
+# 介绍
 
 ## 创建
 
 以下以 `button` 组件为例，解释目录结构和规则。
 
 ```bash
-nu-system/packages/button
+[component]
 ├── README.md           // 介绍你的组件  
 ├── css                 // build 目录
 │   ├── core.css       // 提供 UI Core 代码
@@ -16,32 +16,18 @@ nu-system/packages/button
 
 实际创建将 `button` 修改为你的组件名即可。
 
-## 构建
-
-对于 UI 部分，我们目前采用 [koala](http://koala-app.com/index-zh.html) 作为构建工具。
-
-你只需要将 `./nu-system/packages` 下的组件拖入 koala ，按照以下配置即可。 
-
-它就会将对应的样式文件夹构建到对应 css 目录。不管是`less`还是 `sass`。
-
-![koalo](../.vuepress/public/koala.png)
-
-当然你也可以用你自己喜欢的工具构建你的样式，只是 `dist` 文件要叫 `css` 即可。
-
 ## 发布
 
 ```json
 {
-  "name": "@y-fe/nu-[component]",
+  "name": "@_nu/vanilla-[component]",
   "version": "0.0.1",
   "description": "No UI 组件库系统 nu-system, 弹窗组件",
   "main": "css/core.css",
-  "repository": "git@github.com:nu-system/[component].git",
   "author": "yfe-team",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/nu-system/[component]/issues"
-  },
+  "repository": "git@github.com:nu-system/vanilla-[component].git",
+  "bugs": "https://github.com/nu-system/vanilla-[component]/issues",
   "homepage": "https://nu-system.github.io/vanilla/[component]/",
   "keywords": [
       "!ui",

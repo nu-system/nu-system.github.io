@@ -1,4 +1,9 @@
-# nu-dialog
+# Dialog
+
+[![npm package][npm-badge]][npm]
+
+[npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
+[npm]: https://www.npmjs.org/package/@_nu/vanilla-dialog
 
 <iframe height="600" style="width: 100%;" scrolling="no" title="nu-dialog-js" src="//codepen.io/ziven27/embed/joKGvJ/?height=265&theme-id=dark&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/ziven27/pen/joKGvJ/'>nu-dialog-js</a> by ziven27
@@ -11,12 +16,11 @@ No UI 组件库系统 「 弹窗组件 」。
 ## 怎么用?
 
 ```
-$ npm i @y-fe/nu-dialog
-$ yarn add @y-fe/nu-dialog
+$ yarn add @_nu/vanilla-dialog
 ```
 
 ```
-@y-fe/nu-dialog/css
+@_nu/vanilla-dialog/css
 ├── core.css        // 核心代码
 └── position
     ├── top.css     // 居上显示

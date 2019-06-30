@@ -1,4 +1,9 @@
-# nu-toast
+# Toast
+
+[![npm package][npm-badge]][npm]
+
+[npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
+[npm]: https://www.npmjs.org/package/@_nu/vanilla-toast
 
 <iframe height="400" style="width: 100%;" scrolling="no" title="nu-toast" src="//codepen.io/ziven27/embed/mZyprq/?height=265&theme-id=0&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/ziven27/pen/mZyprq/'>nu-toast</a> by ziven27
@@ -10,21 +15,17 @@ NU 「 no-ui 」 组件库系统 nu-system 「 Toast 组件 」
 ## 怎么用?
 
 ```bash
-npm i @y-fe/nu-toast
-```
-
-```bash
-yarn add @y-fe/nu-toast
+yarn add @_nu/vanilla-toast
 ```
 
 ```HTML
-<link src="https://cdn.jsdelivr.net/npm/@y-fe/nu-toast/css/core.min.css" />
-<link src="https://cdn.jsdelivr.net/npm/@y-fe/nu-toast/css/skins/bootstrap.min.css" />
+<link src="https://cdn.jsdelivr.net/npm/@_nu/vanilla-toast/css/core.min.css" />
+<link src="https://cdn.jsdelivr.net/npm/@_nu/vanilla-toast/css/skins/bootstrap.min.css" />
 
 ```
 
 ```
-@y-fe/nu-toast/css
+@_nu/vanilla-toast/css
 ├── core.css           // 核心样式
 └── skins
     └── bootstrap.css  // 借用 bootstrap alert 的样式

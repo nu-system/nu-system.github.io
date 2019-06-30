@@ -1,4 +1,9 @@
-# nu-button-vue
+# Button
+
+[![npm package][npm-badge]][npm]
+
+[npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
+[npm]: https://www.npmjs.org/package/@_nu/vue-button
 
 <ClientOnly>
 <ButtonDemo/>
@@ -9,21 +14,17 @@
 ## 怎么用?
 
 ```bash
-$ npm i @y-fe/nu-button-vue @y-fe/nu-button
-```
-
-```bash
-$ yarn add @y-fe/nu-button-vue @y-fe/nu-button
+$ yarn add @_nu/vue-button @_nu/vanilla-button
 ```
 
 ### 二次封装
 
 ```vue  
 <script>
-  import NuButton from "@y-fe/nu-button-vue";
-  import "@y-fe/nu-button";
-  import "@y-fe/nu-button/css/skins/loading.css";
-  import "@y-fe/nu-button/css/skins/bootstrap.css";
+  import NuButton from "@_nu/vue-button";
+  import "@_nu/vanilla-button";
+  import "@_nu/vanilla-button/css/skins/loading.css";
+  import "@_nu/vanilla-button/css/skins/bootstrap.css";
 
   export default {
     props: {
@@ -49,7 +50,7 @@ $ yarn add @y-fe/nu-button-vue @y-fe/nu-button
 
 设置默认「 颜色 」和「 变体 」的目的是避免每次在使用按钮的时候需要添加对应属性。
 
-因为 `@y-fe/nu-button-vue` 是纯逻辑组件本身不会输出任何样式，在实际项目中使用需要二次封装。
+因为 `NuButton` 是纯逻辑组件本身不会输出任何样式，在实际项目中使用需要二次封装。
 这里采用的是 [nu-button](https://nu-system.github.io/vanilla/button/) 里面的 bootstrap 皮肤。
 
 ### 使用

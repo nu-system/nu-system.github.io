@@ -27,15 +27,15 @@
     "docs:build": "vuepress build docs"
   },
   "devDependencies": {
-    "@y-fe/nu-button": "^0.0.5",
-    "@y-fe/nu-dialog": "^0.0.3",
+    "@_nu/vanilla-button": "^0.0.1",
+    "@_nu/vanilla-dialog": "^0.0.1",
+    "@_nu/vue-axios-form": "^0.0.1",
+    "@_nu/vue-button": "^0.0.1",
+    "@_nu/vue-dialog": "^0.0.2",
     "del": "^4.1.0",
     "vuepress": "^0.14.11"
   },
   "dependencies": {
-    "@y-fe/nu-axios-form-vue": "^0.0.2",
-    "@y-fe/nu-button-vue": "^0.0.7",
-    "@y-fe/nu-dialog-vue": "^0.0.12",
     "add": "^2.0.6",
     "yarn": "^1.16.0"
   }

@@ -1,6 +1,6 @@
 module.exports = {
     title: 'NU-system',
-    description: '一个 UI 和 Logic 完全分离的组件库系统',
+    description: '一个 推崇 UI 和 Logic 分离的组件库系统',
     ga: 'UA-142729357-1',
     head: [
         ['link', {rel: 'icon', href: '/logo.png'}]
@@ -12,7 +12,7 @@ module.exports = {
         editLinks: true,
         lastUpdated: '上次更新',
         editLinkText: '帮助我们改善此页面！',
-        sidebarDepth: 1,
+        sidebarDepth: 2,
         nav: [
             {
                 text: 'Vanilla',
@@ -60,6 +60,10 @@ module.exports = {
                 text: 'React-native',
                 items: [
                     {
+                      text:'button',
+                      link:'react-native/button/'
+                    },
+                    {
                         text: 'acss',
                         link: 'react-native/acss/'
                     }, {
@@ -105,6 +109,7 @@ module.exports = {
                 collapsable: false,
                 children: [
                     'react-native/',
+                    'react-native/button/',
                     'react-native/acss/',
                     'react-native/grid/'
                 ]

@@ -1,4 +1,9 @@
-# nu-button
+# Button
+
+[![npm package][npm-badge]][npm]
+
+[npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
+[npm]: https://www.npmjs.org/package/@_nu/vanilla-button
 
 ```HTML
 <a href="##" class="nu_btn _primary _ghost _large">大号的幽灵主按钮</a>
@@ -10,12 +15,11 @@ No UI 组件库系统 「 按钮组件 」。
 ## 怎么用?
 
 ```
-$ npm i @y-fe/nu-button
-$ yarn add @y-fe/nu-button
+$ yarn add @_nu/vanilla-button
 ```
 
 ```
-@y-fe/nu-button/css
+@_nu/vanilla-button/css
 ├── core.css             // 核心代码
 └── skins
     ├── bootstrap.css    // bootstrap 按钮皮肤

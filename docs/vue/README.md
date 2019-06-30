@@ -1,4 +1,4 @@
-# nu-vue
+# 介绍
 
 No UI 组件库系统 nu-system，是一个 推崇 UI 和 Logic 完全分离的组件系统。
 
@@ -20,7 +20,7 @@ NU-system 是一个 UI 和 Logic 分离的理念，它应该更像是一个平�
 以下以 `button` 组件为例，解释目录结构和规则。
 
 ```bash
-nu-vue/packages/button
+[component]
 ├── README.md         // 介绍你的组件
 ├── index.js          // VUE 组件引用
 ├── lib               // build 目录
@@ -46,40 +46,20 @@ export default Button;
 
 实际创建将 `button` 修改为你的组件名即可。
 
-## 构建
-
-```json
-/* ./nu-vue/package.json */
-
-"scripts": {
- "build:[component]": "cross-env PAK_NAME=[component] rollup -c build/rollup.config.build.js",
- /* */
-}
-```
-
-```bash
-$ cd ./nu-vue
-$ yarn build:[component]
-```
-
-nu-vue 目前是以 rollup 作为打包工具。新组件需要将 `[component]` 替换为相应组件名，才能在 **根目录** 运行以上命令打包相应组件。
-
 ## 发布
 
 nu-vue 中的每个组件都是独立进行维护的，所以需要独立发布到 npm 中。
 
 ```json
 {
-  "name": "@y-fe/nu-[component]-vue",
+  "name": "@_nu/vue-[component]",
   "version": "0.0.1",
   "description": "No ui 组件库系统 nu-system，[component]组件，vue 实现",
   "main": "lib/index.js",
-  "repository": "git@github.com:nu-system/[component]-vue.git",
   "author": "yfe-team",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/nu-system/[component]-vue/issues"
-  },
+  "repository": "git@github.com:nu-system/vue-[component].git",
+  "bugs": "https://github.com/nu-system/vue-[component]/issues",
   "homepage": "https://nu-system.github.io/vue/[component]/",
   "dependencies": {},
   "keywords": [

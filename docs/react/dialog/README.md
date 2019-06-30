@@ -1,9 +1,9 @@
-# nu-dialog-react
+# Dialog
 
 [![npm package][npm-badge]][npm]
 
 [npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
-[npm]: https://www.npmjs.org/package/@y-fe/nu-dialog-react
+[npm]: https://www.npmjs.org/package/@_nu/react-dialog
 
 
 <iframe src="https://codesandbox.io/embed/winter-https-jxp4p?fontsize=14&hidenavigation=1" title="nu-dialog-react" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
@@ -11,25 +11,24 @@
 
 NU 「 no-ui 」 组件库系统 nu-system，弹窗组件 React 实现。
 
-`@y-fe/nu-dialog-react` 本身不会输出任何样式，所有样式均来自于 [nu-dialog](https://nu-system.github.io/vanilla/dialog/)。
+`NuDialog` 本身不会输出任何样式，所有样式均来自于 [nu-dialog](https://nu-system.github.io/vanilla/dialog/)。
 
 ## 怎么用？
 
 ```
-$ npm i @y-fe/nu-dialog-react @y-fe/nu-dialog
-$ yarn add @y-fe/nu-dialog-react @y-fe/nu-dialog
+$ yarn add @_nu/react-dialog @_nu/vanilla-dialog
 ```
 
 ### 二次封装
 
 ```JSX
-import NuDialog from "@y-fe/nu-dialog-react";
-import "@y-fe/nu-dialog";
-import "@y-fe/nu-dialog/css/position/middle.css";
-// import "@y-fe/nu-dialog/css/position/top.css";
-// import "@y-fe/nu-dialog/css/position/right.css";
-// import "@y-fe/nu-dialog/css/position/bottom.css";
-// import "@y-fe/nu-dialog/css/position/left.css";
+import NuDialog from "@_nu/react-dialog";
+import "@_nu/vanilla-dialog";
+import "@_nu/vanilla-dialog/css/position/middle.css";
+// import "@_nu/vanilla-dialog/css/position/top.css";
+// import "@_nu/vanilla-dialog/css/position/right.css";
+// import "@_nu/vanilla-dialog/css/position/bottom.css";
+// import "@_nu/vanilla-dialog/css/position/left.css";
 
 export default NuDialog;
 ```

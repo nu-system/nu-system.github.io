@@ -1,9 +1,8 @@
 <script>
-  import NuButton from "@y-fe/nu-button-vue";
-  import "@y-fe/nu-button/css/core.css";
-  import "@y-fe/nu-button/css/skins/bootstrap.css";
-  import "@y-fe/nu-button/css/skins/loading.css";
-  // import NuButton from "@y-fe/nu-button-vue";
+  import NuButton from "@_nu/vue-button";
+  import "@_nu/vanilla-button/css/core.css";
+  import "@_nu/vanilla-button/css/skins/bootstrap.css";
+  import "@_nu/vanilla-button/css/skins/loading.css";
   export default {
     props: {
       variant: {

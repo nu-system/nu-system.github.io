@@ -1,4 +1,4 @@
-# nu-react
+# 介绍
 
 No UI 组件库系统 nu-system，是一个 推崇 UI 和 Logic 完全分离的组件系统。
 
@@ -18,7 +18,7 @@ NU-system 是一个 UI 和 Logic 分离的理念，它应该更像是一个平�
 以下以 `button` 组件为例，解释目录结构和规则。
 
 ```bash
-nu-react/packages/button
+[component]
 ├── README.md         // 介绍你的组件
 ├── package.json      // 组件配置
 ├── nwb.config.js     // nwb 配置文件
@@ -34,11 +34,6 @@ nu-react/packages/button
 
 ## 构建
 
-```bash
-cd packages/[component]
-yarn build
-```
-
 nu-react 目前是以 [nwb](https://github.com/insin/nwb/blob/master/docs/guides/ReactComponents.md#developing-react-components-and-libraries-with-nwb) 作为打包工具。
 
 ## 发布
@@ -47,16 +42,14 @@ nu-react 中的每个组件都是独立进行维护的，所以需要独立发�
 
 ```json
 {
-  "name": "@y-fe/nu-[component]-react",
+  "name": "@_nu/react-[component]",
   "version": "0.0.1",
   "description": "No ui 组件库系统 nu-system，[component]组件，react 实现",
   "main": "lib/index.js",
-  "repository": "git@github.com:nu-system/[component]-react.git",
   "author": "yfe-team",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/nu-system/[component]-react/issues"
-  },
+  "repository": "git@github.com:nu-system/react-[component].git",
+  "bugs":  "https://github.com/nu-system/react-[component]/issues",
   "homepage": "https://nu-system.github.io/react/[component]/",
   "dependencies": {},
   "keywords": [
