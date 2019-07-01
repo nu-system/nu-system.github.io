@@ -1,9 +1,7 @@
 # Toast
 
-[![npm package][npm-badge]][npm]
-
-[npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
-[npm]: https://www.npmjs.org/package/@_nu/vanilla-toast
+[![npm package](https://img.shields.io/npm/v/@_nu/vanilla-toast.svg)](https://www.npmjs.org/package/@_nu/vanilla-toast)
+[![github](https://img.shields.io/github/stars/nu-system/vanilla-toast.svg?style=social)](https://github.com/nu-system/vanilla-toast)
 
 <iframe height="400" style="width: 100%;" scrolling="no" title="nu-toast" src="//codepen.io/ziven27/embed/mZyprq/?height=265&theme-id=0&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/ziven27/pen/mZyprq/'>nu-toast</a> by ziven27

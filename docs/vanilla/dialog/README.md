@@ -1,9 +1,7 @@
 # Dialog
 
-[![npm package][npm-badge]][npm]
-
-[npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
-[npm]: https://www.npmjs.org/package/@_nu/vanilla-dialog
+[![npm package](https://img.shields.io/npm/v/@_nu/vanilla-dialog.svg)](https://www.npmjs.org/package/@_nu/vanilla-dialog)
+[![github](https://img.shields.io/github/stars/nu-system/vanilla-dialog.svg?style=social)](https://github.com/nu-system/vanilla-dialog)
 
 <iframe height="600" style="width: 100%;" scrolling="no" title="nu-dialog-js" src="//codepen.io/ziven27/embed/joKGvJ/?height=265&theme-id=dark&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/ziven27/pen/joKGvJ/'>nu-dialog-js</a> by ziven27

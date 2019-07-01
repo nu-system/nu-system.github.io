@@ -1,9 +1,7 @@
 # Dialog
 
-[![npm package][npm-badge]][npm]
-
-[npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
-[npm]: https://www.npmjs.org/package/@_nu/react-dialog
+[![npm package](https://img.shields.io/npm/v/@_nu/react-dialog.svg)](https://www.npmjs.org/package/@_nu/react-dialog)
+[![github](https://img.shields.io/github/stars/nu-system/react-dialog.svg?style=social)](https://github.com/nu-system/react-dialog)
 
 
 <iframe src="https://codesandbox.io/embed/winter-https-jxp4p?fontsize=14&hidenavigation=1" title="nu-dialog-react" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>

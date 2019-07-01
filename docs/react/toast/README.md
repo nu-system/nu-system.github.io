@@ -1,9 +1,7 @@
 # Toast
 
-[![npm package][npm-badge]][npm]
-
-[npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
-[npm]: https://www.npmjs.org/package/@_nu/react-toast
+[![npm package](https://img.shields.io/npm/v/@_nu/react-toast.svg)](https://www.npmjs.org/package/@_nu/react-toast)
+[![github](https://img.shields.io/github/stars/nu-system/react-toast.svg?style=social)](https://github.com/nu-system/react-toast)
 
 <iframe src="https://codesandbox.io/embed/new-night-9e4kp?fontsize=14&hidenavigation=1" title="nu-toast-react" allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 

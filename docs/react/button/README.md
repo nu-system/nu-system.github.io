@@ -1,9 +1,7 @@
 # Button
 
-[![npm package][npm-badge]][npm]
-
-[npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
-[npm]: https://www.npmjs.org/package/@_nu/react-button
+[![npm package](https://img.shields.io/npm/v/@_nu/react-button.svg)](https://www.npmjs.org/package/@_nu/react-button)
+[![github](https://img.shields.io/github/stars/nu-system/react-button.svg?style=social)](https://github.com/nu-system/react-button)
 
 <iframe src="https://codesandbox.io/embed/throbbing-leftpad-juijc?autoresize=1&fontsize=14&hidenavigation=1&module=%2Fsrc%2Fcomponents%2FButton.js" title="throbbing-leftpad-juijc" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 

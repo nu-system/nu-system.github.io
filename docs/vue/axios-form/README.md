@@ -1,9 +1,7 @@
 # Axios-form
 
-[![npm package][npm-badge]][npm]
-
-[npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
-[npm]: https://www.npmjs.org/package/@_nu/vue-axios-form
+[![npm package](https://img.shields.io/npm/v/@_nu/vue-axios-form.svg)](https://www.npmjs.org/package/@_nu/vue-axios-form)
+[![github](https://img.shields.io/github/stars/nu-system/vue-axios-form.svg?style=social)](https://github.com/nu-system/vue-axios-form)
 
 一个基于 axios 利用 Form 表单的 dom 结构， 发送 request 请求的组件。
 

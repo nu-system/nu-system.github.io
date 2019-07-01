@@ -1,9 +1,7 @@
 # Button
 
-[![npm package][npm-badge]][npm]
-
-[npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
-[npm]: https://www.npmjs.org/package/@_nu/vanilla-button
+[![npm package](https://img.shields.io/npm/v/@_nu/vanilla-button.svg)](https://www.npmjs.org/package/@_nu/vanilla-button)
+[![github](https://img.shields.io/github/stars/nu-system/vanilla-button.svg?style=social)](https://github.com/nu-system/vanilla-button)
 
 ```HTML
 <a href="##" class="nu_btn _primary _ghost _large">大号的幽灵主按钮</a>

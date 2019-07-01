@@ -1,21 +1,17 @@
 # Acss
 
-[![npm package][npm-badge]][npm]
+[![npm package](https://img.shields.io/npm/v/@_nu/react-native-acss.svg)](https://www.npmjs.org/package/@_nu/react-native-acss)
+[![github](https://img.shields.io/github/stars/nu-system/react-native-acss.svg?style=social)](https://github.com/nu-system/react-native-acss)
 
-[npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
-[npm]: https://www.npmjs.org/package/@_nu/react-native-acss
+Quick way to write style in react native. Idea from Atomic CSS Design system. 
 
-Quick way to write style in react native.
-
-Idea from Atomic CSS Design system.
-
-```
-$ yarn add @_nu/react-native-acss
+```bash
+yarn add @_nu/react-native-acss
 ```
 
 ## How to use?
 
-```
+```JSX
 import React from 'react';
 import {Text as RnText} from 'react-native';
 import styled from "styled-components";
