@@ -23,7 +23,7 @@ npm i @_nu/react-native-button
 
 ```JSX
 import React from 'react';
-import NuButton, {createNuButtonTheme} from '@y-fe/nu-button-react-native';
+import NuButton, {createNuButtonTheme} from '@_nu/react-native-button';
 
 /**
  * 创建默认按钮主题
