@@ -107,7 +107,6 @@ export default Page;
 | `contentStyle` |  `object` | 见下面 | 内容器样式 |
 | `textStyle` |  `object` | 见下面 | 文本容器样式 |
 
-
 ### `defaultProps`
 
 ```JSX
@@ -277,3 +276,48 @@ const levelColors= {
 };
 ```
 
+## FAQ
+
+### 添加图标
+
+```JSX
+<Button Pre={<ActivityIndicator animating={true} color={'red'}/>}>图标在我左边</Button>
+<Button Append={<ActivityIndicator animating={true} color={'red'}/>}>图标在我右边</Button>
+```
+
+### 多行文本
+
+```JSX
+<Button>{({textStyle}) => {
+    return (
+        <View>
+            <Text style={textStyle}>切换主题</Text>
+            <Text style={textStyle}>「default</Text>
+        </View>
+    );
+}}</Button>
+```
+
+
+### 渐变背景
+
+```JSX
+{    
+    name:'test',
+    Content: function ({children, style, level, variant}) {
+        /* 修改 fill danger 按钮为渐变背景  */
+        if (level === 'danger' && variant === 'fill') {
+            return (
+                <LinearGradient
+                    colors={["red", "blue"]}
+                    style={style}
+                >{children}</LinearGradient>
+            );
+        } else {
+            return (
+                <View style={style}>{children}</View>
+            );
+        }
+    },
+}
+```
