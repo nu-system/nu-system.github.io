@@ -1,4 +1,4 @@
-# nu-react-native-button
+# Button
 
 [![npm package](https://img.shields.io/npm/v/@_nu/react-native-button.svg)](https://www.npmjs.org/package/@_nu/react-native-button)
 [![github](https://img.shields.io/github/stars/nu-system/react-native-button.svg?style=social)](https://github.com/nu-system/react-native-button)
