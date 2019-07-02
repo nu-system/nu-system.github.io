@@ -1,4 +1,4 @@
-# Button
+# nu-react-native-button
 
 [![npm package](https://img.shields.io/npm/v/@_nu/react-native-button.svg)](https://www.npmjs.org/package/@_nu/react-native-button)
 [![github](https://img.shields.io/github/stars/nu-system/react-native-button.svg?style=social)](https://github.com/nu-system/react-native-button)
@@ -43,6 +43,7 @@ createNuButtonTheme({
  * 创建 test 按钮主题
  */
 createNuButtonTheme({
+    name:'test',
     levelColors: {
         default: '#000000',
         primary: '#1976d2',
@@ -51,7 +52,7 @@ createNuButtonTheme({
         danger: 'red',
         success: 'green',
     }
-}, 'test');
+});
 
 export default NuButton;
 ```
@@ -65,7 +66,7 @@ const Page=()=>{
     return (
      <div>
         <Button ghost large>一个大的幽灵按钮</Button>                
-        <Button ghost large>一个大的幽灵主按钮</Button>
+        <Button theme="test" ghost large>一个大的幽灵主按钮</Button>
      </div>     
     );
 };
@@ -95,9 +96,7 @@ export default Page;
 | 参数   | 类型 | 默认值 | 功能 |
 |:-----|:-----:|:-----:|:-----:|
 | `name` |  `string` | `default` | 主题名称 |
-| `defaultLevel` |  `default`, `primary` | `default` | 默认主色 |
-| `defaultVariant` |  `fill`, `link`, `ghost` | `fill` | 默认变体 |
-| `defaultBoolProps` |  `object` | `{}` | 默认 bool 属性, 会给每个按钮默认添加这些 bool 属性 |
+| `defaultProps` |  `Object`| 见下面 | 默认属性 |
 | `levelColors` |  `object` | 见下面 | 按钮主色列表 |
 | `Wrap` |  `func node` | 见下面 | 按钮容器对象 |
 | `Content` |  `func node` | 见下面 | 内容器 |
@@ -108,6 +107,17 @@ export default Page;
 | `contentStyle` |  `object` | 见下面 | 内容器样式 |
 | `textStyle` |  `object` | 见下面 | 文本容器样式 |
 
+
+### `defaultProps`
+
+```JSX
+defaultProps: {
+    level: 'default',
+    variant: 'fill'
+}
+```
+
+这是默认会添加到按钮上的属性值。
 
 ### `Wrap, Content, Txt, Loader`
 
@@ -201,8 +211,8 @@ export default Page;
         small: {
             fontSize: 12
         },
-        customStyle: function ({level, variant, style}) {
-            if (level === 'warning' && variant === 'fill') {
+        customStyle: function ({warning, fill, style}) {
+            if (warning && fill) {
                 style.color = '#333333';
             }
             return style;
