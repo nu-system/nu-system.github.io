@@ -124,9 +124,16 @@ defaultProps: {
 
 ```JSX
 {
-    WrapAndroid: function ({children, level, variant, ...otherProps}) {
-        return <TouchableNativeFeedback
-            background={TouchableNativeFeedback.SelectableBackground()} {...otherProps}>{children}</TouchableNativeFeedback>;
+    WrapAndroid: function ({children, style, ...otherProps}) {
+        return (
+            <View style={style}>
+                // 不能在 TouchableNativeFeedback 上写样式，so sad
+                <TouchableNativeFeedback
+                    background={TouchableNativeFeedback.SelectableBackground()} {...otherProps}>
+                    {children}
+                </TouchableNativeFeedback>
+            </View>
+        );
     },
     Wrap: function ({children, level, variant, ...otherProps}) {
         return <TouchableOpacity activeOpacity={0.5} {...otherProps}>{children}</TouchableOpacity>;
