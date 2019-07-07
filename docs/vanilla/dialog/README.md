@@ -2,14 +2,14 @@
 
 [![npm package](https://img.shields.io/npm/v/@_nu/vanilla-dialog.svg)](https://www.npmjs.org/package/@_nu/vanilla-dialog)
 [![github](https://img.shields.io/github/stars/nu-system/vanilla-dialog.svg?style=social)](https://github.com/nu-system/vanilla-dialog)
+[![jsdelivr](https://data.jsdelivr.com/v1/package/npm/@_nu/vanilla-dialog/badge)](https://www.jsdelivr.com/package/npm/@_nu/vanilla-dialog)
 
 <iframe height="600" style="width: 100%;" scrolling="no" title="nu-dialog-js" src="//codepen.io/ziven27/embed/joKGvJ/?height=265&theme-id=dark&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/ziven27/pen/joKGvJ/'>nu-dialog-js</a> by ziven27
   (<a href='https://codepen.io/ziven27'>@ziven27</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
-No UI 组件库系统 「 弹窗组件 」。
-
+组件库母版系统 [NU-system](https://nu-system.github.io/) 「 弹窗组件 」。
 
 ## 怎么用?
 
@@ -120,16 +120,5 @@ nu-dialog Api 因为简单，你甚至可以通过 `:checked` 属性实现纯 CS
 
 ## Logic Only
 
-- [nu-dialog-react](https://nu-system.github.io/react/dialog/)
-- [nu-dialog-vue](https://nu-system.github.io/vue/dialog/)
-
-## Npm CDN
-
-```HTML
-<link src="https://cdn.jsdelivr.net/npm/@y-fe/nu-dialog/css/core.min.css" />
-<link src="https://cdn.jsdelivr.net/npm/@y-fe/nu-dialog/css/position/top.min.css">
-<link src="https://cdn.jsdelivr.net/npm/@y-fe/nu-dialog/css/position/right.min.css">
-<link src="https://cdn.jsdelivr.net/npm/@y-fe/nu-dialog/css/position/bottom.min.css">
-<link src="https://cdn.jsdelivr.net/npm/@y-fe/nu-dialog/css/position/left.min.css">
-<link src="https://cdn.jsdelivr.net/npm/@y-fe/nu-dialog/css/position/middle.min.css">
-```
+- [nu-react-dialog](https://nu-system.github.io/react/dialog/)
+- [nu-vue-dialog](https://nu-system.github.io/vue/dialog/)

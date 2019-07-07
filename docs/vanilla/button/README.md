@@ -2,13 +2,9 @@
 
 [![npm package](https://img.shields.io/npm/v/@_nu/vanilla-button.svg)](https://www.npmjs.org/package/@_nu/vanilla-button)
 [![github](https://img.shields.io/github/stars/nu-system/vanilla-button.svg?style=social)](https://github.com/nu-system/vanilla-button)
+[![jsdelivr](https://data.jsdelivr.com/v1/package/npm/@_nu/vanilla-button/badge)](https://www.jsdelivr.com/package/npm/@_nu/vanilla-button)
 
-```HTML
-<a href="##" class="nu_btn _primary _ghost _large">大号的幽灵主按钮</a>
-```
-
-No UI 组件库系统 「 按钮组件 」。
-
+组件库母版系统 [NU-system](https://nu-system.github.io/) 「 按钮组件 」。
 
 ## 怎么用?
 
@@ -71,17 +67,18 @@ $ yarn add @_nu/vanilla-button
 | .nu_btn._loading | loading按钮 |
 | .nu_btn._capsule | 圆角按钮 💊 |
 | .nu_btn._block | 占一行的按钮 |
+| .nu_btn._circle | 正圆按钮，这个并没有实现只是约定了名称 |
 
 - **功能 | 颜色**: `_default`、`_primary`、`_secondary`、`_warning`、`_success`、`_danger`
 - **变体 | 形状**: `_fill`、`_ghost`、`_link`
 - **尺寸**: `_large`、`_middle`、`_small`
-- **其它**: `_disabled`、`_loading`、`_block`、`_capsule`
+- **其它**: `_disabled`、`_loading`、`_block`、`_capsule`、`_circle`
 
 除了 颜色、形状、和尺寸是互斥的三个状态，其它选择器都是可以相互组合的。
 
 约定变体默认状态是 `_fill`。
 
-默认按钮大小，建议在`large`和 `middle`之间。
+默认按钮大小，在`large`和 `middle`之间。
 
 ## 如何修改主题?
 
@@ -134,15 +131,6 @@ $ yarn add @_nu/vanilla-button
 
 ## Logic Only
 
-- [nu-button-react](https://nu-system.github.io/react/button/)
-- [nu-button-vue](https://nu-system.github.io/vue/button/)
-
-## Npm cdn
-
-```HTML
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@y-fe/nu-button/css/core.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@y-fe/nu-button/css/skins/loading.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@y-fe/nu-button/css/skins/material.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@y-fe/nu-button/css/skins/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@y-fe/nu-button/css/skins/webnovel.min.css">
-```
+- [nu-react-button](https://nu-system.github.io/react/button/)
+- [nu-vue-button](https://nu-system.github.io/vue/button/)
+- [nu-react-native-button](https://nu-system.github.io/react-native/button/)

@@ -2,13 +2,14 @@
 
 [![npm package](https://img.shields.io/npm/v/@_nu/vanilla-toast.svg)](https://www.npmjs.org/package/@_nu/vanilla-toast)
 [![github](https://img.shields.io/github/stars/nu-system/vanilla-toast.svg?style=social)](https://github.com/nu-system/vanilla-toast)
+[![jsdelivr](https://data.jsdelivr.com/v1/package/npm/@_nu/vanilla-toast/badge)](https://www.jsdelivr.com/package/npm/@_nu/vanilla-toast)
 
 <iframe height="400" style="width: 100%;" scrolling="no" title="nu-toast" src="//codepen.io/ziven27/embed/mZyprq/?height=265&theme-id=0&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/ziven27/pen/mZyprq/'>nu-toast</a> by ziven27
   (<a href='https://codepen.io/ziven27'>@ziven27</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
-NU 「 no-ui 」 组件库系统 nu-system 「 Toast 组件 」
+组件库母版系统 [NU-system](https://nu-system.github.io/) 「 Toast组件 」。
 
 ## 怎么用?
 
@@ -107,4 +108,4 @@ yarn add @_nu/vanilla-toast
 
 ## Logic Only
 
-- [nu-toast-react](https://nu-system.github.io/react/toast/)
+- [nu-react-toast](https://nu-system.github.io/react/toast/)

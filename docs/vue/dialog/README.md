@@ -9,7 +9,7 @@
 <DialogDemo/>
 </ClientOnly>
 
-NU 「 no-ui 」 组件库系统 nu-system，弹窗组件 VUE 版本。
+组件库母版系统 [NU-system](https://nu-system.github.io/) 弹窗组件 VUE 实现。
 
 `nu-vue-dialog` 本身不会输出任何样式，基础样式来自于 [nu-dialog](https://nu-system.github.io/vanilla/dialog/) , 
 

@@ -12,7 +12,7 @@ module.exports = {
         editLinks: true,
         lastUpdated: '上次更新',
         editLinkText: '帮助我们改善此页面！',
-        sidebarDepth: 2,
+        sidebarDepth: 1,
         nav: [
             {
                 text: 'Vanilla',

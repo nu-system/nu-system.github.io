@@ -5,7 +5,7 @@
 
 <iframe src="https://codesandbox.io/embed/throbbing-leftpad-juijc?autoresize=1&fontsize=14&hidenavigation=1&module=%2Fsrc%2Fcomponents%2FButton.js" title="throbbing-leftpad-juijc" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 
-这是 NU 「 no-ui 」 组件库系统 nu-system，按钮组件 React 实现。
+组件库母版系统 [NU-system](https://nu-system.github.io/) 按钮组件 React 实现。
 
 ## 怎么用？
 

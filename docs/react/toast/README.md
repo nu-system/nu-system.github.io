@@ -5,9 +5,7 @@
 
 <iframe src="https://codesandbox.io/embed/new-night-9e4kp?fontsize=14&hidenavigation=1" title="nu-toast-react" allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 
-NU 「 no-ui 」组件库系统 nu-system，Toast 组件 React 实现。
-
-`NuToast` 本身不会输出任何样式。
+组件库母版系统 [NU-system](https://nu-system.github.io/) Toast 组件 React 实现。
 
 ## 怎么用？
 
