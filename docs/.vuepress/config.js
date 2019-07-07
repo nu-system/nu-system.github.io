@@ -1,6 +1,6 @@
 module.exports = {
     title: 'NU-system',
-    description: '一个 推崇 UI 和 Logic 分离的组件库系统',
+    description: '💪 一个 推崇 UI 和 Logic 分离的组件库母版系统',
     ga: 'UA-142729357-1',
     head: [
         ['link', {rel: 'icon', href: '/logo.png'}]
@@ -18,13 +18,13 @@ module.exports = {
                 text: 'Vanilla',
                 items: [
                     {
-                        text: 'button',
+                        text: 'Button',
                         link: '/vanilla/button/'
                     }, {
-                        text: 'dialog',
+                        text: 'Dialog',
                         link: '/vanilla/dialog/'
                     }, {
-                        text: 'toast',
+                        text: 'Toast',
                         link: '/vanilla/toast/'
                     }
                 ]
@@ -32,13 +32,13 @@ module.exports = {
                 text: 'React',
                 items: [
                     {
-                        text: 'button',
+                        text: 'Button',
                         link: '/react/button/'
                     }, {
-                        text: 'dialog',
+                        text: 'Dialog',
                         link: '/react/dialog/'
                     }, {
-                        text: 'toast',
+                        text: 'Toast',
                         link: '/react/toast/'
                     }
                 ]
@@ -46,13 +46,13 @@ module.exports = {
                 text: 'Vue',
                 items: [
                     {
-                        text: 'button',
+                        text: 'Button',
                         link: '/vue/button/'
                     }, {
-                        text: 'dialog',
+                        text: 'Dialog',
                         link: '/vue/dialog/'
                     }, {
-                        text: 'axios-form',
+                        text: 'Axios-form',
                         link: '/vue/axios-form/'
                     }
                 ]
@@ -60,14 +60,14 @@ module.exports = {
                 text: 'React-native',
                 items: [
                     {
-                      text:'button',
+                      text:'Button',
                       link:'/react-native/button/'
                     },
                     {
-                        text: 'acss',
+                        text: 'Acss',
                         link: '/react-native/acss/'
                     }, {
-                        text: 'grid',
+                        text: 'Grid',
                         link: '/react-native/grid/'
                     }
                 ]
