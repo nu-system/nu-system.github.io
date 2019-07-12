@@ -21,12 +21,12 @@ NU-system 是一个 UI 和 Logic 分离的理念，它应该更像是一个平�
 
 ```bash
 [component]
-├── README.md         // 介绍你的组件
-├── index.js          // VUE 组件引用
-├── lib               // build 目录
-│   └── index.js     // rollup 打包文件
+├── README.md               // 介绍你的组件
+├── index.js                // VUE 组件引用
+├── lib                     // build 目录
+│   └── index.common.js     // vue-cli-service打包的文件
 ├── package.json     
-└── src               // 原始代码文件夹
+└── src                     // 原始代码文件夹
     └── index.vue
 ```
 
@@ -46,6 +46,32 @@ export default Button;
 
 实际创建将 `button` 修改为你的组件名即可。
 
+## 构建
+
+此处推荐利用vue的vue-cli-service工具打包组件：
+
+安装工具包
+
+```
+npm install -g @vue/cli-service-global
+# or
+yarn global add @vue/cli-service-global
+```
+
+package.json配置
+
+```
+"scripts": {
+    "build":"vue-cli-service build --target lib --name index  --dest lib  ./index.js"
+},
+```
+
+打包命令
+
+```
+npm run-script build
+```
+
 ## 发布
 
 nu-vue 中的每个组件都是独立进行维护的，所以需要独立发布到 npm 中。
@@ -55,7 +81,7 @@ nu-vue 中的每个组件都是独立进行维护的，所以需要独立发布�
   "name": "@_nu/vue-[component]",
   "version": "0.0.1",
   "description": "No ui 组件库系统 nu-system，[component]组件，vue 实现",
-  "main": "lib/index.js",
+  "main": "lib/index.common.js",//引用的入口文件
   "author": "yfe-team",
   "license": "MIT",
   "repository": "git@github.com:nu-system/vue-[component].git",
