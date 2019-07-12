@@ -25,23 +25,20 @@ $ yarn add @_nu/vue-dialog @_nu/vanilla-dialog
 
 <script>
   import NuDialog from "@_nu/vue-dialog"
-  import "@_nu/vanilla-dialog"
-  import "@_nu/vanilla-dialog/css/position/middle.css"
-  // import "@_nu/vanilla-dialog/css/position/top.css"
-  // import "@_nu/vanilla-dialog/css/position/left.css"
-  // import "@_nu/vanilla-dialog/css/position/right.css"
-  // import "@_nu/vanilla-dialog/css/position/bottom.css"
-
   export default NuDialog;
 </script>
 
-<style>
-  /* 规避 position:fixed 的 bug 问题 */
-  .nu_dialog_wrap{
-    position: absolute;
-  }
-</style>
+<!--样式引用-->
+<style src="@_nu/vanilla-dialog"></style>
+<style src="@_nu/vanilla-dialog/css/position/middle.css"></style>
+<!-- 
+<style src="@_nu/vanilla-dialog/css/position/top.css"></style>
+<style src="@_nu/vanilla-dialog/css/position/left.css"></style>
+<style src="@_nu/vanilla-dialog/css/position/right.css"></style>
+<style src="@_nu/vanilla-dialog/css/position/bottom.css"></style> 
+-->
 ```
+
 
 ### 使用
 
