@@ -1,6 +1,8 @@
 <template>
     <div>
-        <button type="button" @click="dialogOpen = true">打开弹窗</button>
+        <div class="tac">
+            <Button @click="dialogOpen = true">点我打开弹窗</Button>
+        </div>
         <Dialog :open.sync="dialogOpen" :position="dialogPosition">
             <h3 class="tac">这是弹窗</h3>
             <div class="dialog-body p24">
@@ -47,10 +49,12 @@
 
 <script>
     import Dialog from "./Dialog"
+    import Button from "./Button";
 
     export default {
         components: {
-            Dialog
+            Dialog,
+            Button
         },
         data(){
             return {
@@ -67,6 +71,9 @@
 </script>
 
 <style>
+    .tac{
+        text-align: center;
+    }
     .p24{
         padding: 24px;
     }

@@ -10,9 +10,3 @@
 
   export default NuDialog;
 </script>
-
-<style>
-  .nu_dialog_wrap{
-    position: absolute;
-  }
-</style>

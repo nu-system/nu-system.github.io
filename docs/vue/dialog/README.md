@@ -3,15 +3,15 @@
 [![npm package](https://img.shields.io/npm/v/@_nu/vue-dialog.svg)](https://www.npmjs.org/package/@_nu/vue-dialog)
 [![github](https://img.shields.io/github/stars/nu-system/vue-dialog.svg?style=social)](https://github.com/nu-system/vue-dialog)
 
-<iframe src="https://codesandbox.io/embed/vue-template-phc9q?autoresize=1&fontsize=14&hidenavigation=1&module=%2Fsrc%2Fcomponents%2FDialog.vue&view=preview" title="nu-dialog-vue" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
-
-<ClientOnly>
-<DialogDemo/>
-</ClientOnly>
+<iframe src="https://codesandbox.io/embed/nudialogvue-phc9q?autoresize=1&fontsize=14&hidenavigation=1&view=preview" title="nu-dialog-vue" allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 
 组件库母版系统 [NU-system](https://nu-system.github.io/) 弹窗组件 VUE 实现。
 
 `nu-vue-dialog` 本身不会输出任何样式，基础样式来自于 [nu-dialog](https://nu-system.github.io/vanilla/dialog/) , 
+
+<ClientOnly>
+<DialogDemo/>
+</ClientOnly>
 
 ## 怎么用？
 

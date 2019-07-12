@@ -2,7 +2,10 @@
   "name": "@y-fe/nu-system",
   "version": "0.0.1",
   "description": "No UI 组件库系统",
-  "repository": "git@github.com:yued-fe/nu-system.git",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:yued-fe/nu-system.git"
+  },
   "author": "ziven27",
   "license": "MIT",
   "keywords": [
@@ -31,11 +34,11 @@
     "@_nu/vanilla-dialog": "^0.0.1",
     "@_nu/vue-axios-form": "^0.0.1",
     "@_nu/vue-button": "^0.0.1",
-    "@_nu/vue-dialog": "^0.0.2",
     "del": "^4.1.0",
     "vuepress": "^0.14.11"
   },
   "dependencies": {
+    "@_nu/vue-dialog": "^0.0.3",
     "add": "^2.0.6",
     "yarn": "^1.16.0"
   }
