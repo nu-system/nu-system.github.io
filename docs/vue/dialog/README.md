@@ -19,10 +19,13 @@
 $ yarn add @_nu/vue-dialog @_nu/vanilla-dialog
 ```
 
+* **@_nu/vue-dialog**： 逻辑组件;
+* **@_nu/vanilla-dialog**:  样式组件;
+
 ### 二次封装
 
 ```vue
-
+<!-- @components/Dialog/index.vue -->
 <script>
   import NuDialog from "@_nu/vue-dialog"
   export default NuDialog;
@@ -39,6 +42,8 @@ $ yarn add @_nu/vue-dialog @_nu/vanilla-dialog
 -->
 ```
 
+不建议直接在项目页面中通过 `import "@_nu/vue-dialog"` 的方式使用 nu-dialog，而是把 nu-dialog 当作一个 dialog 组件的构建工具，在自己的 `components/` 的文件夹中，通过上述方式 "二次封装"，然后 `export` 属于自己项目的 Dialog 组件。
+对于自己全局的Dialog逻辑就可以写在这个逻辑里面了。
 
 ### 使用
 
