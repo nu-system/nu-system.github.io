@@ -88,6 +88,8 @@ export default Page;
 | level | 'default', 'primary', 'secondary', 'warning', 'danger', 'success' | `default` | 按钮等级 |
 | variant | 'fill', 'ghost', 'link' | `fill` | 按钮变体 |
 | size | \['large', 'default', 'middle', 'small' \] or `number` | `default` | 按钮大小 |
+| before | 'element','function' | `null` | 放到文字之前 |
+| after | 'element','function' | `null` | 放到文字之后 |
 
 *注*: 虽然提供了 `size` 可以为 `number` 的接口，但是这个是非常不推荐使用的。你使用这种方式，意味着你定义的这个按钮样式是没法被人复用的。
 
@@ -288,8 +290,8 @@ const levelColors= {
 ### 添加图标
 
 ```JSX
-<Button Pre={<ActivityIndicator animating={true} color={'red'}/>}>图标在我左边</Button>
-<Button Append={<ActivityIndicator animating={true} color={'red'}/>}>图标在我右边</Button>
+<Button before={<ActivityIndicator animating={true} color={'red'}/>}>图标在我左边</Button>
+<Button after={<ActivityIndicator animating={true} color={'red'}/>}>图标在我右边</Button>
 ```
 
 ### 多行文本
