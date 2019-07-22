@@ -19,7 +19,7 @@ $ yarn add @_nu/react-native-acss
 import React from 'react';
 import {Text, View, ImageBackground, Image} from './packages/withAcss';
 import mImg1 from "./assets/1.jpg";
-import mImg2 from "./assets/1.jpg";
+import mImg2 from "./assets/2.jpg";
 
 export default function App() {
     return (
@@ -38,7 +38,7 @@ export default function App() {
 };
 ```
 
-## How to bind to custom component?
+## How to withAcss on custom component?
 
 ```JSX
 import React from 'react';
@@ -61,9 +61,7 @@ export default function App() {
 
 ## Name rules
 
-It looks wired in first sight what we use abbreviation instead of the full name. 
-
-Cause we want user just remember the rules below rather than all the props.
+It looks wired in first sight what we use abbreviation instead of the full name. Cause we want user just remember the rules below rather than all the props.
 
 1. Only Initials: `aic` means `alignItems: center`;
 2. Direct digital connection: `fw700` means `fontWidth:700`;
@@ -233,4 +231,4 @@ As you can see that is all the code we create blew.
 
 We just did a little but can help you a lot when create style in react native.
 
-help up to make it better together [issue](https://github.com/nu-system/acss-react-native/issues).
+Help us to make it better together [issue](https://github.com/nu-system/acss-react-native/issues).
