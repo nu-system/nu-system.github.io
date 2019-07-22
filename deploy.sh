@@ -2,6 +2,10 @@ set -e
 
 yarn docs:build
 
+git add -A
+git commit -m 'docs: update docs'
+git push -f
+
 cd docs/.vuepress/dist
 
 git init
