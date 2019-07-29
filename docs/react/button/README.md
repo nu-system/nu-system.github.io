@@ -93,8 +93,8 @@ export default Page;
 
 ```jsx
 import { Link } from "@reach/router";
-import NuButton from "@y-fe/nu-button-react";
-import "@y-fe/nu-button";
+import NuButton from "@_nu/react-button";
+import "@_nu/vanilla-button";
 import './style.css';
 
 // 自定义标签
