@@ -20,23 +20,40 @@
 
 ```json
 {
-  "name": "@_nu/vanilla-[component]",
+  "name": "@_nu/css-[component]",
   "version": "0.0.1",
   "description": "No UI 组件库系统 nu-system, 弹窗组件",
   "main": "css/core.css",
   "author": "yfe-team",
   "license": "MIT",
-  "repository": "git@github.com:nu-system/vanilla-[component].git",
-  "bugs": "https://github.com/nu-system/vanilla-[component]/issues",
-  "homepage": "https://nu-system.github.io/vanilla/[component]/",
+  "repository": "git@github.com:nu-system/css-[component].git",
+  "bugs": "https://github.com/nu-system/css-[component]/issues",
+  "homepage": "https://nu-system.github.io/css/[component]/",
   "keywords": [
       "!ui",
       "ui",
       "no-ui",
       "css",
       "ui-system",
+      "nu-system",
       "[component]"    
   ],
+  "files": [
+    "lib",
+    "CHANGELOG.md",
+    "README.md",
+    "LICENSE",
+    "package.json"
+  ],
+  "scripts": {
+    "log": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
+    "commitInit": "commitizen init cz-conventional-changelog --yarn --dev --exact"
+  },
+  "devDependencies": {
+    "commitizen": "^4.0.3",
+    "conventional-changelog-cli": "^2.0.23",
+    "cz-conventional-changelog": "3.0.2"
+  }
 }
 ```
 

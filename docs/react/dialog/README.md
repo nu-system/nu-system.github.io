@@ -8,24 +8,24 @@
 
 组件库母版系统 [NU-system](https://nu-system.github.io/) 弹窗组件 React 实现。
 
-`NuDialog` 本身不会输出任何样式，所有样式均来自于 [nu-dialog](https://nu-system.github.io/vanilla/dialog/)。
+`NuDialog` 本身不会输出任何样式，所有样式均来自于 [nu-dialog](https://nu-system.github.io/css/dialog/)。
 
 ## 怎么用？
 
 ```
-$ yarn add @_nu/react-dialog @_nu/vanilla-dialog
+$ yarn add @_nu/react-dialog @_nu/css-dialog
 ```
 
 ### 二次封装
 
 ```JSX
 import NuDialog from "@_nu/react-dialog";
-import "@_nu/vanilla-dialog";
-import "@_nu/vanilla-dialog/css/position/middle.css";
-// import "@_nu/vanilla-dialog/css/position/top.css";
-// import "@_nu/vanilla-dialog/css/position/right.css";
-// import "@_nu/vanilla-dialog/css/position/bottom.css";
-// import "@_nu/vanilla-dialog/css/position/left.css";
+import "@_nu/css-dialog";
+import "@_nu/css-dialog/css/position/middle.css";
+// import "@_nu/css-dialog/css/position/top.css";
+// import "@_nu/css-dialog/css/position/right.css";
+// import "@_nu/css-dialog/css/position/bottom.css";
+// import "@_nu/css-dialog/css/position/left.css";
 
 export default NuDialog;
 ```
@@ -135,4 +135,4 @@ nu-dialog 采用 [react-transition-group/css-transition](https://reactcommunity.
 
 ## 如何自定义样式？
 
-可以查看 [nu-dialog](https://nu-system.github.io/vanilla/dialog/)
+可以查看 [nu-css-dialog](https://nu-system.github.io/css/dialog/)

@@ -18,17 +18,25 @@ module.exports = {
         sidebarDepth: 1,
         nav: [
             {
-                text: 'Vanilla',
+                text: 'CSS',
                 items: [
                     {
                         text: 'Button',
-                        link: '/vanilla/button/'
+                        link: '/css/button/'
                     }, {
                         text: 'Dialog',
-                        link: '/vanilla/dialog/'
+                        link: '/css/dialog/'
                     }, {
                         text: 'Toast',
-                        link: '/vanilla/toast/'
+                        link: '/css/toast/'
+                    }
+                ]
+            }, {
+                text: 'JS',
+                items: [
+                   {
+                        text: 'Dialog',
+                        link: '/js/dialog/'
                     }
                 ]
             }, {
@@ -78,13 +86,21 @@ module.exports = {
         ],
         sidebar: [
             {
-                title: 'Vanilla',
+                title: 'CSS',
                 collapsable: false,
                 children: [
-                    '/vanilla/',
-                    '/vanilla/button/',
-                    '/vanilla/dialog/',
-                    '/vanilla/toast/',
+                    '/css/',
+                    '/css/button/',
+                    '/css/dialog/',
+                    '/css/toast/',
+                ]
+            },
+            {
+                title: 'JS',
+                collapsable: false,
+                children: [
+                    '/js/',
+                    '/js/dialog/',
                 ]
             },
             {

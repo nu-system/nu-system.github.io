@@ -166,4 +166,4 @@ NuToast 采用 [react-transition-group/css-transition](https://reactcommunity.or
 
 ## 如何自定义样式?
 
-[nu-toast](https://nu-system.github.io/vanilla/toast/)
+[nu-css-toast](https://nu-system.github.io/css/toast/)

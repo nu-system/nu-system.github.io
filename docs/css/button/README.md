@@ -1,19 +1,19 @@
 # Button
 
-[![npm package](https://img.shields.io/npm/v/@_nu/vanilla-button.svg)](https://www.npmjs.org/package/@_nu/vanilla-button)
-[![github](https://img.shields.io/github/stars/nu-system/vanilla-button.svg?style=social)](https://github.com/nu-system/vanilla-button)
-[![jsdelivr](https://data.jsdelivr.com/v1/package/npm/@_nu/vanilla-button/badge)](https://www.jsdelivr.com/package/npm/@_nu/vanilla-button)
+[![npm package](https://img.shields.io/npm/v/@_nu/css-button.svg)](https://www.npmjs.org/package/@_nu/css-button)
+[![github](https://img.shields.io/github/stars/nu-system/css-button.svg?style=social)](https://github.com/nu-system/css-button)
+[![jsdelivr](https://data.jsdelivr.com/v1/package/npm/@_nu/css-button/badge)](https://www.jsdelivr.com/package/npm/@_nu/css-button)
 
 组件库母版系统 [NU-system](https://nu-system.github.io/) 「 按钮组件 」。
 
 ## 怎么用?
 
 ```
-$ yarn add @_nu/vanilla-button
+$ yarn add @_nu/css-button
 ```
 
 ```
-@_nu/vanilla-button/css
+@_nu/css-button/css
 ├── core.css             // 核心代码
 └── skins
     ├── bootstrap.css    // bootstrap 按钮皮肤

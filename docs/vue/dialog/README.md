@@ -7,7 +7,7 @@
 
 组件库母版系统 [NU-system](https://nu-system.github.io/) 弹窗组件 VUE 实现。
 
-`nu-vue-dialog` 本身不会输出任何样式，基础样式来自于 [nu-dialog](https://nu-system.github.io/vanilla/dialog/) , 
+`nu-vue-dialog` 本身不会输出任何样式，基础样式来自于 [nu-dialog](https://nu-system.github.io/css/dialog/) , 
 
 <ClientOnly>
 <DialogDemo/>
@@ -16,11 +16,11 @@
 ## 怎么用？
 
 ```bash
-$ yarn add @_nu/vue-dialog @_nu/vanilla-dialog
+$ yarn add @_nu/vue-dialog @_nu/css-dialog
 ```
 
 * **@_nu/vue-dialog**： 逻辑组件;
-* **@_nu/vanilla-dialog**:  样式组件;
+* **@_nu/css-dialog**:  样式组件;
 
 ### 二次封装
 
@@ -32,13 +32,13 @@ $ yarn add @_nu/vue-dialog @_nu/vanilla-dialog
 </script>
 
 <!--样式引用-->
-<style src="@_nu/vanilla-dialog"></style>
-<style src="@_nu/vanilla-dialog/css/position/middle.css"></style>
+<style src="@_nu/css-dialog"></style>
+<style src="@_nu/css-dialog/css/position/middle.css"></style>
 <!-- 
-<style src="@_nu/vanilla-dialog/css/position/top.css"></style>
-<style src="@_nu/vanilla-dialog/css/position/left.css"></style>
-<style src="@_nu/vanilla-dialog/css/position/right.css"></style>
-<style src="@_nu/vanilla-dialog/css/position/bottom.css"></style> 
+<style src="@_nu/css-dialog/css/position/top.css"></style>
+<style src="@_nu/css-dialog/css/position/left.css"></style>
+<style src="@_nu/css-dialog/css/position/right.css"></style>
+<style src="@_nu/css-dialog/css/position/bottom.css"></style> 
 -->
 ```
 

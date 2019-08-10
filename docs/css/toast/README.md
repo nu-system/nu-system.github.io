@@ -1,8 +1,8 @@
 # Toast
 
-[![npm package](https://img.shields.io/npm/v/@_nu/vanilla-toast.svg)](https://www.npmjs.org/package/@_nu/vanilla-toast)
-[![github](https://img.shields.io/github/stars/nu-system/vanilla-toast.svg?style=social)](https://github.com/nu-system/vanilla-toast)
-[![jsdelivr](https://data.jsdelivr.com/v1/package/npm/@_nu/vanilla-toast/badge)](https://www.jsdelivr.com/package/npm/@_nu/vanilla-toast)
+[![npm package](https://img.shields.io/npm/v/@_nu/css-toast.svg)](https://www.npmjs.org/package/@_nu/css-toast)
+[![github](https://img.shields.io/github/stars/nu-system/css-toast.svg?style=social)](https://github.com/nu-system/css-toast)
+[![jsdelivr](https://data.jsdelivr.com/v1/package/npm/@_nu/css-toast/badge)](https://www.jsdelivr.com/package/npm/@_nu/css-toast)
 
 <iframe height="400" style="width: 100%;" scrolling="no" title="nu-toast" src="//codepen.io/ziven27/embed/mZyprq/?height=265&theme-id=0&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/ziven27/pen/mZyprq/'>nu-toast</a> by ziven27
@@ -14,17 +14,17 @@
 ## 怎么用?
 
 ```bash
-yarn add @_nu/vanilla-toast
+yarn add @_nu/css-toast
 ```
 
 ```HTML
-<link src="https://cdn.jsdelivr.net/npm/@_nu/vanilla-toast/css/core.min.css" />
-<link src="https://cdn.jsdelivr.net/npm/@_nu/vanilla-toast/css/skins/bootstrap.min.css" />
+<link src="https://cdn.jsdelivr.net/npm/@_nu/css-toast/css/core.min.css" />
+<link src="https://cdn.jsdelivr.net/npm/@_nu/css-toast/css/skins/bootstrap.min.css" />
 
 ```
 
 ```
-@_nu/vanilla-toast/css
+@_nu/css-toast/css
 ├── core.css           // 核心样式
 └── skins
     └── bootstrap.css  // 借用 bootstrap alert 的样式

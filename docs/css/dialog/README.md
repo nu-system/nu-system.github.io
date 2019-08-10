@@ -1,8 +1,8 @@
 # Dialog
 
-[![npm package](https://img.shields.io/npm/v/@_nu/vanilla-dialog.svg)](https://www.npmjs.org/package/@_nu/vanilla-dialog)
-[![github](https://img.shields.io/github/stars/nu-system/vanilla-dialog.svg?style=social)](https://github.com/nu-system/vanilla-dialog)
-[![jsdelivr](https://data.jsdelivr.com/v1/package/npm/@_nu/vanilla-dialog/badge)](https://www.jsdelivr.com/package/npm/@_nu/vanilla-dialog)
+[![npm package](https://img.shields.io/npm/v/@_nu/css-dialog.svg)](https://www.npmjs.org/package/@_nu/css-dialog)
+[![github](https://img.shields.io/github/stars/nu-system/css-dialog.svg?style=social)](https://github.com/nu-system/css-dialog)
+[![jsdelivr](https://data.jsdelivr.com/v1/package/npm/@_nu/css-dialog/badge)](https://www.jsdelivr.com/package/npm/@_nu/css-dialog)
 
 <iframe height="600" style="width: 100%;" scrolling="no" title="nu-dialog-js" src="//codepen.io/ziven27/embed/joKGvJ/?height=265&theme-id=dark&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/ziven27/pen/joKGvJ/'>nu-dialog-js</a> by ziven27
@@ -14,11 +14,11 @@
 ## 怎么用?
 
 ```
-$ yarn add @_nu/vanilla-dialog
+$ yarn add @_nu/css-dialog
 ```
 
 ```
-@_nu/vanilla-dialog/css
+@_nu/css-dialog/css
 ├── core.css        // 核心代码
 └── position
     ├── top.css     // 居上显示

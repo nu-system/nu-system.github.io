@@ -10,7 +10,7 @@
 ## 怎么用？
 
 ```
-yarn add @_nu/react-button @_nu/vanilla-button
+yarn add @_nu/react-button @_nu/css-button
 ```
 
 ### 二次封装
@@ -18,8 +18,8 @@ yarn add @_nu/react-button @_nu/vanilla-button
 ```JSX
 /* @components/Button/index.js */
 import NuButton from "@_nu/react-button";
-import "@_nu/vanilla-button";     // 样式组件
-import "@_nu/vanilla-button/css/skins/bootstrap.css"; // bootstrap 皮肤 
+import "@_nu/css-button";     // 样式组件
+import "@_nu/css-button/css/skins/bootstrap.css"; // bootstrap 皮肤 
 // import './style.css'; // 你自定义的css样式
 NuButton.defaultProps.color = "primary";  // 自定义默认颜色
 NuButton.defaultProps.variant = "ghost";  // 自定义默认变体
@@ -27,7 +27,7 @@ export default NuButton;
 ```
 
 因为 `NuButton` 是纯逻辑组件本身不会输出任何样式，在实际项目中使用需要二次封装。
-这里采用的是 [nu-button](https://nu-system.github.io/vanilla/button/) 里面的 bootstrap 皮肤。
+这里采用的是 [nu-button](https://nu-system.github.io/css/button/) 里面的 bootstrap 皮肤。
 
 ### 使用
 
@@ -94,7 +94,7 @@ export default Page;
 ```jsx
 import { Link } from "@reach/router";
 import NuButton from "@_nu/react-button";
-import "@_nu/vanilla-button";
+import "@_nu/css-button";
 import './style.css';
 
 // 自定义标签
@@ -107,7 +107,7 @@ export default NuButton;
 
 nu-button-react 会将上所有的 `boolean` 属性，基于以下的 「 class 映射表 」添加对应的 class 到按钮上。
 
-想要自定义样式，只需要围绕对应选择器进行开发即可, 样式定义规则可以查看 [nu-button](https://nu-system.github.io/vanilla/button/)。
+想要自定义样式，只需要围绕对应选择器进行开发即可, 样式定义规则可以查看 [nu-button](https://nu-system.github.io/css/button/)。
 
 | props |  class |
 |:----------|------:|
