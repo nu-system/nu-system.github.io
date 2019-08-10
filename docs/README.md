@@ -1,7 +1,7 @@
 ---
 home: true
 actionText: Get Start →
-actionLink: /vanilla/
+actionLink: /css/
 features:
 - title: ❤️ UI Just
   details: UI Just UI
