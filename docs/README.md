@@ -16,7 +16,7 @@ footer: MIT Licensed | Copyright © 2019-present YFE-TEAM
 
 > NU-system 不是一套 UI 库
 
-目前比较流行的如 [Material-ui](https://material-ui.com/) 、[element-ui](https://element.eleme.io/) 、 [ant.desigon](https://ant.design/index-cn) 或者其它的 UI 库。
+目前比较流行的如 [element-ui](https://element.eleme.io/) 、 [ant.desigon](https://ant.design/index-cn) 或者其它的 UI 库。
 
 都是希望他们的用户承认他们这套 UI，然后开箱即用。毕竟这些 UI 可是他们花了大量的力气请设计师设计的。
 
