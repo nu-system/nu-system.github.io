@@ -21,7 +21,7 @@ $ yarn add @_nu/react-native-acss
 
 ```JSX
 import React from 'react';
-import {Text, View, ImageBackground, Image} from './packages/withAcss';
+import {Text, View, ImageBackground, Image} from '@_nu/react-native-acss';
 import mImg1 from "./assets/1.jpg";
 import mImg2 from "./assets/2.jpg";
 
@@ -47,7 +47,7 @@ export default function App() {
 ```JSX
 import React from 'react';
 import {Text, View} from 'react-native';
-import widthAcss from './packages/withAcss';
+import widthAcss from '@_nu/react-native-acss';
 
 const CusText = widthAcss(Text);
 const CusView = widthAcss(View);
