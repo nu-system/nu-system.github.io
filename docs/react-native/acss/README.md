@@ -2,12 +2,11 @@
 title: Acss
 ---
 
-# nu-react-native-acss
+# @_nu/react-native-acss
 
-[![npm package][npm-badge]][npm]
+[![npm package](https://img.shields.io/npm/v/@_nu/react-native-acss.svg)](https://www.npmjs.org/package/@_nu/react-native-acss)
+[![github](https://img.shields.io/github/stars/nu-system/react-native-acss.svg?style=social)](https://github.com/nu-system/react-native-acss)
 
-[npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
-[npm]: https://www.npmjs.org/package/@_nu/react-native-acss
 
 Quick way to write style in react native.
 
@@ -89,7 +88,7 @@ equal to
       color:'#ffffff',
       paddingTop: 16,
       paddingBottom: 16,
-      alignItem:'center'
+      textAlign:'center'
     }}>Hello world!</Text>
 </View>
 ```
