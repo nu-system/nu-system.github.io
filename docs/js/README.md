@@ -1,71 +1,58 @@
-# 介绍
+---
+title: Intro
+---
 
-## 创建
+## What?
 
-以下以 `dialog` 组件为例，解释目录结构和规则。
+`js-[component]` 主要负责 Login Only 部分 。这里面**尽量**不要出现展示性的样式，只做逻辑的部分。
+
+
+## Script Guild
+
+```javascript
+(function (global, factory) {
+    if (typeof define === 'function' && (define.amd || define.cmd)) {
+        define(factory);
+    } else {
+        // 修改 Component 为你组件的名称
+        global.NuComponent = factory();
+    }
+}(this, function () {
+
+    // 全局参数
+    const _default = {
+
+    };
+    
+    // 你的组件
+    function Obj(opt) {
+        for (const name of _default) {
+            this[name] = opt[name] || _default[name];
+        }
+        this.init();
+    }
+    
+    // 初始化
+    Obj.prototype.init = function () {
+        console.log('hello world');
+    };
+
+    return Obj;
+}));
+```
+
+这是一个 JS 代码模版，采用的是 JS 原型链继承的方式编写组件。
+
+## Tree
 
 ```bash
 [component]
-├── README.md           // 介绍你的组件 
-├── demo/               // 组件demo  
-├── lib                 // build 目录
-│   └── index.js        // 主要入口文件
-└── package.json        // 组件配置
+├── README.md          // describe your component 
+├── lib                // dist 目录
+│   └── index.js       
+└── package.json
 ```
 
-实际创建将 `dialog` 修改为你的组件名即可。
+## Contribution
 
-## 发布
-
-```json
-{
-  "name": "@_nu/js-[component]",
-  "version": "0.0.1",
-  "description": "No UI 组件库系统 nu-system, 原生 JS [component] 组件",
-  "main": "lib/index.js",
-  "author": "yfe-team",
-  "license": "MIT",
-  "repository": "git@github.com:nu-system/js-[component].git",
-  "bugs": "https://github.com/nu-system/js-[component]/issues",
-  "homepage": "https://nu-system.github.io/js/[component]/",
-  "files": [
-      "lib",
-      "CHANGELOG.md",
-      "README.md",
-      "LICENSE",
-      "package.json"
-  ],
-  "keywords": [
-      "!ui",
-      "ui",
-      "no-ui",
-      "css",
-      "ui-system",
-      "nu-system",
-      "[component]"    
-  ],
-  "scripts": {
-    "build": "cp -r demo/dialog/ ./lib",
-    "prepublishOnly": "npm run build",
-    "log": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
-    "commitInit": "commitizen init cz-conventional-changelog --yarn --dev --exact"
-  },
-  "devDependencies": {
-    "commitizen": "^4.0.3",
-    "conventional-changelog-cli": "^2.0.23",
-    "cz-conventional-changelog": "3.0.2"
-  }
-}
-```
-
-以上是 package.json 的文档模版，实际开发只需要 `[component]` 替换为相应组件名即可。
-
-```
-$ npm publish --access=public
-```
-
-```
-$ yarn publish --access public
-```
-
-在 `package.json` 目录下输入以上命令即可发布到 npm。
+Fork [js-dialog](https://github.com/nu-system/js-dialog) 这个作为组件模版，使用里面配置，删除原始代码，然后创建你自己的组件即可。

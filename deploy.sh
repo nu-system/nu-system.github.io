@@ -1,6 +1,6 @@
 set -e
 
-yarn docs:build
+yarn build
 
 git add -A
 git commit -m 'docs: update docs'

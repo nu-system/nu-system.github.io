@@ -10,7 +10,7 @@ module.exports = {
         repo: 'nu-system',
         repoLabel: 'GitHub',
         editLinks: true,
-        docsRepo:'nu-system/nu-system.github.io',
+        docsRepo: 'nu-system/nu-system.github.io',
         docsDir: 'docs',
         docsBranch: 'dev',
         lastUpdated: '上次更新',
@@ -21,6 +21,9 @@ module.exports = {
                 text: 'CSS',
                 items: [
                     {
+                        text: 'Intro',
+                        link: '/css/'
+                    }, {
                         text: 'Button',
                         link: '/css/button/'
                     }, {
@@ -34,7 +37,11 @@ module.exports = {
             }, {
                 text: 'JS',
                 items: [
-                   {
+                    {
+                        text: 'Intro',
+                        link: '/js/'
+                    },
+                    {
                         text: 'Dialog',
                         link: '/js/dialog/'
                     }
@@ -43,6 +50,9 @@ module.exports = {
                 text: 'React',
                 items: [
                     {
+                        text: 'Intro',
+                        link: '/react/'
+                    }, {
                         text: 'Button',
                         link: '/react/button/'
                     }, {
@@ -57,6 +67,9 @@ module.exports = {
                 text: 'Vue',
                 items: [
                     {
+                        text: 'Intro',
+                        link: '/vue/'
+                    }, {
                         text: 'Button',
                         link: '/vue/button/'
                     }, {
@@ -71,8 +84,11 @@ module.exports = {
                 text: 'React-native',
                 items: [
                     {
-                      text:'Button',
-                      link:'/react-native/button/'
+                        text: 'Intro',
+                        link: '/react-native/'
+                    }, {
+                        text: 'Button',
+                        link: '/react-native/button/'
                     },
                     {
                         text: 'Acss',

@@ -26,8 +26,8 @@
   },
   "homepage": "https://yued-fe.github.io/nu-system/",
   "scripts": {
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
   },
   "devDependencies": {
     "@_nu/vue-axios-form": "^0.0.1",
