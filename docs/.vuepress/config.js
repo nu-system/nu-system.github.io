@@ -24,6 +24,9 @@ module.exports = {
                         text: 'Intro',
                         link: '/css/'
                     }, {
+                        text: 'ACSS',
+                        link: '/css/acss/'
+                    },{
                         text: 'Button',
                         link: '/css/button/'
                     }, {
@@ -106,6 +109,7 @@ module.exports = {
                 collapsable: false,
                 children: [
                     '/css/',
+                    '/css/acss/',
                     '/css/button/',
                     '/css/dialog/',
                     '/css/toast/',

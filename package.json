@@ -30,14 +30,14 @@
     "build": "vuepress build docs"
   },
   "devDependencies": {
-    "@_nu/vue-axios-form": "^0.0.1",
-    "@_nu/vue-button": "^0.0.1",
-    "del": "^4.1.0",
-    "vuepress": "^0.14.11",
     "@_nu/css-button": "^0.0.2",
     "@_nu/css-dialog": "^0.0.1",
+    "@_nu/vue-axios-form": "^0.0.1",
+    "@_nu/vue-button": "^0.0.3",
     "@_nu/vue-dialog": "^0.0.3",
     "add": "^2.0.6",
+    "del": "^4.1.0",
+    "vuepress": "^0.14.11",
     "yarn": "^1.16.0"
   }
 }
