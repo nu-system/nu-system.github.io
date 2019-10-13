@@ -1,5 +1,9 @@
 # CSS-ACSS
 
+[![npm package](https://img.shields.io/npm/v/@_nu/css-acss.svg)](https://www.npmjs.org/package/@_nu/css-acss)
+[![github](https://img.shields.io/github/stars/nu-system/css-acss.svg?style=social)](https://github.com/nu-system/css-acss)
+[![jsdelivr](https://data.jsdelivr.com/v1/package/npm/@_nu/css-acss/badge)](https://www.jsdelivr.com/package/npm/@_nu/css-acss)
+
 ## 这是什么？
 
 [ACSS](http://acss.io/)/ utility-first CSS  构建工具, 帮助你管理你的 CSS。
