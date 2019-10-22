@@ -1,4 +1,4 @@
-# CSS-ACSS
+# ACSS
 
 [![npm package](https://img.shields.io/npm/v/@_nu/css-acss.svg)](https://www.npmjs.org/package/@_nu/css-acss)
 [![github](https://img.shields.io/github/stars/nu-system/css-acss.svg?style=social)](https://github.com/nu-system/css-acss)
