@@ -6,7 +6,7 @@
 
 ## 这是什么？
 
-[ACSS](http://acss.io/)/ utility-first CSS  构建工具, 帮助你管理你的 CSS。
+[ACSS](http://acss.io/)/ utility-first CSS / Functional CSS  构建工具, 帮助你管理你的 CSS。
 
 灵感来自于 [ACSS](http://acss.io/), [tailwindcss](https://tailwindcss.com/), [quickLayout](https://github.com/zhangxinxu/quickLayout)。
 
@@ -155,8 +155,8 @@ $ npm i @_nu/css-acss;
 ));
 
 @include ACSS_(z-index, (
-  zi_header: 100,           // .z_header { z-index: 100; }
-  zi_toast: 200             // .z_toast { z-index: 200; }
+  zi_header: 100,           // .zi_header { z-index: 100; }
+  zi_toast: 200             // .zi_toast { z-index: 200; }
 ));
 
 @include ACSS_(color, (
@@ -182,9 +182,7 @@ $ npm i @_nu/css-acss;
 // @import '@_nu/css-acss/lib/_acss.less';
 @import "../lib/_acss.less";
 
-// 是否需要 ACSS 核心代码
-// 采用这个方法会帮你默认引入 `css/core.css` 代码
-#ACSS;
+#ACSS; // ACSS 核心代码，等价于引用 `css/acss.css`
 
 /*!
  * 命名规则
