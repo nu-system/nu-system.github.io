@@ -18,6 +18,15 @@ module.exports = {
         sidebarDepth: 1,
         nav: [
             {
+                text: 'HTML',
+                items: [
+                    {
+                        text: 'Lint',
+                        link: '/html/lint/'
+                    }
+                ]
+            },
+            {
                 text: 'CSS',
                 items: [
                     {
@@ -104,6 +113,13 @@ module.exports = {
             },
         ],
         sidebar: [
+            {
+                title: 'HTML',
+                collapsable: false,
+                children: [
+                    '/html/lint/'
+                ]
+            },
             {
                 title: 'CSS',
                 collapsable: false,
