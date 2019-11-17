@@ -1,3 +1,7 @@
+---
+title: Lint
+---
+
 # Html-Lint
 
 [![npm package](https://img.shields.io/npm/v/@_nu/html-lint.svg)](https://www.npmjs.org/package/@_nu/html-lint)
