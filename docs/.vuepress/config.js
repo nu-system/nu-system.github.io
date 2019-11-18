@@ -15,14 +15,14 @@ module.exports = {
         docsBranch: 'dev',
         lastUpdated: '上次更新',
         editLinkText: '帮助我们改善此页面！',
-        sidebarDepth: 1,
+        sidebarDepth: 0,
         nav: [
             {
                 text: 'HTML',
                 items: [
                     {
-                        text: 'Lint',
-                        link: '/html/lint/'
+                        text: 'Validator',
+                        link: '/html/validator/'
                     }
                 ]
             },
@@ -117,7 +117,7 @@ module.exports = {
                 title: 'HTML',
                 collapsable: false,
                 children: [
-                    '/html/lint/'
+                    '/html/validator/'
                 ]
             },
             {
