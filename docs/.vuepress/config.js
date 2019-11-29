@@ -67,6 +67,9 @@ module.exports = {
                     }, {
                         text: 'Button',
                         link: '/react/button/'
+                    },{
+                        text: 'Img',
+                        link: '/react/img/'
                     }, {
                         text: 'Dialog',
                         link: '/react/dialog/'
@@ -144,6 +147,7 @@ module.exports = {
                 collapsable: false,
                 children: [
                     '/react/',
+                    '/react/img/',
                     '/react/button/',
                     '/react/dialog/',
                     '/react/toast/'
