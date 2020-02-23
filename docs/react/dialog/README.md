@@ -8,9 +8,6 @@
 
 <iframe src="https://codesandbox.io/embed/winter-https-jxp4p?fontsize=14&hidenavigation=1" title="nu-dialog-react" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 
-
-NU 「 no-ui 」 组件库系统 nu-system，弹窗组件 React 实现。
-
 `NuDialog` 本身不会输出任何样式，所有样式均来自于 [@_nu/css-dialog](https://nu-system.github.io/css/dialog/)。
 
 ## 怎么用？
