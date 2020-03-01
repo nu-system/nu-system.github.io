@@ -1,15 +1,20 @@
 # Dialog
 
-[![npm package](https://img.shields.io/npm/v/@_nu/css-dialog.svg)](https://www.npmjs.org/package/@_nu/css-dialog)
-[![github](https://img.shields.io/github/stars/nu-system/css-dialog.svg?style=social)](https://github.com/nu-system/css-dialog)
-[![jsdelivr](https://data.jsdelivr.com/v1/package/npm/@_nu/css-dialog/badge)](https://www.jsdelivr.com/package/npm/@_nu/css-dialog)
+[![npm package][npm-badge]][npm-url]
+[![NPM downloads][npm-downloads]][npm-url]
+
+[npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
+[npm-url]: https://www.npmjs.org/package/@_nu/css-dialog
+[npm-downloads]: https://img.shields.io/npm/dw/@_nu/css-dialog?style=flat-square
+
 
 <iframe height="600" style="width: 100%;" scrolling="no" title="nu-dialog-js" src="//codepen.io/ziven27/embed/joKGvJ/?height=265&theme-id=dark&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/ziven27/pen/joKGvJ/'>nu-dialog-js</a> by ziven27
   (<a href='https://codepen.io/ziven27'>@ziven27</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
-组件库母版系统 [NU-system](https://nu-system.github.io/) 「 弹窗组件 」。
+No UI 组件库系统 「 弹窗组件 」。
+
 
 ## 怎么用?
 
@@ -34,6 +39,7 @@ $ yarn add @_nu/css-dialog
 
 | 选择器   |   功能   |
 |:----------|-------------:|
+| `.nu_dialog_root` |  将所有弹窗都放到该容器下 |
 | `.nu_dialog_wrap` |  整个弹窗主容器 |
 | `.nu_dialog_mask` | 弹窗遮罩 |
 | `.nu_dialog` | 弹窗主体 |
@@ -45,16 +51,21 @@ $ yarn add @_nu/css-dialog
 ## API
 
 ```HTML
-<div class="nu_dialog_wrap _middle _open">
-  <label class="nu_dialog_mask" title="mask"></label>
-  <div class="nu_dialog">
-    <label class="nu_dialog_close" title="close">&times;</label>
-    <!-- 这是放弹窗内容的地方 -->
+<body>
+  <!-- others -->
+  <div class="nu_dialog_root">
+    <dialog open class="nu_dialog_wrap _middle _open">
+      <button class="nu_dialog_mask" title="mask"></button>
+      <section class="nu_dialog">
+        <button class="nu_dialog_close" title="close">&times;</button>
+        <!-- 这是放弹窗内容的地方 -->
+      </section>
+    </dialog>
   </div>
-</div>
+</body>
 ```
 
-为了无障碍可访问性，这边推荐使用 `label` 标签作为 `mask` 和 `close` 的标签。
+为了无障碍可访问性，这边推荐使用 `buttton` 标签作为 `mask` 和 `close` 的标签。
 
 | 选择器   |   功能   |
 |:----------|-------------:|
@@ -64,11 +75,9 @@ $ yarn add @_nu/css-dialog
 | `.nu_dialog_wrap._bottom .nu_dialog` |  弹窗居下 |
 | `.nu_dialog_wrap._left .nu_dialog` |  弹窗居左 |
 | `.nu_dialog_wrap._middle .nu_dialog` |  弹窗居中 |
-| `body.nu_dialog_open` |  用于控制弹窗底层滚动条 |
 
 nu-dialog 这边只是约定了 几个 CSS Hooks 的方案，所以对于使用方来说，可以使用任意js框架（原生js，jquery, react, vue ...）去切换这些API的属性即可。
 
-**注**: 为了防止底层滚动条滚动，可以在弹窗显示的时候在滚动容器上添加 `body` | `html`  上添加 `.nu_dialog_open`。
 
 ## 如何添加动效?
 
@@ -76,7 +85,7 @@ nu-dialog 这边只是约定了 几个 CSS Hooks 的方案，所以对于使用�
 .nu_dialog_wrap._middle .nu_dialog{
     transform:  rotate(360deg) translate3D(0, 20%, 0);
 }
-.nu_dialog_wrap._middle._open .nu_dialog{
+.nu_dialog_wrap._middle[open] .nu_dialog{
     transform:  rotate(0) translate3D(0, 0, 0);
 }
 ```
@@ -85,29 +94,6 @@ nu-dialog 这边只是约定了 几个 CSS Hooks 的方案，所以对于使用�
   See the Pen <a href='https://codepen.io/ziven27/pen/KLemVx/'>nu-dialog-ani</a> by ziven27
   (<a href='https://codepen.io/ziven27'>@ziven27</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
-
-## Someting awesome
-
-```HTML
-<label class="btn-show-dialog" for="dialogSwitch">显示弹窗</label>
-<input id="dialogSwitch" type="checkbox" class="nu_dialog_switch">
-<div class="nu_dialog_wrap _middle">
-  <label for="dialogMiddleCssSwitch" class="nu_dialog_mask"></label>
-  <div class="nu_dialog">
-    <label for="dialogMiddleCssSwitch" class="nu_dialog_close">&times;</label>
-    <!-- 这是放弹窗内容的地方 -->
-  </div>
-</div>
-```
-
-<iframe height="600" style="width: 100%;" scrolling="no" title="nu-dialog-css" src="//codepen.io/ziven27/embed/zQaZay/?height=265&theme-id=dark&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href='https://codepen.io/ziven27/pen/zQaZay/'>nu-dialog-css</a> by ziven27
-  (<a href='https://codepen.io/ziven27'>@ziven27</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
-
-nu-dialog Api 因为简单，你甚至可以通过 `:checked` 属性实现纯 CSS 控制弹窗的显示和隐藏。
-
-**注**: 当然这里只是用这个来举例说明 nu-dialog 的拓展性，并不推荐在实际开发环境采用这种方式。
 
 ## Do less but can be more
 
@@ -120,5 +106,16 @@ nu-dialog Api 因为简单，你甚至可以通过 `:checked` 属性实现纯 CS
 
 ## Logic Only
 
-- [nu-react-dialog](https://nu-system.github.io/react/dialog/)
-- [nu-vue-dialog](https://nu-system.github.io/vue/dialog/)
+- [react](https://nu-system.github.io/react/dialog/)
+- [vue](https://nu-system.github.io/vue/dialog/)
+
+## Npm CDN
+
+```HTML
+<link src="https://cdn.jsdelivr.net/npm/@_nu/css-dialog/css/core.min.css" />
+<link src="https://cdn.jsdelivr.net/npm/@_nu/css-dialog/css/position/top.min.css">
+<link src="https://cdn.jsdelivr.net/npm/@_nu/css-dialog/css/position/right.min.css">
+<link src="https://cdn.jsdelivr.net/npm/@_nu/css-dialog/css/position/bottom.min.css">
+<link src="https://cdn.jsdelivr.net/npm/@_nu/css-dialog/css/position/left.min.css">
+<link src="https://cdn.jsdelivr.net/npm/@_nu/css-dialog/css/position/middle.min.css">
+```
