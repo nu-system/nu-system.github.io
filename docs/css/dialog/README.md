@@ -1,22 +1,23 @@
 # Dialog
 
 [![npm package][npm-badge]][npm-url]
-[![NPM downloads][npm-downloads]][npm-url]
+[![npm downloads][npm-downloads]][npm-url]
+[![github][git-badge]][git-url]
 
-[npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
+[npm-badge]: https://img.shields.io/npm/v/@_nu/css-dialog.svg
 [npm-url]: https://www.npmjs.org/package/@_nu/css-dialog
-[npm-downloads]: https://img.shields.io/npm/dw/@_nu/css-dialog?style=flat-square
-
+[npm-downloads]: https://img.shields.io/npm/dw/@_nu/css-dialog
+[git-url]: https://github.com/nu-system/css-dialog
+[git-badge]: https://img.shields.io/github/stars/nu-system/css-dialog.svg?style=social
 
 <iframe height="600" style="width: 100%;" scrolling="no" title="nu-dialog-js" src="//codepen.io/ziven27/embed/joKGvJ/?height=265&theme-id=dark&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/ziven27/pen/joKGvJ/'>nu-dialog-js</a> by ziven27
   (<a href='https://codepen.io/ziven27'>@ziven27</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
-No UI 组件库系统 「 弹窗组件 」。
+css vanilla dialog component.
 
-
-## 怎么用?
+## install
 
 ```
 $ yarn add @_nu/css-dialog
@@ -25,6 +26,7 @@ $ yarn add @_nu/css-dialog
 ```
 @_nu/css-dialog/css
 ├── core.css        // 核心代码
+├── transition.css        // 核心代码
 └── position
     ├── top.css     // 居上显示
     ├── right.css   // 居右显示
@@ -39,27 +41,24 @@ $ yarn add @_nu/css-dialog
 
 | 选择器   |   功能   |
 |:----------|-------------:|
-| `.nu_dialog_root` |  将所有弹窗都放到该容器下 |
+| `#nu_dialog_root` |  将所有弹窗都放到该容器下 |
 | `.nu_dialog_wrap` |  整个弹窗主容器 |
 | `.nu_dialog_mask` | 弹窗遮罩 |
 | `.nu_dialog` | 弹窗主体 |
 | `.nu_dialog_close` | 弹窗关闭按钮 |
-
-和其它 UI 库的弹窗组件不同的是，在 Nu-system 中，我们并没有将 `title`,`header`,`body`,`footer` 列为弹窗的范畴。
-在我们看来这几个组件的覆盖面都太小了。
 
 ## API
 
 ```HTML
 <body>
   <!-- others -->
-  <div class="nu_dialog_root">
-    <dialog open class="nu_dialog_wrap _middle _open">
-      <button class="nu_dialog_mask" title="mask"></button>
-      <section class="nu_dialog">
-        <button class="nu_dialog_close" title="close">&times;</button>
-        <!-- 这是放弹窗内容的地方 -->
-      </section>
+  <div id="nu_dialog_root">
+    <dialog tabindex="-1" id="dialog" class="nu_dialog_wrap">
+        <button id="mask" title="mask" class="nu_dialog_mask"></button>
+        <section class="nu_dialog">
+            <button id="close" title="close" class="nu_dialog_close">&times;</button>
+            <!-- here put the content -->
+        </section>
     </dialog>
   </div>
 </body>
@@ -69,7 +68,7 @@ $ yarn add @_nu/css-dialog
 
 | 选择器   |   功能   |
 |:----------|-------------:|
-| `.nu_dialog_wrap._open .nu_dialog` |  控制弹窗的显示隐藏 |
+| `.nu_dialog_wrap[open] .nu_dialog` |  控制弹窗的显示隐藏 |
 | `.nu_dialog_wrap._top .nu_dialog` |  弹窗居上 |
 | `.nu_dialog_wrap._right .nu_dialog` |  弹窗居右 |
 | `.nu_dialog_wrap._bottom .nu_dialog` |  弹窗居下 |
@@ -82,11 +81,17 @@ nu-dialog 这边只是约定了 几个 CSS Hooks 的方案，所以对于使用�
 ## 如何添加动效?
 
 ```css
-.nu_dialog_wrap._middle .nu_dialog{
-    transform:  rotate(360deg) translate3D(0, 20%, 0);
+.nu_dialog_wrap {
+  display: block;
 }
-.nu_dialog_wrap._middle[open] .nu_dialog{
-    transform:  rotate(0) translate3D(0, 0, 0);
+.nu_dialog{
+  transform: translate(0, 50px);
+}
+.nu_dialog_wrap {
+  transition: opacity 200ms, visibility 200ms;
+}
+.nu_dialog_wrap[open] {
+  transition: opacity 200ms;
 }
 ```
 

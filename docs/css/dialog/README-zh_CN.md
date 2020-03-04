@@ -10,15 +10,14 @@
 [git-url]: https://github.com/nu-system/react-dialog
 [git-badge]: https://img.shields.io/github/stars/nu-system/react-dialog.svg?style=social
 
-English | [简体中文](./README-zh_CN.md)
 
-A fully accessible、flexible、unstyled React dialog component.
+一个兼顾无障碍范围，易用性，且没有UI依赖的 React 对话框组件.
 
-**nu-react-dialog** dose not output any style, All the style comes from [@_nu/css-dialog](https://nu-system.github.io/css/dialog/)。
+`@_nu/react-dialog` 本身不会输出任何样式，所有 demo 样式均来自于[@_nu/css-dialog](https://nu-system.github.io/css/dialog/)。
 
 <iframe src="https://codesandbox.io/embed/winter-https-jxp4p?fontsize=14&hidenavigation=1" title="nu-dialog-react" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 
-## Installation
+## 安装
 
 ```
 $ npm install @_nu/react-dialog @_nu/css-dialog
@@ -26,9 +25,9 @@ $ npm install @_nu/react-dialog @_nu/css-dialog
 $ yarn add @_nu/react-dialog @_nu/css-dialog
 ```
 
-## Custome
+## 二次封装
 
-Creact a new component dialog in your components file.
+在你的项目组件库文件夹中创建一个新的 Dialog 组件.
 
 ```
 components/
@@ -42,13 +41,13 @@ components/
 import NuDialog from "@_nu/react-dialog";
 import "@_nu/css-dialog";
 import "@_nu/css-dialog/css/position/middle.css";
-// your custom style
+// 自定义你的弹窗样式
 import "./index.css";
 
 export default NuDialog;
 ```
 
-## Usage
+## 使用
 
 ```JSX
 import React, { useState } from "react";
@@ -190,17 +189,17 @@ Dialog.propTypes = {
 }
 ```
 
-you just need define the start status of `.nu_dialog`.
+你只需要定义 `.nu_dialog` 的起点状态即可。
 
-## Contributing & Development
+## 贡献与开发
 
-Please note that this project is released with a Contributor Code of Conduct. By participating in this project you agree to abide by its terms.
+这个项目是与贡献者行为准则一起发布的。参与本项目，代表您同意遵守其条款。
 
-Run the demos with `npm start`.
+运行 demo `npm start`.
 
-## Prior art
+## 技术方案
 
-`@_nu/react-dialog` was build on those awesome projects: 
+`@_nu/react-dialog` 灵感来自以下几个优秀的开源框架：
 
 - [react-aria-modal](https://github.com/davidtheclark/react-aria-modal)
 - [focus-trap-react](https://github.com/davidtheclark/focus-trap-react)
