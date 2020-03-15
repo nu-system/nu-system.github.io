@@ -1,6 +1,5 @@
 # ACSS
 
-
 [![npm package][npm-badge]][npm-url]
 [![npm downloads][npm-downloads]][npm-url]
 [![jsdelivr][jsdelivr-badge]][jsdelivr-url]
@@ -14,10 +13,9 @@
 [jsdelivr-badge]: https://data.jsdelivr.com/v1/package/npm/@_nu/css-acss/badge
 [jsdelivr-url]: https://www.jsdelivr.com/package/npm/@_nu/css-acss
 
-
 ## 这是什么？
 
-[ACSS](http://acss.io/)/ utility-first CSS / Functional CSS  构建工具, 帮助你管理你的 CSS。
+[ACSS](http://acss.io/)/ utility-first CSS / Functional CSS 构建工具, 帮助你管理你的 CSS。
 
 灵感来自于 [ACSS](http://acss.io/), [tailwindcss](https://tailwindcss.com/), [quickLayout](https://github.com/zhangxinxu/quickLayout)。
 
@@ -31,31 +29,38 @@
 │   └── scss.scss
 └── lib
     ├── _acss.less      // less Mixin 需要使用 `#ACSS;` 初始化
-    ├── _acss.scss      // sass Mixin 需要使用 ``@include ACSS;` 初始化 
-    └── acss.css        // 核心点 css 代码引用，使用即可     
+    ├── _acss.scss      // sass Mixin 需要使用 ``@include ACSS;` 初始化
+    └── acss.css        // 核心点 css 代码引用，使用即可
 ```
 
 ```html
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <style>
-        * { margin: 0; padding: 0; font: inherit; color: inherit; }
+      * {
+        margin: 0;
+        padding: 0;
+        font: inherit;
+        color: inherit;
+      }
     </style>
-    <link rel="stylesheet" href="../scss/demo.css">
-</head>
-<body style="background-color: #333333;">
+    <link rel="stylesheet" href="../scss/demo.css" />
+  </head>
+  <body style="background-color: #333333;">
     <section class="pt16 pr16 pb16 pl16 fs12 bc_fff mt16 mr16 ml16 mb16">
-        <h2 class="fw700 mb16 fs16">CSS-ACSS</h2>
-        <p class="mb8"> ACSS / utility-first CSS 构建工具, 帮助你管理你的 CSS。</p>
-        <p>
-            <strong class="fw700">灵感来自于</strong>
-            <a href="http://acss.io/" class="c_primary">acss.io</a>
-            <a href="https://tailwindcss.com/" class="c_primary">tailwindcss</a>
-            <a href="https://github.com/zhangxinxu/quickLayout" class="c_primary">quickLayout</a>
-        </p>
+      <h2 class="fw700 mb16 fs16">CSS-ACSS</h2>
+      <p class="mb8">ACSS / utility-first CSS 构建工具, 帮助你管理你的 CSS。</p>
+      <p>
+        <strong class="fw700">灵感来自于</strong>
+        <a href="http://acss.io/" class="c_primary">acss.io</a>
+        <a href="https://tailwindcss.com/" class="c_primary">tailwindcss</a>
+        <a href="https://github.com/zhangxinxu/quickLayout" class="c_primary"
+          >quickLayout</a
+        >
+      </p>
     </section>
-</body>
+  </body>
 </html>
 ```
 
@@ -71,79 +76,207 @@ $ npm i @_nu/css-acss;
 
 ```css
 /*! ## scruct  */
-.di{display:inline}
-.db{display:block}
-.dn{display:none}
-.dib{display:inline-block}
-.oh{overflow:hidden}
-.w100p{width:100%}
-.h100p{height:100%}
-.vam{vertical-align:middle}
+.di {
+  display: inline;
+}
+.db {
+  display: block;
+}
+.dn {
+  display: none;
+}
+.dib {
+  display: inline-block;
+}
+.oh {
+  overflow: hidden;
+}
+.w100p {
+  width: 100%;
+}
+.h100p {
+  height: 100%;
+}
+.vam {
+  vertical-align: middle;
+}
 /*! ### scruct position */
-.pr{position:relative}
-.pf{position:fixed}
-.pa{position:absolute}
-.z1{z-index:1}
-.t0{top:0}
-.r0{right:0}
-.b0{bottom:0}
-.l0{left:0}
-.t50p{top:50%}
-.l50p{left:50%}
-.l100p{left:100%}
-.t100p{top:100%}
-.mla{margin-left:auto}
-.mra{margin-right:auto}
+.pr {
+  position: relative;
+}
+.pf {
+  position: fixed;
+}
+.pa {
+  position: absolute;
+}
+.z1 {
+  z-index: 1;
+}
+.t0 {
+  top: 0;
+}
+.r0 {
+  right: 0;
+}
+.b0 {
+  bottom: 0;
+}
+.l0 {
+  left: 0;
+}
+.t50p {
+  top: 50%;
+}
+.l50p {
+  left: 50%;
+}
+.l100p {
+  left: 100%;
+}
+.t100p {
+  top: 100%;
+}
+.mla {
+  margin-left: auto;
+}
+.mra {
+  margin-right: auto;
+}
 /*! ### scruct float */
-.fl{float:left;display:inline}
-.fr{float:right}
+.fl {
+  float: left;
+  display: inline;
+}
+.fr {
+  float: right;
+}
 /*! ### struct flex */
-.df{display:flex}
-.dif{display:inline-flex}
-.f1{flex:1}
-.fa{flex:auto}
-.aic{align-items:center}
-.aife{align-item:flex-end}
-.aifs{align-item:flex-start}
-.fdr{flex-direction:row}
-.fdc{flex-direction:column}
-.fww{flex-wrap:wrap}
-.jcsb{justify-content:space-between}
-.jcsa{justify-content:space-around}
-.jcc{justify-content:center}
-.jcfe{justify-content:flex-end}
+.df {
+  display: flex;
+}
+.dif {
+  display: inline-flex;
+}
+.f1 {
+  flex: 1;
+}
+.fa {
+  flex: auto;
+}
+.aic {
+  align-items: center;
+}
+.aife {
+  align-item: flex-end;
+}
+.aifs {
+  align-item: flex-start;
+}
+.fdr {
+  flex-direction: row;
+}
+.fdc {
+  flex-direction: column;
+}
+.fww {
+  flex-wrap: wrap;
+}
+.jcsb {
+  justify-content: space-between;
+}
+.jcsa {
+  justify-content: space-around;
+}
+.jcc {
+  justify-content: center;
+}
+.jcfe {
+  justify-content: flex-end;
+}
 /*! ## style =================== */
-.vh{visibility:hidden}
-.br100p{border-radius:100%}
+.vh {
+  visibility: hidden;
+}
+.br100p {
+  border-radius: 100%;
+}
 /*! ### style font */
-.fs0{font-size:0}
-.fwn{font-weight:400}
-.fwb{font-weight:700}
-.fsi{font-style:italic}
-.wsn{white-space:nowrap}
-.wwbw{word-wrap:break-word;word-break:break-all}
-.lh1d5{line-height:1.5}
-.lh1d8{line-height:1.8}
-.tar{text-align:right}
-.tac{text-align:center}
-.tal{text-align:left}
-.ttu{text-transform:uppercase}
-.ttc{text-transform:capitalize}
-.ttn{text-transform:none}
-.ttl{text-transform:lowercase}
-.tdn{text-decoration:none}
+.fs0 {
+  font-size: 0;
+}
+.fwn {
+  font-weight: 400;
+}
+.fwb {
+  font-weight: 700;
+}
+.fsi {
+  font-style: italic;
+}
+.wsn {
+  white-space: nowrap;
+}
+.wwbw {
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.lh1d5 {
+  line-height: 1.5;
+}
+.lh1d8 {
+  line-height: 1.8;
+}
+.tar {
+  text-align: right;
+}
+.tac {
+  text-align: center;
+}
+.tal {
+  text-align: left;
+}
+.ttu {
+  text-transform: uppercase;
+}
+.ttc {
+  text-transform: capitalize;
+}
+.ttn {
+  text-transform: none;
+}
+.ttl {
+  text-transform: lowercase;
+}
+.tdn {
+  text-decoration: none;
+}
 /*! ### style color */
-.c_fff{color:#fff}
-.c_000{color:#000}
-.bc_fff{background-color:#fff}
+.c_fff {
+  color: #fff;
+}
+.c_000 {
+  color: #000;
+}
+.bc_fff {
+  background-color: #fff;
+}
 /*!
   * 以下属性因为太常用所有放在了这里
   * 这里的命名并没有严格按照上面的规则
   */
 /*! 清除浮动 */
-.clearfix:after{display:table;content:'';clear:both}
+.clearfix:after {
+  display: table;
+  content: "";
+  clear: both;
+}
 /*! 文字超出一行点点点 */
-.ell{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ell {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 ```
 
 ### `../lib/_acss.scss`
@@ -152,39 +285,71 @@ $ npm i @_nu/css-acss;
 // @import '@_nu/css-acss/lib/_acss.scss';
 @import "../lib/_acss.scss";
 
-@include ACSS;     // ACSS 核心代码，等价于引用 `css/acss.css`
-@include ACSS_(margin, (8,16), 1px);       // .mt8, .mr8, .mb8, .ml8, .mt16, .mr16, .mb16, .ml16;
-@include ACSS_(padding, (8,16), 1px);      // .pt8, .pr8, .pb8, .pl8, .pt16, .pr16, .pb16, .pl16;
-@include ACSS_(font-size, (12,16), 1px);   // .fs12, .fs16
-@include ACSS_(line-height, (8,16), 1px);  // .lh16, .lh24
-@include ACSS_(font-weight, (400,700));    // .fw400, .fw700
+@include ACSS; // ACSS 核心代码，等价于引用 `css/acss.css`
+@include ACSS_(
+  margin,
+  (8, 16),
+  1px
+); // .mt8, .mr8, .mb8, .ml8, .mt16, .mr16, .mb16, .ml16;
+@include ACSS_(
+  padding,
+  (8, 16),
+  1px
+); // .pt8, .pr8, .pb8, .pl8, .pt16, .pr16, .pb16, .pl16;
+@include ACSS_(font-size, (12, 16), 1px); // .fs12, .fs16
+@include ACSS_(line-height, (8, 16), 1px); // .lh16, .lh24
+@include ACSS_(font-weight, (400, 700)); // .fw400, .fw700
 
 // 自定义方法
-@include ACSS_(width, (
-  w50p: 50%,             // .w50p { width: 50%; }
-  w100p: 100%            // .w100p { width: 100%; }
-));
+@include ACSS_(
+  width,
+  (
+    w50p: 50%,
+    // .w50p { width: 50%; }
+      w100p: 100% // .w100p { width: 100%; }
+  )
+);
 
-@include ACSS_(z-index, (
-  zi_header: 100,           // .zi_header { z-index: 100; }
-  zi_toast: 200             // .zi_toast { z-index: 200; }
-));
+@include ACSS_(
+  z-index,
+  (
+    zi_header: 100,
+    // .zi_header { z-index: 100; }
+      zi_toast: 200 // .zi_toast { z-index: 200; }
+  )
+);
 
-@include ACSS_(color, (
-  c_xl:#111,               // .c_xl{ color: #111; }
-  c_l:#333,                // .c_l{ color: #333; }
-  c_m:#666,                // .c_m{ color: #666; }
-  c_s:#999,                // .c_s{ color: #999; }
-  c_xs:#DDD,               // .c_xs{ color: #DDD; }
-  c_primary: blue,         // .c_primary{ color: blue; }
-  c_secondary: gray,       // .c_secondary{ color: gray; }
-  c_danger: red,           // .c_danger{ color: red; }
-  c_warning: yellow,       // .c_warning{ color: yellow; }
-  c_succcess: green,       // .c_succcess{ color: green; }
-  c_info: cadetblue,       // .c_info{ color: cadetblue; }
-  c_light: #f8f9fa,        // .c_light{ color: #f8f9fa; }
-  c_dark: #343a40,         // .c_dark{ color: #343a40; }
-));
+@include ACSS_(
+  color,
+  (
+    c_xl: #111,
+    // .c_xl{ color: #111; }
+      c_l: #333,
+    // .c_l{ color: #333; }
+      c_m: #666,
+    // .c_m{ color: #666; }
+      c_s: #999,
+    // .c_s{ color: #999; }
+      c_xs: #ddd,
+    // .c_xs{ color: #DDD; }
+      c_primary: blue,
+    // .c_primary{ color: blue; }
+      c_secondary: gray,
+    // .c_secondary{ color: gray; }
+      c_danger: red,
+    // .c_danger{ color: red; }
+      c_warning: yellow,
+    // .c_warning{ color: yellow; }
+      c_succcess: green,
+    // .c_succcess{ color: green; }
+      c_info: cadetblue,
+    // .c_info{ color: cadetblue; }
+      c_light: #f8f9fa,
+    // .c_light{ color: #f8f9fa; }
+      c_dark: #343a40,
+    // .c_dark{ color: #343a40; }
+  )
+);
 ```
 
 ### `../lib/_acss.less`
@@ -202,11 +367,14 @@ $ npm i @_nu/css-acss;
  * @param {expression} @unit - 单位换算表达式, 默认为1px, 想要 rem 填写 1/16*1rem
  * @warning 注意列表后面的分号不能省略
  */
-#ACSS.margin(8, 16; 1px);        // .mt8, .mr8, .mb8, .ml8, .mt16, .mr16, .mb16, .ml16;
-#ACSS.padding(8, 16; 1px);       // .pt8, .pr8, .pb8, .pl8, .pt16, .pr16, .pb16, .pl16;
-#ACSS.fontSize(12, 16; 1px);     // .fs12{ font-size:12px; }
-#ACSS.lineHeight(16, 24; 1px);   // .lh16{ line-height:16px; }
-#ACSS.fontWeight(400, 700;);     // .fw400{ font-weight:400; }
+#ACSS.margin(8, 16; 1px); // .mt8, .mr8, .mb8, .ml8, .mt16, .mr16, .mb16, .ml16;
+#ACSS.padding(
+  8,
+  16; 1px
+); // .pt8, .pr8, .pb8, .pl8, .pt16, .pr16, .pb16, .pl16;
+#ACSS.fontSize(12, 16; 1px); // .fs12{ font-size:12px; }
+#ACSS.lineHeight(16, 24; 1px); // .lh16{ line-height:16px; }
+#ACSS.fontWeight(400, 700;); // .fw400{ font-weight:400; }
 
 /*!
  * 以下设计资源，因为 LESS 不支持 map 对象
@@ -216,35 +384,64 @@ $ npm i @_nu/css-acss;
 /*!
  * 管理层级 .zi_*
  */
-.zi_header{ z-index: 200; }
-.zi_toast{ z-index: 300; }
+.zi_header {
+  z-index: 200;
+}
+.zi_toast {
+  z-index: 300;
+}
 
 /*!
  * 管理颜色 .c_*
  */
-.c_xl{ color: #111; }
-.c_l{ color: #333; }
-.c_m{ color: #666; }
-.c_s{ color: #999; }
-.c_xs{ color: #DDD; }
-.c_primary{ color: blue; }
-.c_secondary{ color: gray; }
-.c_danger{ color: red; }
-.c_warning{ color: yellow; }
-.c_succcess{ color: green; }
-.c_info{ color: cadetblue; }
-.c_light{ color: #f8f9fa; }
-.c_dark{ color: #343a40; }
+.c_xl {
+  color: #111;
+}
+.c_l {
+  color: #333;
+}
+.c_m {
+  color: #666;
+}
+.c_s {
+  color: #999;
+}
+.c_xs {
+  color: #ddd;
+}
+.c_primary {
+  color: blue;
+}
+.c_secondary {
+  color: gray;
+}
+.c_danger {
+  color: red;
+}
+.c_warning {
+  color: yellow;
+}
+.c_succcess {
+  color: green;
+}
+.c_info {
+  color: cadetblue;
+}
+.c_light {
+  color: #f8f9fa;
+}
+.c_dark {
+  color: #343a40;
+}
 ```
-
 
 ## ACSS 命名规则
 
-1. 只取首字母 `.db{ display:block; }`; 
-2. 有数字直接连接 `.mb10{ margin-bottom:10px; }`; 
-3. 百分号用 p（percent）表示 `.w100p{ width:100%; }`; 
-4. 小数点用 d（dot）表示 `.lh1d2{ line-height:1.2}`; 
-5. 有想要自定义的样式，用 `_` 分割单词; 
+1. 只取首字母 `.db{ display:block; }`;
+2. 有数字直接连接 `.mb10{ margin-bottom:10px; }`;
+3. 百分号用 p（percent）表示 `.w100p{ width:100%; }`;
+4. 小数点用 d（dot）表示 `.lh1d2{ line-height:1.2}`;
+5. 有想要自定义的样式，用 `_` 分割单词;
 
 `css/core.css` 除了自定的几个样式之外，其余全部严格采用以上模式。
 不管是 SCSS 还是 LESS 初始化出来的 CSS 也完全按照这个命名规则。

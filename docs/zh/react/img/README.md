@@ -57,22 +57,22 @@ export default Demo;
 
 ## Vanilla Img Api
 
-| props   | 类型 | 默认值 | 功能 |
-|:-----|:-----:|:-----:|:-----:|
-| src | string | required | img src |
-| alt | string | required | img alt |
-| width | string, number | required | img width |
+| props  |      类型      |  默认值  |    功能    |
+| :----- | :------------: | :------: | :--------: |
+| src    |     string     | required |  img src   |
+| alt    |     string     | required |  img alt   |
+| width  | string, number | required | img width  |
 | height | string, number | required | img height |
 
 Just the `img` api but the `width` and `height` is required.
 
 ## Enhance Api
 
-| props   | 类型 | 默认值 | 功能 |
-|:-----|:-----:|:-----:|:-----:|
-| errorBg | base64Url, color | 8*8 base64 transparent png | 图片加载失败显示 |
-| circle | bool | false | img `border-radius:100%` |
-| responsive | bool,'x','y' | false | 图片是否自适应 |
+| props      |       类型       |           默认值            |           功能           |
+| :--------- | :--------------: | :-------------------------: | :----------------------: |
+| errorBg    | base64Url, color | 8\*8 base64 transparent png |     图片加载失败显示     |
+| circle     |       bool       |            false            | img `border-radius:100%` |
+| responsive |   bool,'x','y'   |            false            |      图片是否自适应      |
 
 ### `responsive`
 

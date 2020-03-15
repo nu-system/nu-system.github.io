@@ -15,8 +15,6 @@
 [jsdelivr-badge]: https://data.jsdelivr.com/v1/package/npm/@_nu/js-dialog/badge
 [jsdelivr-url]: https://www.jsdelivr.com/package/npm/@_nu/js-dialog
 
-
-
 ## 做了什么？
 
 `@_nu/js-dialog` 只做了以下两件事情。
@@ -32,8 +30,8 @@
 $ npm i @_nu/js-dialog @_nu/css-dialog
 ```
 
-1. @_nu/js-dialog 为逻辑组件
-2. @_nu/css-dialog 为样式组件
+1. @\_nu/js-dialog 为逻辑组件
+2. @\_nu/css-dialog 为样式组件
 
 ```HTML
 <!doctype html>
@@ -42,11 +40,11 @@ $ npm i @_nu/js-dialog @_nu/css-dialog
         <link rel="stylesheet" href="../../../node_modules/@_nu/css-dialog/css/core.css">
         <!-- 弹窗居中显示 -->
         <link rel="stylesheet" href="../../../node_modules/@_nu/css-dialog/css/position/middle.css">
-        <!-- 
+        <!--
             <link rel="stylesheet" href="node_modules/@_nu/css-dialog/css/position/top.css">
             <link rel="stylesheet" href="node_modules/@_nu/css-dialog/css/position/right.css">
             <link rel="stylesheet" href="node_modules/@_nu/css-dialog/css/position/bottom.css">
-            <link rel="stylesheet" href="node_modules/@_nu/css-dialog/css/position/left.css"> 
+            <link rel="stylesheet" href="node_modules/@_nu/css-dialog/css/position/left.css">
         -->
     </head>
     <body>
@@ -90,9 +88,9 @@ $ npm i @_nu/js-dialog @_nu/css-dialog
 ```JS
 var _api= new NuDialog({
     // [string] dom 对象选择器，内部选择器为 document.querySelector
-    sel: null,  
+    sel: null,
     // [string] 用于控制弹窗的显示隐藏
-    openClass: '_open', 
+    openClass: '_open',
     // [string] 弹窗内部有这个clas，点击会触发弹窗关闭逻辑
     closeClass: 'j_close',
     // [boolean] 初始化的时候是否显示弹窗

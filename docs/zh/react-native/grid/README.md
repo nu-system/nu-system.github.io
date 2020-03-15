@@ -75,20 +75,18 @@ export default function App() {
 
 ![demo](demo.png)
 
-
 ### Api `Grid`
 
-| props   |      类型      |       默认值      |  功能 |
-|:----------|:-------------:|:-------------:|------:|
-| gridNum |  number | `6` | 列数 |
-| gutterInside |  number | `12` |  列之间的间距 |
-| gutterOutSide | number  |  `16` | 列距离屏幕边缘的间距 |
-
+| props         |  类型  | 默认值 |                 功能 |
+| :------------ | :----: | :----: | -------------------: |
+| gridNum       | number |  `6`   |                 列数 |
+| gutterInside  | number |  `12`  |         列之间的间距 |
+| gutterOutSide | number |  `16`  | 列距离屏幕边缘的间距 |
 
 ### Api `Col`
 
-| props   |      类型      |       默认值      |  功能 |
-|:----------|:-------------:|:-------------:|------:|
-| span |  number | `1` | 所占的列数 |
-| offset |  number | `0` |  偏移的列数 |
-| widthToInt | bool  |  `false` | 是否单位采用整数，默认是采用百分比 |
+| props      |  类型  | 默认值  |                               功能 |
+| :--------- | :----: | :-----: | ---------------------------------: |
+| span       | number |   `1`   |                         所占的列数 |
+| offset     | number |   `0`   |                         偏移的列数 |
+| widthToInt |  bool  | `false` | 是否单位采用整数，默认是采用百分比 |

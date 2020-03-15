@@ -12,6 +12,7 @@ title: Intro
 - 想要拓展组件样式建议使用原生的方式或者群组选择器，并以 `_` 开头，比如 `.nu_btn:disabled, .nu_btn._loading`；
 
 ### 不推荐 ❌
+
 ```HTML
 <style>
 .nu_btn{}
@@ -24,6 +25,7 @@ title: Intro
 ```
 
 ### 正确 ✅
+
 ```HTML
 <style>
 .nu_btn{}
@@ -35,17 +37,16 @@ title: Intro
 </button>
 ```
 
-
 ## Component Tree
 
 ```bash
 [component]
-├── README.md          
-├── css                
-│   ├── core.css       
-│   └── skins          
+├── README.md
+├── css
+│   ├── core.css
+│   └── skins
 │       └── **.css
-└── package.json       
+└── package.json
 ```
 
 ## Contribution

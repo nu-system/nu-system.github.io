@@ -14,7 +14,6 @@ React toast 组件
 
 <iframe src="https://codesandbox.io/embed/new-night-9e4kp?fontsize=14&hidenavigation=1" title="nu-toast-react" allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 
-
 ## 怎么用？
 
 ```
@@ -39,7 +38,7 @@ export { NuToast };
 
 NuToast 有两种使用方式。
 
-### 使用 「 基于DOM 」
+### 使用 「 基于 DOM 」
 
 ```JSX
 import React from 'react';
@@ -56,10 +55,9 @@ function PageToast() {
 export default PageToast;
 ```
 
-第一种方式是直接采用 Dom 的方式。 `NuToast` 会在Dom对象创建的时候显示，然后`3000` 毫秒之后消失。这种方式比较适合在一进入页面的就需要显示一个 toast 的时候使用。
+第一种方式是直接采用 Dom 的方式。 `NuToast` 会在 Dom 对象创建的时候显示，然后`3000` 毫秒之后消失。这种方式比较适合在一进入页面的就需要显示一个 toast 的时候使用。
 
-
-### 使用 「 基于Function 」
+### 使用 「 基于 Function 」
 
 ```JSX
 import React, { Component } from "react";
@@ -73,19 +71,19 @@ function App(){
             Toast('toast default');
         }}>
           显示Toast
-        </button> 
+        </button>
         <button type="button" onClick={()=>{
-            Toast.danger('toast danger');        
+            Toast.danger('toast danger');
         }}>
           显示Toast danger
         </button>
         <button type="button" onClick={()=>{
-            Toast.success('toast danger');        
+            Toast.success('toast danger');
         }}>
           显示Toast danger
         </button>
         <button type="button" onClick={()=>{
-            Toast.warning('toast warning');        
+            Toast.warning('toast warning');
         }}>
           显示Toast danger
         </button>
@@ -122,7 +120,7 @@ function App(){
         }}>
           显示Toast
         </button>
-        
+
         <button type="button" onClick={()=>{
             Toast.myToast('toast myToast');
         }}>
@@ -138,15 +136,15 @@ export default App;
 
 ## NuToast Api
 
-| props   |      类型      |       默认值      |  功能 |
-|:----------|:-------------:|:-------------:|------:|
-| children * |  node | null | 内容元素 |
-| className * |  string | '' | className |
-| status |  string | - | toast 的状态 |
-| showTime | number | true | toast 显示的时间 |
-
+| props        |  类型  | 默认值 |             功能 |
+| :----------- | :----: | :----: | ---------------: |
+| children \*  |  node  |  null  |         内容元素 |
+| className \* | string |   ''   |        className |
+| status       | string |   -    |     toast 的状态 |
+| showTime     | number |  true  | toast 显示的时间 |
 
 ## 动效
+
 ```jsx
   appear = true,
   unmountOnExit = true,
@@ -160,15 +158,15 @@ export default App;
   },
 ```
 
-NuToast 采用 [react-transition-group/css-transition](https://reactcommunity.org/react-transition-group/css-transition) 作为CSS动画解决方案，所有除了以上自定义的 API 之外，还会直接将 `css-transition` 所有的属性都移接到 `NuToast` 上。 
+NuToast 采用 [react-transition-group/css-transition](https://reactcommunity.org/react-transition-group/css-transition) 作为 CSS 动画解决方案，所有除了以上自定义的 API 之外，还会直接将 `css-transition` 所有的属性都移接到 `NuToast` 上。
 因为 `css-transition` 还是有一定的上手成本，这边为了方便使用直接设定了如上的默认值。
 在实际开发的时候只需要围绕着 `.nu_toast._open` 这个选择器开发即可。
 
 ## `NuToast.setDefault` Api
 
-| props   |      类型      |       默认值      |  功能 |
-|:----------|:-------------:|:-------------:|------:|
-| status |  array  | `['danger', 'warning', 'success']` | 弹窗默认状态 |
+| props  | 类型  |               默认值               |         功能 |
+| :----- | :---: | :--------------------------------: | -----------: |
+| status | array | `['danger', 'warning', 'success']` | 弹窗默认状态 |
 
 对于其它的 `props` 都会直接在创建的时候透传到 `NuToast` 上。
 

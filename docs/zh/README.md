@@ -3,13 +3,13 @@ home: true
 actionText: Get Start →
 actionLink: /zh/css/
 features:
-- title: 🔧 Custom
-  details: NU-system 不是一个拿来即用的组件库，我们主张基于业务场景二次封装
-- title: ❤️ UI Just 
-  details: 定义 Design Token 和实现逻辑状态接口定义的样式
-- title: 🌊 Logic Only 
-  details: 定义逻辑状态接口，并不实现该状态下对应的样式
-  
+  - title: 🔧 Custom
+    details: NU-system 不是一个拿来即用的组件库，我们主张基于业务场景二次封装
+  - title: ❤️ UI Just
+    details: 定义 Design Token 和实现逻辑状态接口定义的样式
+  - title: 🌊 Logic Only
+    details: 定义逻辑状态接口，并不实现该状态下对应的样式
+
 footer: MIT Licensed | Copyright © 2020-present YFE-TEAM
 ---
 

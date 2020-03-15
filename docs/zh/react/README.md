@@ -12,7 +12,7 @@ title: Intro
 
 ## 构建
 
-`react-[component]`  目前是以 [nwb](https://github.com/insin/nwb/blob/master/docs/guides/ReactComponents.md#developing-react-components-and-libraries-with-nwb) 作为打包工具。
+`react-[component]` 目前是以 [nwb](https://github.com/insin/nwb/blob/master/docs/guides/ReactComponents.md#developing-react-components-and-libraries-with-nwb) 作为打包工具。
 
 ## Tree
 

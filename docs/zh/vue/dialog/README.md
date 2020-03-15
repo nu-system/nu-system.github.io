@@ -10,12 +10,11 @@
 [git-url]: https://github.com/nu-system/vue-dialog
 [git-badge]: https://img.shields.io/github/stars/nu-system/vue-dialog.svg?style=social
 
-
 <iframe src="https://codesandbox.io/embed/nudialogvue-phc9q?autoresize=1&fontsize=14&hidenavigation=1&view=preview" title="nu-dialog-vue" allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 
 组件库母版系统 [NU-system](https://nu-system.github.io/) 弹窗组件 VUE 实现。
 
-`nu-vue-dialog` 本身不会输出任何样式，基础样式来自于 [nu-dialog](https://nu-system.github.io/css/dialog/) , 
+`nu-vue-dialog` 本身不会输出任何样式，基础样式来自于 [nu-dialog](https://nu-system.github.io/css/dialog/) ,
 
 <ClientOnly>
 <DialogDemo/>
@@ -27,16 +26,16 @@
 $ yarn add @_nu/vue-dialog @_nu/css-dialog
 ```
 
-* **@_nu/vue-dialog**： 逻辑组件;
-* **@_nu/css-dialog**:  样式组件;
+- **@\_nu/vue-dialog**： 逻辑组件;
+- **@\_nu/css-dialog**: 样式组件;
 
 ### 二次封装
 
 ```vue
 <!-- @components/Dialog/index.vue -->
 <script>
-  import NuDialog from "@_nu/vue-dialog"
-  export default NuDialog;
+import NuDialog from "@_nu/vue-dialog";
+export default NuDialog;
 </script>
 
 <!--样式引用-->
@@ -51,14 +50,14 @@ $ yarn add @_nu/vue-dialog @_nu/css-dialog
 ```
 
 不建议直接在项目页面中通过 `import "@_nu/vue-dialog"` 的方式使用 nu-dialog，而是把 nu-dialog 当作一个 dialog 组件的构建工具，在自己的 `components/` 的文件夹中，通过上述方式 "二次封装"，然后 `export` 属于自己项目的 Dialog 组件。
-对于自己全局的Dialog逻辑就可以写在这个逻辑里面了。
+对于自己全局的 Dialog 逻辑就可以写在这个逻辑里面了。
 
 ### 使用
 
 ```vue
 <template>
-  <div id="app">    
-    <button type="button" @click="dialogOpen = true">打开弹窗</button>            
+  <div id="app">
+    <button type="button" @click="dialogOpen = true">打开弹窗</button>
     <Dialog :open.sync="dialogOpen" :position="dialogPosition">
       <select @change="handlePosition">
         <option value="middle">居中显示</option>
@@ -72,25 +71,25 @@ $ yarn add @_nu/vue-dialog @_nu/css-dialog
 </template>
 
 <script>
-  import Dialog from "@components/Dialog";
-  
-  export default {
-    name: 'app',
-    data() {
-      return {
-        dialogOpen: false,
-        dialogPosition: 'middle'
-      }
-    },
-    components: {
-      Dialog
-    },
-    methods: {
-        handlePosition(e) {
-         this.dialogPosition = e.target.value;
-        }
+import Dialog from "@components/Dialog";
+
+export default {
+  name: "app",
+  data() {
+    return {
+      dialogOpen: false,
+      dialogPosition: "middle"
+    };
+  },
+  components: {
+    Dialog
+  },
+  methods: {
+    handlePosition(e) {
+      this.dialogPosition = e.target.value;
     }
-}
+  }
+};
 </script>
 ```
 
@@ -98,13 +97,13 @@ nu-dialog-vue 会动态的把弹窗添加到 `body` 标签之后。
 
 ## Api
 
-| props   |      类型      | 默认值  |功能 |
-|:----------|:-------------|:------:|------:|
-| :open.sync |  boolean | - | 显示弹窗|
-| :position |  strong | 'middle' | 弹窗位置|
-| :beforeClose |  Func | - | 在关闭之前要做的事 |
-| :isPortal | boolean | 'true' | 是否需要传送门 |
-| :speed | Number | 200 | 动画时长 |
+| props        | 类型    |  默认值  |               功能 |
+| :----------- | :------ | :------: | -----------------: |
+| :open.sync   | boolean |    -     |           显示弹窗 |
+| :position    | strong  | 'middle' |           弹窗位置 |
+| :beforeClose | Func    |    -     | 在关闭之前要做的事 |
+| :isPortal    | boolean |  'true'  |     是否需要传送门 |
+| :speed       | Number  |   200    |           动画时长 |
 
 **position 可选值**: `middle`,`top`,`right`,`left`,`bottom`;
 
@@ -131,4 +130,3 @@ nu-dialog-vue 会动态的把弹窗添加到 `body` 标签之后。
 ```
 
 `nu-dialog-vue` 几乎所有都子组件都可以用 `slot` 重写。
-

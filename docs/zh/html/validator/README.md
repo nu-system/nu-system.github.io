@@ -21,7 +21,6 @@ title: Validator
 
 <iframe src="https://nu-system.github.io/html-validator/" style="width:100%; height:500px; border:1px solid #333; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 
-
 ## 开始
 
 ```
@@ -33,7 +32,6 @@ npm i @_nu/html-validator
 ```HTML
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@_nu/html-validator" />
 ```
-
 
 如果你只是想要一级的校验，可以这样：
 
@@ -53,7 +51,6 @@ html-validator/css
 
 ## 技术方案
 
-
 `@_nu/html-validator` 是基于以下项目构建
 
-* [https://github.com/t7/construct.css](https://github.com/t7/construct.css)
+- [https://github.com/t7/construct.css](https://github.com/t7/construct.css)

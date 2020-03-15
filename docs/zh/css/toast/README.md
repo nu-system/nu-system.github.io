@@ -20,7 +20,6 @@
   (<a href='https://codepen.io/ziven27'>@ziven27</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
-
 ## 怎么用?
 
 ```bash
@@ -56,10 +55,10 @@ yarn add @_nu/css-toast
 
 ## Api
 
-| 选择器   |   功能   |
-|:----------|-------------:|
-| `.nu_toast._open` |  是否显示toast |
-| `.nu_dialog._[skins]` | toast 的皮肤 |
+| 选择器                |           功能 |
+| :-------------------- | -------------: |
+| `.nu_toast._open`     | 是否显示 toast |
+| `.nu_dialog._[skins]` |   toast 的皮肤 |
 
 这边约定用 `_open` 来控制 toast 的显示隐藏。
 
@@ -72,7 +71,7 @@ yarn add @_nu/css-toast
 ## 如何添加动效?
 
 ```css
-.nu_toast{
+.nu_toast {
   visibility: hidden;
   opacity: 0;
   transform: translate(0, -10px);
@@ -90,8 +89,8 @@ yarn add @_nu/css-toast
 
 ```css
 .nu_toast {
-  border-radius: .25rem;
-  padding: .75rem 1.25rem;
+  border-radius: 0.25rem;
+  padding: 0.75rem 1.25rem;
   color: #004085;
   background-color: #cce5ff;
   border: 1px solid #b8daff;

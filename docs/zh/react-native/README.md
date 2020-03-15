@@ -8,7 +8,7 @@ title: Intro
 
 ## 构建
 
-`react-native-[component]`  不需要构建，可以发布原始代码。对于 Demo 推荐使用 [expo](https://expo.io/)。
+`react-native-[component]` 不需要构建，可以发布原始代码。对于 Demo 推荐使用 [expo](https://expo.io/)。
 
 ## Tree
 

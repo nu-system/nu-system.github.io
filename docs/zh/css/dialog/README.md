@@ -20,7 +20,6 @@
   (<a href='https://codepen.io/ziven27'>@ziven27</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
-
 ## 使用
 
 ```
@@ -58,17 +57,16 @@ $ yarn add @_nu/css-dialog
 
 为了无障碍可访问性，这边推荐使用 `buttton` 标签作为 `mask` 和 `close` 的标签。
 
-| 选择器   |   功能   |
-|:----------|-------------:|
-| `.nu_dialog_wrap[open] .nu_dialog` |  控制弹窗的显示隐藏 |
-| `.nu_dialog_wrap._top .nu_dialog` |  弹窗居上 |
-| `.nu_dialog_wrap._right .nu_dialog` |  弹窗居右 |
-| `.nu_dialog_wrap._bottom .nu_dialog` |  弹窗居下 |
-| `.nu_dialog_wrap._left .nu_dialog` |  弹窗居左 |
-| `.nu_dialog_wrap._middle .nu_dialog` |  弹窗居中 |
+| 选择器                               |               功能 |
+| :----------------------------------- | -----------------: |
+| `.nu_dialog_wrap[open] .nu_dialog`   | 控制弹窗的显示隐藏 |
+| `.nu_dialog_wrap._top .nu_dialog`    |           弹窗居上 |
+| `.nu_dialog_wrap._right .nu_dialog`  |           弹窗居右 |
+| `.nu_dialog_wrap._bottom .nu_dialog` |           弹窗居下 |
+| `.nu_dialog_wrap._left .nu_dialog`   |           弹窗居左 |
+| `.nu_dialog_wrap._middle .nu_dialog` |           弹窗居中 |
 
-nu-dialog 这边只是约定了 几个 CSS Hooks 的方案，所以对于使用方来说，可以使用任意js框架（原生js，jquery, react, vue ...）去切换这些API的属性即可。
-
+nu-dialog 这边只是约定了 几个 CSS Hooks 的方案，所以对于使用方来说，可以使用任意 js 框架（原生 js，jquery, react, vue ...）去切换这些 API 的属性即可。
 
 ## 如何添加动效?
 
@@ -76,7 +74,7 @@ nu-dialog 这边只是约定了 几个 CSS Hooks 的方案，所以对于使用�
 .nu_dialog_wrap {
   display: block;
 }
-.nu_dialog{
+.nu_dialog {
   transform: translate(0, 50px);
 }
 .nu_dialog_wrap {
@@ -91,7 +89,6 @@ nu-dialog 这边只是约定了 几个 CSS Hooks 的方案，所以对于使用�
   See the Pen <a href='https://codepen.io/ziven27/pen/KLemVx/'>nu-dialog-ani</a> by ziven27
   (<a href='https://codepen.io/ziven27'>@ziven27</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
-
 
 ## Logic Only
 

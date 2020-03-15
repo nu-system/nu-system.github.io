@@ -19,8 +19,9 @@
 ```
 yarn add @_nu/react-button @_nu/css-button
 ```
-- [@_nu/react-button](https://nu-system.github.io/react/button/): 逻辑组件
-- [@_nu/css-button](https://nu-system.github.io/css/button/): 样式组件
+
+- [@\_nu/react-button](https://nu-system.github.io/react/button/): 逻辑组件
+- [@\_nu/css-button](https://nu-system.github.io/css/button/): 样式组件
 
 ### 二次封装
 
@@ -41,12 +42,12 @@ export default Button;
 ```JSX
 import Button from "./components/Button";
 
-const Page=()=>{    
+const Page=()=>{
     return (
      <div>
-        <Button>Button</Button>                
+        <Button>Button</Button>
         <Button href="/nu-button">Button</Button>
-     </div>     
+     </div>
     );
 };
 
@@ -63,15 +64,15 @@ export default Page;
 
 ## Api
 
-| 属性   | 类型 | 默认值 | 功能 |
-|:-----|:-----:|:-----:|:-----:|
-| children |  string&#124;Array | null | 子元素 |
-| className |  string&#124;Array | '' | 按钮默认选择器 |
-| classNameDefault |  string&#124;Array, | '_fill' | 按钮默认样式 |
-| href |  string | null | 跳转链接 |
-| disabled |  boolean | false | 不可用按钮 |
-| Component | string &#124; func &#124; object | 'button' | 外壳组件 |
-| SubComponent | string &#124; func &#124; object | 'span' | 容器组件 |
+| 属性             |               类型               |  默认值  |           功能            |
+| :--------------- | :------------------------------: | :------: | :-----------------------: |
+| children         |       string &#124; Array        | '&nbsp;' |         children          |
+| className        |       string &#124; Array        | '&nbsp;' |         className         |
+| classNameDefault |       string &#124; Array        | '\_fill' |     default className     |
+| href             |              string              | '&nbsp;' |       href for `a`        |
+| disabled         |             boolean              |  false   | disabled status of button |
+| Component        | string &#124; func &#124; object | 'button' |          wrapper          |
+| SubComponent     | string &#124; func &#124; object |  'span'  |         container         |
 
 ```JSX
 <Button>hello</Button>
@@ -89,13 +90,28 @@ export default Page;
 <a class="nu_btn _fill" href="." title="hello"><span>hello</span></a>
 ```
 
+## ClassName 处理
+
+```JSX
+<Button className="_primary _fill _ghost _primary">hello</Button>
+<Button className={['_primary','_fill','_ghost','_primary','','',null]}>hello</Button>
+```
+
+```HTML
+<button class="nu_btn _primary _ghost" type="button"><span>hello</span></button>
+```
+
+- 重复的 Class 会被移除
+- `_fill`,`_ghost`,`_link` 同时出现，只会取最后一个;
+- 会去掉空字符串；
+
 ## 如何配合路由组件使用？
 
 ```jsx
 import { Link } from "@reach/router";
 import Button from "@_nu/react-button";
 import "@_nu/css-button";
-import './style.css';
+import "./style.css";
 
 // 自定义标签
 Button.defaultProps.component = Link;
@@ -106,13 +122,13 @@ export default Button;
 ## 如何设定默认样式?
 
 ```JSX
-Button.defaultProps.classNameDefault = "_fill _capsule";  
+Button.defaultProps.classNameDefault = "_fill _capsule";
 
 // or
 
-Button.defaultProps.classNameDefault = ["_fill", "_capsule"];  
+Button.defaultProps.classNameDefault = ["_fill", "_capsule"];
 ```
 
 ## 如何修改样式？
 
-查看样式组件 [@_nu/css-button](https://nu-system.github.io/zh/css/button/)
+查看样式组件 [@\_nu/css-button](https://nu-system.github.io/zh/css/button/)

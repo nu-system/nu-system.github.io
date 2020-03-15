@@ -12,7 +12,7 @@ title: Intro
 
 ## 构建
 
-此处推荐利用vue的vue-cli-service工具打包组件：
+此处推荐利用 vue 的 vue-cli-service 工具打包组件：
 
 安装工具包
 
@@ -22,7 +22,7 @@ npm install -g @vue/cli-service-global
 yarn global add @vue/cli-service-global
 ```
 
-package.json配置
+package.json 配置
 
 ```
 "scripts": {
@@ -44,7 +44,7 @@ npm run-script build
 ├── index.js                // VUE 组件引用
 ├── lib                     // build 目录
 │   └── index.common.js     // vue-cli-service 打包的文件
-├── package.json     
+├── package.json
 └── src                     // 原始代码文件夹
     └── index.vue
 ```
