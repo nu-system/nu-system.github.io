@@ -57,20 +57,13 @@ $ yarn add @_nu/css-button
 
 | 选择器 |  功能 |
 |:-------------|------:|
+| Selector |  Function |
+|:-------------|------:|
 | .nu_btn | base selector |
-| .nu_btn._default | default style |
-| .nu_btn._primary | primary |
-| .nu_btn._secondary | secondary |
-| .nu_btn._warning | warning |
-| .nu_btn._success | success |
-| .nu_btn._danger | danger |
-| .nu_btn._large | size of large |
-| .nu_btn._middle | size of middle |
-| .nu_btn._small | size of small |
-| .nu_btn._fill | background color fill button |
-| .nu_btn._ghost | ghost button 👻 |
-| .nu_btn._link | link button 🔗 |
-| .nu_btn:disabled | status of disabled |
+| .nu_btn._[color] | color style |
+| .nu_btn._[size] | size of button |
+| .nu_btn._[variant] | variant of button |
+| .nu_btn:disabled, .nu_btn[disabled] | status of disabled |
 | .nu_btn._loading | loading |
 | .nu_btn._capsule | button like capsule 💊 |
 | .nu_btn._block | block button |

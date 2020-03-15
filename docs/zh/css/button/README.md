@@ -60,19 +60,10 @@ $ yarn add @_nu/css-button
 | 选择器 |  功能 |
 |:-------------|------:|
 | .nu_btn | 默认的按钮选择器 |
-| .nu_btn._default | 默认按钮颜色 |
-| .nu_btn._primary | 主按钮 |
-| .nu_btn._secondary | 次级按钮 |
-| .nu_btn._warning | 警告按钮 |
-| .nu_btn._success | 成功按钮 |
-| .nu_btn._danger | 危险按钮 |
-| .nu_btn._large | 大号按钮 |
-| .nu_btn._middle | 中号按钮 |
-| .nu_btn._small | 小号按钮 |
-| .nu_btn._fill | 实心按钮 |
-| .nu_btn._ghost | 幽灵按钮 👻 |
-| .nu_btn._link | 链接按钮 🔗 |
-| .nu_btn._disabled | 不可用按钮 |
+| .nu_btn._[color] | 按钮颜色 |
+| .nu_btn._[size] | 按钮尺寸 |
+| .nu_btn._[variant] | 按钮形状 |
+| .nu_btn:disabled, .nu_btn[disabled] | 按钮不可用 |
 | .nu_btn._loading | loading按钮 |
 | .nu_btn._capsule | 圆角按钮 💊 |
 | .nu_btn._block | 占一行的按钮 |
