@@ -136,6 +136,6 @@ If the automated code doesn't meet your needs, you can customize it this way. He
 
 ## Logic Only
 
-- [nu-react-button](/react/button/)
-- [nu-vue-button](/vue/button/)
-- [nu-react-native-button](/react-native/button/)
+- [@_nu/react-button](https://nu-system.github.io/react/button/)
+- [@_nu/vue-button](https://nu-system.github.io/vue/button/)
+- [@_nu/react-native-button](https://nu-system.github.io/react-native/button/)

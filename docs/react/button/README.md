@@ -10,33 +10,32 @@
 [git-url]: https://github.com/nu-system/react-button
 [git-badge]: https://img.shields.io/github/stars/nu-system/react-button.svg?style=social
 
-Component of react button.
+No UI dependency button of react.
 
 <iframe src="https://codesandbox.io/embed/throbbing-leftpad-juijc?autoresize=1&fontsize=14&hidenavigation=1&module=%2Fsrc%2Fcomponents%2FButton.js" title="throbbing-leftpad-juijc" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 
-
-
-## Install？
+## Install
 
 ```
 yarn add @_nu/react-button @_nu/css-button
 ```
 
-### custom
+- [@_nu/react-button](https://nu-system.github.io/react/button/): Login only
+- [@_nu/css-button](https://nu-system.github.io/css/button/): UI Just
+
+### Custom
 
 ```JSX
 /* @components/Button/index.js */
-import NuButton from "@_nu/react-button";
-import "@_nu/css-button";     // style
-import "@_nu/css-button/css/skins/bootstrap.css"; // skin of bootstrap  
-// import './style.css'; // custom style
-NuButton.defaultProps.color = "primary";  // custome color
-NuButton.defaultProps.variant = "ghost";  // custom variant
-export default NuButton;
-```
+import Button from "@_nu/react-button";
+import "@_nu/css-button";     // core style
+import "@_nu/css-button/css/skins/bootstrap.css"; // skin of bootstrap
+import './style.css'; // custome style
 
-Because 'NuButton' is a purely logical component that does not output any style itself, it needs to be repackaged in real projects.
-Here is [css-button](https://nu-system.github.io/css/button/) the bootstrap inside the skin.
+Button.defaultProps.classNameBase = "_fill";  // base className of button
+
+export default Button;
+```
 
 ### Use
 
@@ -46,8 +45,8 @@ import Button from "./components/Button";
 const Page=()=>{    
     return (
      <div>
-        <Button ghost large>Large ghost button</Button>                
-        <Button href="/nu-button" ghost large>Large ghost link button</Button>
+        <Button>Button</Button>                
+        <Button href="/nu-button">Button</Button>
      </div>     
     );
 };
@@ -55,60 +54,68 @@ const Page=()=>{
 export default Page;
 ```
 
-## DOM 
+## 结构
 
 ```JSX
-<Button>hello</Button>
-<Button href="." title="hello">hello</Button>
-```
-
-```HTML
-<button class="nu_button" type="button" ><span>hello</span></button>
-<a class="nu_button" href="../../.." title="hello"><span>hello</span></a>
+<Component>
+    <SubComponent>{children}</SubComponent>
+</Component>
 ```
 
 ## Api
 
-| props   | type | default | function |
+| Prop   | type | Default | Function |
 |:-----|:-----:|:-----:|:-----:|
-| baseClass |  string | 'nu_btn' | 按钮默认选择器 |
-| href |  string | - | 跳转链接 |
-| type |  string | 'button' | 按钮类型 |
-| component | string &#124; func &#124; object | 'button' | 外壳组件 |
-| disabled |  boolean | - | 不可用按钮 |
-| loading |  boolean | - | loading按钮 |
-| capsule |  boolean | - | 圆角按钮|
-| circle |  boolean | - | 正圆按钮|
-| block |  boolean | - | 占一行的按钮|
-| color | 'default' &#124; 'primary' &#124; 'secondary' <br/> 'warning' &#124; 'success' &#124; 'danger' |  'default' | 按钮颜色 |
-| primary |  boolean | - | 主按钮 | 
-| secondary |  boolean | - | 次级按钮 | 
-| warning |  boolean | - | 警告按钮 | 
-| success |  boolean | - | 成功按钮 |
-| danger |  boolean | - | 危险按钮 | 
-| variant| 'fill' &#124; 'ghost' &#124; 'link' | 'fill' | 按钮变体 |
-| fill | boolean | - | 实心按钮 | 
-| ghost |  boolean | - | 幽灵按钮 | 
-| link |  boolean | - | 链接按钮 |
-| large |  boolean | - | 大按钮 | 
-| middle |  boolean | - | 中号按钮 |
-| small |  boolean | - | 小按钮 |
+| children |  string&#124;Array | null | children |
+| className |  string&#124;Array | '' | className |
+| classNameDefault |  string&#124;Array, | '_fill' | default className |
+| href |  string | null | href for `a` |
+| disabled |  boolean | false | disabled status of button  |
+| Component | string &#124; func &#124; object | 'button' | wrapper |
+| SubComponent | string &#124; func &#124; object | 'span' | container |
 
-## How to use with routing components
+
+```JSX
+<Button>hello</Button>
+<Button disabled>hello</Button>
+<Button className="_primary">hello</Button>
+<Button SubComponent="strong">hello</Button>
+<Button href="." title="hello">hello</Button>
+```
+
+```HTML
+<button class="nu_btn _fill" type="button"><span>hello</span></button>
+<button class="nu_btn _fill" type="button" disabled><span>hello</span></button>
+<button class="nu_btn _fill _primary" type="button"><span>hello</span></button>
+<button class="nu_btn _fill" type="button"><strong>hello</strong></button>
+<a class="nu_btn _fill" href="." title="hello"><span>hello</span></a>
+```
+
+## Use with Link？
 
 ```jsx
 import { Link } from "@reach/router";
-import NuButton from "@_nu/react-button";
+import Button from "@_nu/react-button";
 import "@_nu/css-button";
 import './style.css';
 
-// 自定义标签
-NuButton.defaultProps.component = Link;
+// Custom
+Button.defaultProps.component = Link;
 
-export default NuButton;
+export default Button;
 ```
 
-## custom style？
+## Custom default className?
 
-Go to [@_nu/css-button](https://nu-system.github.io/css/button/)。
+```JSX
+Button.defaultProps.classNameDefault = "_fill _capsule";  
+
+// or
+
+Button.defaultProps.classNameDefault = ["_fill", "_capsule"];  
+```
+
+## Custom style？
+
+Go to [@_nu/css-button](https://nu-system.github.io/css/button/)
 

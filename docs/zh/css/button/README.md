@@ -140,6 +140,6 @@ $ yarn add @_nu/css-button
 
 ## Logic Only
 
-- [nu-react-button](https://nu-system.github.io/react/button/)
-- [nu-vue-button](https://nu-system.github.io/vue/button/)
-- [nu-react-native-button](https://nu-system.github.io/react-native/button/)
+- [@_nu/react-button](https://nu-system.github.io/zh/react/button/)
+- [@_nu/vue-button](https://nu-system.github.io/zh/vue/button/)
+- [@_nu/react-native-button](https://nu-system.github.io/zh/react-native/button/)
