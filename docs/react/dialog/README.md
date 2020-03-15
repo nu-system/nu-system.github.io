@@ -1,4 +1,4 @@
-# nu-react-dialog
+# Dialog
 
 [![npm package][npm-badge]][npm-url]
 [![npm downloads][npm-downloads]][npm-url]
@@ -9,8 +9,6 @@
 [npm-downloads]: https://img.shields.io/npm/dw/@_nu/react-dialog
 [git-url]: https://github.com/nu-system/react-dialog
 [git-badge]: https://img.shields.io/github/stars/nu-system/react-dialog.svg?style=social
-
-English | [简体中文](./README-zh_CN.md)
 
 A fully accessible、flexible、unstyled React dialog component.
 

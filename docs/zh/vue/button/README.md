@@ -10,19 +10,20 @@
 [git-url]: https://github.com/nu-system/vue-button
 [git-badge]: https://img.shields.io/github/stars/nu-system/vue-button.svg?style=social
 
+
 <ClientOnly>
 <ButtonDemo/>
 </ClientOnly>
 
-Button of vue. 
+组件库母版系统 [NU-system](https://nu-system.github.io/) 按钮组件 VUE 实现。
 
-## Install
+## 怎么用?
 
 ```bash
 $ yarn add @_nu/vue-button @_nu/css-button
 ```
 
-### Custom
+### 二次封装
 
 ```vue  
 <script>
@@ -53,15 +54,17 @@ $ yarn add @_nu/vue-button @_nu/css-button
 </style>
 ```
 
-The purpose of setting the default "color" and "variation" is to avoid the need to add attributes every time the button is used.
+设置默认「 颜色 」和「 变体 」的目的是避免每次在使用按钮的时候需要添加对应属性。
 
+因为 `NuButton` 是纯逻辑组件本身不会输出任何样式，在实际项目中使用需要二次封装。
+这里采用的是 [nu-button](https://nu-system.github.io/css/button/) 里面的 bootstrap 皮肤。
 
-### Use
+### 使用
 
 ```vue  
 <template>
     <div>
-      <Button>Button</Button>
+      <Button>按钮</Button>
     </div>  
 </template>
 
@@ -75,16 +78,18 @@ The purpose of setting the default "color" and "variation" is to avoid the need 
 </script>
 ```
 
-## DOM
+## DOM 结构
 
 ```VUE
 <Button>hello</Button>
 <Button href="." title="hello">hello</Button>
 ```
 
+上面的代码会被渲染成如下的 HTML 结构。
+
 ```HTML
 <button class="nu_button" type="button" ><span>hello</span></button>
-<a class="nu_button" href="." title="hello"><span>hello</span></a>
+<a class="nu_button" href="../../.." title="hello"><span>hello</span></a>
 ```
 
 ## API
@@ -116,8 +121,27 @@ The purpose of setting the default "color" and "variation" is to avoid the need 
 <Button block> block 按钮</Button>
 </ClientOnly>
 
+并且除了上表中的属性，其它属性都会直接传到原生 button 上。
 
-## custom style ？
+## 如何修改样式？
 
-Go to [@_nu/css-button](https://nu-system.github.io/css/button/)。
+nu-button-vue 会将上所有的 `boolean` 属性，基于以下的 「 class 映射表 」添加对应的 class 到按钮上。想要自定义样式，只需要围绕对应选择器进行开发即可, 样式定义规则可以查看 [nu-button](https://yued-fe.github.io/nu-system/packages/button/)。
 
+| props |  class |
+|:----------|------:|
+| baseClass | .nu_btn |
+| primary | ._primary |
+| secondary | ._secondary |
+| warning | ._warning |
+| success | ._success |
+| danger | ._danger |
+| fill | ._fill |
+| ghost | ._ghost |
+| link | ._link |
+| disabled | ._disabled |
+| loading | ._loading |
+| large | ._large |
+| middle | ._middle |
+| small | ._small |
+| capsule | ._capsule |
+| block | ._block |

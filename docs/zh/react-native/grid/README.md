@@ -10,15 +10,15 @@
 [git-url]: https://github.com/nu-system/react-native-grid
 [git-badge]: https://img.shields.io/github/stars/nu-system/react-native-grid.svg?style=social
 
-Grid of react native
+这是 NU 「 no-ui 」 组件库系统 nu-system，Grid 组件 React-native 实现。
 
-## Install
+## 怎么用？
 
 ```bash
 yarn add @_nu/react-native-grid
 ```
 
-### Custom
+### 二次封装
 
 ```JSX
 import React from 'react';
@@ -34,7 +34,7 @@ export default Grid;
 export {Row, Col, Wrap};
 ```
 
-### Use
+### 使用
 
 ```JSX
 import React from 'react';
@@ -78,7 +78,7 @@ export default function App() {
 
 ### Api `Grid`
 
-| props   |      type      |       default      |  function |
+| props   |      类型      |       默认值      |  功能 |
 |:----------|:-------------:|:-------------:|------:|
 | gridNum |  number | `6` | 列数 |
 | gutterInside |  number | `12` |  列之间的间距 |
@@ -87,7 +87,7 @@ export default function App() {
 
 ### Api `Col`
 
-| props   |      type      |       default      |  function |
+| props   |      类型      |       默认值      |  功能 |
 |:----------|:-------------:|:-------------:|------:|
 | span |  number | `1` | 所占的列数 |
 | offset |  number | `0` |  偏移的列数 |

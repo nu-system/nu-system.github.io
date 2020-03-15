@@ -1,4 +1,4 @@
-# nu-react-dialog
+# Dialog
 
 [![npm package][npm-badge]][npm-url]
 [![npm downloads][npm-downloads]][npm-url]
@@ -10,10 +10,9 @@
 [git-url]: https://github.com/nu-system/react-dialog
 [git-badge]: https://img.shields.io/github/stars/nu-system/react-dialog.svg?style=social
 
+一个兼顾无障碍范围，易用性，且没有 UI 依赖的 React 对话框组件.
 
-一个兼顾无障碍范围，易用性，且没有UI依赖的 React 对话框组件.
-
-`@_nu/react-dialog` 本身不会输出任何样式，所有 demo 样式均来自于[@_nu/css-dialog](https://nu-system.github.io/css/dialog/)。
+`@_nu/react-dialog` 本身不会输出任何样式，所有 demo 样式均来自于[@\_nu/css-dialog](https://nu-system.github.io/css/dialog/)。
 
 <iframe src="https://codesandbox.io/embed/winter-https-jxp4p?fontsize=14&hidenavigation=1" title="nu-dialog-react" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 
@@ -37,7 +36,7 @@ components/
 ```
 
 ```JSX
-// components/Dialog/index.js 
+// components/Dialog/index.js
 import NuDialog from "@_nu/react-dialog";
 import "@_nu/css-dialog";
 import "@_nu/css-dialog/css/position/middle.css";
@@ -71,6 +70,7 @@ export default App;
 ```
 
 ## Dom
+
 ```JSX
 <dialog open tab-index="-1" class="nu_dialog_wrap">
   <Mask title={maskTitle} className="nu_dialog_mask" />
@@ -90,21 +90,12 @@ Dialog.defaultProps={
   open = false,
   active = true,
   lockScroll = true,
-  maskTitle = "mask",
+  maskTitle = "Mask",
   removeTime = 200,
   disabledPortal = false,
   disableEsc = false,
-  Close = props => {
-    if (!props.title) {
-      return null;
-    }
-    return (
-      <button type="button" {...props}>
-        &times;
-      </button>
-    );
-  },
-  closeTitle = "close",
+  closeTitle = "Close",
+  closeChildren = <Fragment>&times;</Fragment>,
   onClose = () => {},
   onClickMask = () => {}
 };
@@ -165,7 +156,11 @@ Dialog.propTypes = {
    * title of the mask element.
    * If empty string, the mask do not render
    */
-  maskTitle: PropTypes.string
+  maskTitle: PropTypes.string,
+  /**
+   * Close children
+   */
+  closeChildren: PropTypes.node
 };
 ```
 
@@ -203,6 +198,5 @@ Dialog.propTypes = {
 
 - [react-aria-modal](https://github.com/davidtheclark/react-aria-modal)
 - [focus-trap-react](https://github.com/davidtheclark/focus-trap-react)
-- [react-transition-group/](http://reactcommunity.org/react-transition-group/)
 - [material-ui](https://material-ui.com/zh/components/modal/)
 - [nu-system](https://nu-system.github.io/)

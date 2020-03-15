@@ -10,24 +10,27 @@
 [git-url]: https://github.com/nu-system/vue-dialog
 [git-badge]: https://img.shields.io/github/stars/nu-system/vue-dialog.svg?style=social
 
-Dialog component of vue.
 
 <iframe src="https://codesandbox.io/embed/nudialogvue-phc9q?autoresize=1&fontsize=14&hidenavigation=1&view=preview" title="nu-dialog-vue" allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+
+组件库母版系统 [NU-system](https://nu-system.github.io/) 弹窗组件 VUE 实现。
+
+`nu-vue-dialog` 本身不会输出任何样式，基础样式来自于 [nu-dialog](https://nu-system.github.io/css/dialog/) , 
 
 <ClientOnly>
 <DialogDemo/>
 </ClientOnly>
 
-## Use
+## 怎么用？
 
 ```bash
 $ yarn add @_nu/vue-dialog @_nu/css-dialog
 ```
 
-* **@_nu/vue-dialog**： logic component;
-* **@_nu/css-dialog**:  style component;
+* **@_nu/vue-dialog**： 逻辑组件;
+* **@_nu/css-dialog**:  样式组件;
 
-### Custom
+### 二次封装
 
 ```vue
 <!-- @components/Dialog/index.vue -->
@@ -47,15 +50,10 @@ $ yarn add @_nu/vue-dialog @_nu/css-dialog
 -->
 ```
 
-It is not recommended to use nu-dialog directly in the project page by `import "@_nu/vue-dialog"`. 
+不建议直接在项目页面中通过 `import "@_nu/vue-dialog"` 的方式使用 nu-dialog，而是把 nu-dialog 当作一个 dialog 组件的构建工具，在自己的 `components/` 的文件夹中，通过上述方式 "二次封装"，然后 `export` 属于自己项目的 Dialog 组件。
+对于自己全局的Dialog逻辑就可以写在这个逻辑里面了。
 
-Instead, `@_nu/vue-dialog` is used as the construction tool of a dialog component. In the folder of its `components/`, 
-
-it is "repackaged" in the above way, and then 'export' belongs to the dialog component of its own project.
-
-The Dialog logic for its own global Dialog can be written in this logic.
-
-### Use
+### 使用
 
 ```vue
 <template>
@@ -96,23 +94,23 @@ The Dialog logic for its own global Dialog can be written in this logic.
 </script>
 ```
 
-the dom will portal to the `body`.
+nu-dialog-vue 会动态的把弹窗添加到 `body` 标签之后。
 
 ## Api
 
-| props   |      type      | default  | function |
+| props   |      类型      | 默认值  |功能 |
 |:----------|:-------------|:------:|------:|
-| :open.sync |  boolean | - | show |
-| :position |  strong | 'middle' | position of dialog |
-| :beforeClose |  Func | - | before on close |
-| :isPortal | boolean | 'true' | is need portal |
-| :speed | Number | 200 | time speed |
+| :open.sync |  boolean | - | 显示弹窗|
+| :position |  strong | 'middle' | 弹窗位置|
+| :beforeClose |  Func | - | 在关闭之前要做的事 |
+| :isPortal | boolean | 'true' | 是否需要传送门 |
+| :speed | Number | 200 | 动画时长 |
 
-**position [option]**: `middle`,`top`,`right`,`left`,`bottom`;
+**position 可选值**: `middle`,`top`,`right`,`left`,`bottom`;
 
-**beforeClose**: is `false` the dialog will not close;
+**beforeClose**: 如果返回值为 `false` 那么弹窗不会关闭;
 
-## Dom
+## Dom 结构
 
 ```vue
 <div v-if="render" class="nu_dialog_wrap" :class="computedClass">
@@ -132,5 +130,5 @@ the dom will portal to the `body`.
 </div>
 ```
 
-`nu-dialog-vue` all the sub component can rewrite by `slot`。
+`nu-dialog-vue` 几乎所有都子组件都可以用 `slot` 重写。
 

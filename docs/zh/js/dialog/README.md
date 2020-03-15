@@ -5,7 +5,7 @@
 [![jsdelivr][jsdelivr-badge]][jsdelivr-url]
 [![github][git-badge]][git-url]
 
-JS Dialog.
+弹窗组件。
 
 [npm-badge]: https://img.shields.io/npm/v/@_nu/js-dialog.svg
 [npm-url]: https://www.npmjs.org/package/@_nu/js-dialog
@@ -16,20 +16,24 @@ JS Dialog.
 [jsdelivr-url]: https://www.jsdelivr.com/package/npm/@_nu/js-dialog
 
 
-## What？
 
-`@_nu/js-dialog` Only two things were done:
+## 做了什么？
 
-1. A class '_open' control state is switched between popover display and hide;
-2. The scrolling state of 'body' is switched when popover shows and hides;
+`@_nu/js-dialog` 只做了以下两件事情。
 
-`@ _nu/js - dialog` itself does not output any style, the corresponding Dom structure and the corresponding class are from the [CSS-dialog](https://nu-system.github.io/css/dialog/).
+1. 弹窗显示和隐藏的时候切换了一个，控制状态的 class `_open`;
+2. 弹窗显示和隐藏的时候切换了 `body` 的滚动状态;
 
-## How？
+`@_nu/js-dialog` 本身不会输出任何样式，对应的 Dom 结构和相应的 class 均来自于 [css-dialog](https://nu-system.github.io/css/dialog/)。
+
+## 怎么用？
 
 ```
 $ npm i @_nu/js-dialog @_nu/css-dialog
 ```
+
+1. @_nu/js-dialog 为逻辑组件
+2. @_nu/css-dialog 为样式组件
 
 ```HTML
 <!doctype html>

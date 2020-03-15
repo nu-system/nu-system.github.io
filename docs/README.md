@@ -3,35 +3,38 @@ home: true
 actionText: Get Start →
 actionLink: /css/
 features:
+- title: 🔧 Custom
+  details: Nu-system is not a ready-to-use component library, we advocate secondary packaging based on business scenarios
 - title: ❤️ UI Just 
-  details: 对通用 UI 的进一步抽象，以便于其它人在自定义 Skin 的时候可以写更少样式代码，更像是一个 UI 接口规范
+  details: Defines the Design Token and the style that implements the logical state interface definition
 - title: 🌊 Logic Only 
-  details: 对通用 Logic 对进一步抽象，以便于其他人在定义 UI 的时候可以写更少逻辑代码，更像是一个 Logic 接口规范
+  details: Defines a logical state interface that does not implement the corresponding style for that state
   
-footer: MIT Licensed | Copyright © 2019-present YFE-TEAM
+footer: MIT Licensed | Copyright © 2020-present YFE-TEAM
 ---
-> nu-system 是一个帮助你定制属于自己项目 UI 风格的母版组件库
 
-你是在否在修改[element-ui](https://element.eleme.io/) 、 [ant.desigon](https://ant.design/index-cn) 等 To business 的 UI 库的样式而感觉到心累？
+### Why
 
-你是否只是想简单的有一个轻量的，简单的，且高度自定义化的 TO Client 的 UI 组件？
+Are you tired of modifying UI libraries like [Element-ui](https://element.eleme.io/), [ant.design](https://ant.design/index-cn), etc.?
 
-nu-system 是一个不容你错过的选择。它推崇 UI 和 Logic 分离，主要由 UI Just + Logic Only 组成，彼此之间由接口关联，也可以完全独立。
+Do you wanna have a lightweight, simple, and highly customizable UI component what is for client?
 
-期待你的加入！
+Nu-system is another option we offer you. It advocates the separation of UI and Logic, which are related to each other by the state interface, and can also be used completely independently.
+
+Looking forward to your joining us!
 
 ## ❤️ UI Just
 
-NU-system 本身并没有对 UI 语言做限制，只是目前 CSS 比较容易实现这套理念，所以暂时提供 CSS 的方式。
+NU-system has no restrictions on the UI language, but currently CSS is easier to implement this concept, so for the time being, CSS is provided.
 
 - [css-component](/css/) ;
 
 ## 🌊 Logic Only
 
-NU-system 本身并没有对逻辑语言做限制，所以可以使用任意 JS 语言创建 Logic Only 部分。
+NU-system has no restrictions on the logical language, so you can create the Logic Only part using any JS language
 
 - [vue-component](/vue/) ;
 - [react-component](/react/);
 - [react-native-component](/react-native/);
 - [js-component](/js/);
-- jquery-component 可能会考虑用原生 JS 的方式替代;
+- jquery-component: considering use native JS instead;

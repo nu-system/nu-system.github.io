@@ -4,35 +4,31 @@ title: Intro
 
 ## What?
 
-`vue-[component]` 主要负责 Login Only 部分 。这里面**尽量**不要出现展示性的样式，只做逻辑的部分。
+`vue-[component]` is primarily responsible for the Login Only section. Try not to be showy in this, just do the logic part.
 
-如果你是采用的 CSS 的方案，那么对应的展示性样式和对应的皮肤，请额外创建 `css-[component]` 组件。
+If you are using a CSS solution, create an additional `CSS -[component]` component for the corresponding presentation style and the corresponding skin.
 
-如果你采用的是 CSS-in-js 的方案，需要在组件内定义好你的 UI 接口，和皮肤拓展方式。
+If you're using a css-in-js solution, you need to define your UI interface and skin extensions within the component.
 
-## 构建
+## Builder
 
-此处推荐利用vue的vue-cli-service工具打包组件：
+build with vue-cli-service
 
-安装工具包
-
-```
+```bash
 npm install -g @vue/cli-service-global
 # or
 yarn global add @vue/cli-service-global
 ```
 
-package.json配置
+package.json
 
-```
+```js
 "scripts": {
     "build":"vue-cli-service build --target lib --name index  --dest lib  ./index.js"
 },
 ```
 
-打包命令
-
-```
+``` bash
 npm run-script build
 ```
 
@@ -40,15 +36,15 @@ npm run-script build
 
 ```bash
 [component]
-├── README.md               // 介绍你的组件
-├── index.js                // VUE 组件引用
-├── lib                     // build 目录
-│   └── index.common.js     // vue-cli-service 打包的文件
+├── README.md               
+├── index.js                
+├── lib                     
+│   └── index.common.js     
 ├── package.json     
-└── src                     // 原始代码文件夹
+└── src                     
     └── index.vue
 ```
 
 ## Contribution
 
-Fork [vue-button](https://github.com/nu-system/vue-button) 这个作为组件模版，使用里面配置，删除原始代码，然后创建你自己的组件即可。
+Fork [vue-button](https://github.com/nu-system/vue-button) as template.

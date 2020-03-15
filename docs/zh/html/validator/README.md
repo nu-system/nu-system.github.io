@@ -17,24 +17,25 @@ title: Validator
 [jsdelivr-badge]: https://data.jsdelivr.com/v1/package/npm/@_nu/html-validator/badge
 [jsdelivr-url]: https://www.jsdelivr.com/package/npm/@_nu/html-validator
 
-Semantic HTML linter in just pure CSS way.
+纯 CSS 实现的语义化 HTML 校验工具.
 
 <iframe src="https://nu-system.github.io/html-validator/" style="width:100%; height:500px; border:1px solid #333; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 
 
-## How to start
+## 开始
 
 ```
 npm i @_nu/html-validator
 ```
 
-Or just add the tag below in your html page
+或者直接粘贴以下代码到项目中即可：
 
 ```HTML
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@_nu/html-validator" />
 ```
 
-If you just wanna use level1 try 
+
+如果你只是想要一级的校验，可以这样：
 
 ```HTML
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@_nu/html-validator/level1.css" />
@@ -44,14 +45,15 @@ If you just wanna use level1 try
 
 ```bash
 html-validator/css
-├── level1.css    // leve1 「 red 」:  force validate rules
-└── level2.css    // leve2 「 yellow 」: level1.css + suggest validate rules
+├── level1.css    // leve1 「 red 」:  强制的校验规则
+└── level2.css    // leve2 「 yellow 」: 强制的校验规则 + 建议的规则
 ```
 
-All valid msg on css prop of `content`.
+所有的校验提示文案都放在 CSS 属性 `content` 中.
 
-## Prior art
+## 技术方案
 
-`@_nu/html-validator` was build on this awesome projects:
+
+`@_nu/html-validator` 是基于以下项目构建
 
 * [https://github.com/t7/construct.css](https://github.com/t7/construct.css)
