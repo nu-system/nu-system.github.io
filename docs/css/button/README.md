@@ -85,12 +85,15 @@ Default button size, between 'large' and 'middle'.。
 ```scss
 .nu_btn._default{
     color:#333333;
+    background-color:#333333;
 }
 .nu_btn._primary{
     color:blue;
+    background-color:blue;
 }
 .nu_btn._warning{
      color:yellow;
+     background-color:yellow;
 }
 ```
 

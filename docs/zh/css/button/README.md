@@ -82,16 +82,18 @@ $ yarn add @_nu/css-button
 ## 如何修改主题?
 
 ```scss
-.nu_btn._default {
-  color: #333333;
+.nu_btn._default{
+    color:#333333;
+    background-color:#333333;
 }
-.nu_btn._primary {
-  color: blue;
+.nu_btn._primary{
+    color:blue;
+    background-color:blue;
 }
-.nu_btn._warning {
-  color: yellow;
+.nu_btn._warning{
+     color:yellow;
+     background-color:yellow;
 }
-
 /* 其它同理 */
 ```
 

@@ -58,7 +58,7 @@ export default Page;
 
 ```JSX
 <Component>
-    <SubComponent>{children}</SubComponent>
+    <ComponentSub>{children}</ComponentSub>
 </Component>
 ```
 
@@ -72,18 +72,21 @@ export default Page;
 | href             |              string              | '&nbsp;' |       href for `a`        |
 | disabled         |             boolean              |  false   | disabled status of button |
 | Component        | string &#124; func &#124; object | 'button' |          wrapper          |
-| SubComponent     | string &#124; func &#124; object |  'span'  |         container         |
+| ComponentSub     | string &#124; func &#124; object |  'span'  |         container         |
 
-```JSX
+- 如果 `chidren` 不是字符串的化，`ComponentSub` 会用 `<Fragment />` 替代； 
+```JS
 <Button>hello</Button>
+<Button><strong>hello</strong></Button>
 <Button disabled>hello</Button>
 <Button className="_primary">hello</Button>
-<Button SubComponent="strong">hello</Button>
+<Button ComponentSub="strong">hello</Button>
 <Button href="." title="hello">hello</Button>
 ```
 
 ```HTML
 <button class="nu_btn _fill" type="button"><span>hello</span></button>
+<button class="nu_btn _fill" type="button"><strong>hello</strong></button>
 <button class="nu_btn _fill" type="button" disabled><span>hello</span></button>
 <button class="nu_btn _fill _primary" type="button"><span>hello</span></button>
 <button class="nu_btn _fill" type="button"><strong>hello</strong></button>
