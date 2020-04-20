@@ -1,9 +1,9 @@
 # Dialog
 
-[![npm package][npm-badge]][npm-url]
-[![npm downloads][npm-downloads]][npm-url]
-[![jsdelivr][jsdelivr-badge]][jsdelivr-url]
-[![github][git-badge]][git-url]
+| npm package| npm downloads| jsdelivr |  github |
+| --------------- | ------------------------------ | ------ | ----------------------- |
+| [![npm package][npm-badge]][npm-url] | [![npm downloads][npm-downloads]][npm-url] | [![jsdelivr][jsdelivr-badge]][jsdelivr-url] | [![github][git-badge]][git-url] |
+
 
 弹窗组件。
 

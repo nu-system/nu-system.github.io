@@ -10,6 +10,18 @@ title: Intro
 
 如果你采用的是 CSS-in-js 的方案，需要在组件内定义好你的 UI 接口，和皮肤拓展方式。
 
+## 开始
+
+```bash
+$ yarn global add @_nu/cli
+$ nu-cli # 选择 react
+```
+
+会在你的当前目录创建一个母版仓库，你直接写就好了。
+
+然后去 [nu-system](https://github.com/organizations/nu-system/repositories/new) github 上创建一个新的仓库。
+然后把你写的组件提交上去即可。
+
 ## 构建
 
 `react-[component]` 目前是以 [nwb](https://github.com/insin/nwb/blob/master/docs/guides/ReactComponents.md#developing-react-components-and-libraries-with-nwb) 作为打包工具。

@@ -6,6 +6,19 @@ title: Intro
 
 `css-[component]` Mainly responsible for the UI and Skin Library in nu-system。
 
+## How to start
+
+```bash
+$ yarn global add @_nu/cli
+$ nu-cli # and select css
+```
+
+It will create a master component for you.
+
+After finish your can go [nu-system](https://github.com/organizations/nu-system/repositories/new) github and create new repository. 
+
+And push your component.
+
 ## Style Guild
 
 - Prefixed with `nu_`, like `.nu_btn`；
@@ -42,9 +55,9 @@ title: Intro
 [component]
 ├── README.md          
 ├── css                
-│   ├── core.css       
+│   ├── index.css       
 │   └── skins          
-│       └── **.css
+│       └── default.css
 └── package.json       
 ```
 

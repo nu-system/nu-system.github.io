@@ -1,8 +1,9 @@
 # Dialog
 
-[![npm package][npm-badge]][npm-url]
-[![npm downloads][npm-downloads]][npm-url]
-[![github][git-badge]][git-url]
+| npm package| npm downloads |  github |
+| --------------- | ------------------------------ | ------ | ----------------------- |
+| [![npm package][npm-badge]][npm-url] | [![npm downloads][npm-downloads]][npm-url] | [![github][git-badge]][git-url] |
+
 
 [npm-badge]: https://img.shields.io/npm/v/@_nu/react-dialog.svg
 [npm-url]: https://www.npmjs.org/package/@_nu/react-dialog

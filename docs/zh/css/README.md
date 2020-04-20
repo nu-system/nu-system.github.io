@@ -2,9 +2,21 @@
 title: Intro
 ---
 
-## What?
+## 是什么
 
 `css-[component]` 主要负责 nu-system 里面的 UI 和 Skin Library 两个部分。
+
+## 开始
+
+```bash
+$ yarn global add @_nu/cli
+$ nu-cli # 选择 css
+```
+
+会在你的当前目录创建一个母版仓库，你直接写就好了。
+
+然后去 [nu-system](https://github.com/organizations/nu-system/repositories/new) github 上创建一个新的仓库。
+然后把你写的组件提交上去即可。
 
 ## Style Guild
 

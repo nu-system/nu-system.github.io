@@ -6,13 +6,21 @@ title: Intro
 
 'react-[component]' is mainly responsible for the Login Only section. Try not to be showy in this, just do the logic part.
 
-
-
 If you are using a CSS solution, create an additional 'CSS -[component]' component for the corresponding presentation style and the corresponding skin.
 
-
-
 If you're using a css-in-js solution, you need to define your UI interface and skin extensions within the component.
+
+## How to start
+
+```bash
+$ yarn global add @_nu/cli
+$ nu-cli # and select react
+```
+It will create a master component for you.
+
+After finish your can go [nu-system](https://github.com/organizations/nu-system/repositories/new) github and create new repository. 
+
+And push your component.
 
 ## Builder
 
