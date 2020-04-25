@@ -66,6 +66,10 @@ module.exports = {
                 text: "Select",
                 link: "/css/select/",
               },
+              {
+                text: "Input",
+                link: "/css/input/",
+              },
             ],
           },
           {
@@ -252,6 +256,10 @@ module.exports = {
               {
                 text: "Select",
                 link: "/zh/css/select/",
+              },
+              {
+                text: "Input",
+                link: "/zh/css/input/",
               },
             ],
           },
