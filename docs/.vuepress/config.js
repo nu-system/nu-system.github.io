@@ -173,6 +173,7 @@ module.exports = {
               "/css/dialog/",
               "/css/toast/",
               "/css/select/",
+              "/css/input/",
             ],
           },
           {
@@ -363,6 +364,8 @@ module.exports = {
               "/zh/css/button/",
               "/zh/css/dialog/",
               "/zh/css/toast/",
+              "/zh/css/select/",
+              "/zh/css/input/",
             ],
           },
           {

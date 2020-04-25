@@ -1,4 +1,4 @@
-# @\_nu/css-input
+# Input
 
 | npm package| npm downloads| jsdelivr |  github |
 | --------------- | ------------------------------ | ------ | ----------------------- |
