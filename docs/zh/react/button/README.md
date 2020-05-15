@@ -15,6 +15,7 @@
 
 <iframe src="https://codesandbox.io/embed/throbbing-leftpad-juijc?autoresize=1&fontsize=14&hidenavigation=1&module=%2Fsrc%2Fcomponents%2FButton.js" title="throbbing-leftpad-juijc" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 
+
 ## 安装
 
 ```
@@ -33,34 +34,35 @@ import "@_nu/css-button";     // core style
 import "@_nu/css-button/css/skins/bootstrap.css"; // skin of bootstrap
 import './style.css'; // custome style
 
-Button.defaultProps.classNameBase = "_fill";  // base className of button
-
 export default Button;
 ```
 
 ### 使用
 
 ```JSX
-import Button from "./components/Button";
+import React, { useState } from 'react';
+import Button, { ButtonClassProvider } from '../Button';
 
 const Page=()=>{
+    const [buttonThemeClass, setButtonThemeClass] = useState('theme_class1');
+    const onThemeChange = e => {
+        setButtonThemeClass(e.currentTarget.value);
+    };
     return (
-     <div>
-        <Button>Button</Button>
-        <Button href="/nu-button">Button</Button>
-     </div>
+        <ButtonClassProvider value={buttonThemeClass}>
+            <div>
+                <select onChange={onThemeChange}>
+                    <option value="theme_class1">theme1</option>
+                    <option value="theme_class2">theme2</option>
+                </select>
+                <Button className="nu_btn">Button</Button>
+                <Button className="nu_btn" href="/nu-button">Button</Button>
+            </div>
+        </ButtonClassProvider>
     );
 };
 
 export default Page;
-```
-
-## 结构
-
-```JSX
-<Component>
-    <ComponentSub>{children}</ComponentSub>
-</Component>
 ```
 
 ## Api
@@ -69,29 +71,27 @@ export default Page;
 | :--------------- | :------------------------------: | :------: | :-----------------------: |
 | children         |       string &#124; Array        | '&nbsp;' |         children          |
 | className        |       string &#124; Array        | '&nbsp;' |         className         |
-| classNameDefault |       string &#124; Array        | '\_fill' |     default className     |
 | href             |              string              | '&nbsp;' |       href for `a`        |
 | disabled         |             boolean              |  false   | disabled status of button |
 | Component        | string &#124; func &#124; object | 'button' |          wrapper          |
-| ComponentSub     | string &#124; func &#124; object |  'span'  |         container         |
 
-- 如果 `chidren` 不是字符串的化，`ComponentSub` 会用 `<Fragment />` 替代； 
-```JS
-<Button>hello</Button>
-<Button><strong>hello</strong></Button>
-<Button disabled>hello</Button>
-<Button className="_primary">hello</Button>
-<Button ComponentSub="strong">hello</Button>
-<Button href="." title="hello">hello</Button>
+```JSX
+<Button className="nu_btn _fill">hello</Button>
+<Button className="nu_btn _fill"><strong>hello</strong></Button>
+<Button className="nu_btn _fill" disabled>hello</Button>
+<Button className="nu_btn _fill _primary">hello</Button>
+<Button className="nu_btn _fill _primary" href="." title="hello">hello</Button>
 ```
 
+=>
+
 ```HTML
-<button class="nu_btn _fill" type="button"><span>hello</span></button>
+<button class="nu_btn _fill" type="button" title="hello">hello</button>
 <button class="nu_btn _fill" type="button"><strong>hello</strong></button>
-<button class="nu_btn _fill" type="button" disabled><span>hello</span></button>
-<button class="nu_btn _fill _primary" type="button"><span>hello</span></button>
-<button class="nu_btn _fill" type="button"><strong>hello</strong></button>
-<a class="nu_btn _fill" href="." title="hello"><span>hello</span></a>
+<button class="nu_btn _fill" type="button" disabled title="hello">hello</button>
+<button class="nu_btn _primary _fill" type="button" title="hello">hello</button>
+<button class="nu_btn _fill _primary" type="button" title="hello">hello</button>
+<a class="nu_btn _fill _primary" href="." title="hello">hello</a>
 ```
 
 ## ClassName 处理
@@ -101,38 +101,19 @@ export default Page;
 <Button className={['_primary','_fill','_ghost','_primary','','',null]}>hello</Button>
 ```
 
-```HTML
-<button class="nu_btn _primary _ghost" type="button"><span>hello</span></button>
-```
-
-- 重复的 Class 会被移除
-- `_fill`,`_ghost`,`_link` 同时出现，只会取最后一个;
-- 会去掉空字符串；
-
-## 如何配合路由组件使用？
-
-```jsx
-import { Link } from "@reach/router";
-import Button from "@_nu/react-button";
-import "@_nu/css-button";
-import "./style.css";
-
-// 自定义标签
-Button.defaultProps.component = Link;
-
-export default Button;
-```
-
-## 如何设定默认样式?
-
-```JSX
-Button.defaultProps.classNameDefault = "_fill _capsule";
-
-// or
-
-Button.defaultProps.classNameDefault = ["_fill", "_capsule"];
-```
-
 ## 如何修改样式？
 
 查看样式组件 [@\_nu/css-button](https://nu-system.github.io/zh/css/button/)
+
+
+## 测试
+
+```
+// How to start
+npm test
+```
+
+```
+// generate coverage report
+npm run test:coverage
+```

@@ -31,25 +31,8 @@ $ yarn add @_nu/css-button
 
 ## Skins
 
-### Bootstrap
-
-<iframe height="480" style="width: 100%;" scrolling="no" title="wbXgba" src="//codepen.io/ziven27/embed/wbXgba/?height=265&theme-id=dark&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href='https://codepen.io/ziven27/pen/wbXgba/'>wbXgba</a> by ziven27
-  (<a href='https://codepen.io/ziven27'>@ziven27</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
-
-### Material
-
-<iframe height="480" style="width: 100%;" scrolling="no" title="nu-button-material" src="//codepen.io/ziven27/embed/rgKyap/?height=265&theme-id=dark&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href='https://codepen.io/ziven27/pen/rgKyap/'>nu-button-material</a> by ziven27
-  (<a href='https://codepen.io/ziven27'>@ziven27</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
-
-
-### Webnovel
-
-<iframe height="480" style="width: 100%;" scrolling="no" title="nu-button-webnovel" src="//codepen.io/ziven27/embed/byKqEe/?height=265&theme-id=dark&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href='https://codepen.io/ziven27/pen/byKqEe/'>nu-button-webnovel</a> by ziven27
+<iframe height="600" style="width: 100%;" scrolling="no" title="nu-button-bootstrap" src="https://codepen.io/ziven27/embed/wbXgba?height=265&theme-id=light&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/ziven27/pen/wbXgba'>nu-button-bootstrap</a> by ziven27
   (<a href='https://codepen.io/ziven27'>@ziven27</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
