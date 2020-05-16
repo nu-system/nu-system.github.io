@@ -1,9 +1,9 @@
 # Button
 
-| npm package| npm downloads| jsdelivr |  github |
-| --------------- | ------------------------------ | ------ | ----------------------- |
-| [![npm package][npm-badge]][npm-url] | [![npm downloads][npm-downloads]][npm-url] | [![jsdelivr][jsdelivr-badge]][jsdelivr-url] | [![github][git-badge]][git-url] |
-
+[![npm package][npm-badge]][npm-url]
+[![npm downloads][npm-downloads]][npm-url]
+[![jsdelivr][jsdelivr-badge]][jsdelivr-url]
+[![github][git-badge]][git-url]
 
 [npm-badge]: https://img.shields.io/npm/v/@_nu/css-button.svg
 [npm-url]: https://www.npmjs.org/package/@_nu/css-button
@@ -13,7 +13,9 @@
 [jsdelivr-badge]: https://data.jsdelivr.com/v1/package/npm/@_nu/css-button/badge
 [jsdelivr-url]: https://www.jsdelivr.com/package/npm/@_nu/css-button
 
-## How?
+[English](https://nu-system.github.io/css/button/) | 简体中文
+
+## 怎么用?
 
 ```
 $ yarn add @_nu/css-button
@@ -21,15 +23,15 @@ $ yarn add @_nu/css-button
 
 ```
 @_nu/css-button/css
-├── core.css             // core code
+├── core.css             // 核心代码
 └── skins
-    ├── bootstrap.css    // skin of bootstrap
-    ├── loading.css      // skin of loading 
-    ├── material.css     // skin of  material-ui 
-    └── webnovel.css     // skin of  webnovel 
+    ├── bootstrap.css    // bootstrap 按钮皮肤
+    ├── loading.css      // 按钮loading 效果
+    ├── material.css     // material-ui  按钮皮肤
+    └── webnovel.css     // webnovel  按钮皮肤
 ```
 
-## Skins
+## Skin library
 
 <iframe height="600" style="width: 100%;" scrolling="no" title="nu-button-bootstrap" src="https://codepen.io/ziven27/embed/wbXgba?height=265&theme-id=light&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/ziven27/pen/wbXgba'>nu-button-bootstrap</a> by ziven27
@@ -40,59 +42,50 @@ $ yarn add @_nu/css-button
 
 | 选择器 |  功能 |
 |:-------------|------:|
-| Selector |  Function |
-|:-------------|------:|
-| .nu_btn | base selector |
-| .nu_btn._[color] | color style |
-| .nu_btn._[size] | size of button |
-| .nu_btn._[variant] | variant of button |
-| .nu_btn:disabled, .nu_btn[disabled] | status of disabled |
-| .nu_btn._loading | loading |
-| .nu_btn._capsule | button like capsule 💊 |
-| .nu_btn._block | block button |
-| .nu_btn._circle | button circle |
+| .nu_btn | 默认的按钮选择器 |
+| .nu_btn._[color] | 按钮颜色 |
+| .nu_btn._[size] | 按钮尺寸 |
+| .nu_btn._[variant] | 按钮形状 |
+| .nu_btn:disabled, .nu_btn[disabled] | 按钮不可用 |
+| .nu_btn._loading | loading按钮 |
+| .nu_btn._capsule | 圆角按钮 💊 |
+| .nu_btn._block | 占一行的按钮 |
+| .nu_btn._circle | 正圆按钮，这个并没有实现只是约定了名称 |
 
-- **function | color**: `_default`、`_primary`、`_secondary`、`_warning`、`_success`、`_danger`
-- **variant | shape**: `_fill`、`_ghost`、`_link`
-- **size**: `_large`、`_middle`、`_small`
-- **other**: `_disabled`、`_loading`、`_block`、`_capsule`、`_circle`
+- **功能 | 颜色**: `_default`、`_primary`、`_secondary`、`_warning`、`_success`、`_danger`
+- **变体 | 形状**: `_fill`、`_ghost`
+- **尺寸**: `_large`、`_middle`、`_small`
+- **其它**: `_disabled`、`_loading`、`_block`、`_capsule`、`_circle`
 
-Except color, variant, and size, all selectors can be combined with each other.
+除了 颜色、形状、和尺寸是互斥的三个状态，其它选择器都是可以相互组合。
 
-The default state of the convention variant is `_fill`。
+默认按钮大小，在`large`和 `middle`之间。
 
-Default button size, between 'large' and 'middle'.。
-
-## Custom color?
+## 如何修改主题?
 
 ```scss
-.nu_btn._default{
-    color:#333333;
-    background-color:#333333;
-}
-.nu_btn._primary{
+
+/** primary button */
+.nu_btn._primary:not(._fill){
     color:blue;
+}
+.nu_btn._primary._fill{
     background-color:blue;
 }
-.nu_btn._warning{
-     color:yellow;
-     background-color:yellow;
+
+/** warning button */
+.nu_btn._warning:not(._fill){
+    color:yellow;
 }
-```
-
-Although `nu-button` specifies 6 colors, the actual project usually doesn't need so many colors, just write based on the actual project.
-
-For border and background colors, the interior of the component is automatically implemented.
-
-```css
-.nu_btn._ghost._primary{
-    border-color: red;
+.nu_btn._warning._fill{
+    background-color:yellow;
 }
-```
 
-If the automated code doesn't meet your needs, you can customize it this way. Here we change the border of the ghost main button to red.
+虽然 `nu-button` 约定了6种颜色，往往实际项目并不需要这么多的颜色，基于实际项目编写即可。
 
-## Custom size？
+如果自动实现的代码不能满足你的需求，你可以这样定制。这里我们将 ghost 主按钮的边框改成了红色。
+
+## 如何修改大小？
 
 ```css
 .nu_btn._large {
@@ -101,13 +94,13 @@ If the automated code doesn't meet your needs, you can customize it this way. He
   line-height: 1.5;
   border-radius: .3rem;
 }
+/* 其它同理 */
 ```
 
-## Custom status？
+## 如何修改状态？
 
 ```css
-.nu_btn._disabled {
-  opacity: 0.5;
+.nu_btn:disabled,  .nu_btn[disabled]{
   cursor: not-allowed;
   pointer-events: none;
 }
@@ -115,6 +108,6 @@ If the automated code doesn't meet your needs, you can customize it this way. He
 
 ## Logic Only
 
-- [@_nu/react-button](https://nu-system.github.io/react/button/)
-- [@_nu/vue-button](https://nu-system.github.io/vue/button/)
-- [@_nu/react-native-button](https://nu-system.github.io/react-native/button/)
+- [@_nu/react-button](https://nu-system.github.io/zh/react/button/)
+- [@_nu/vue-button](https://nu-system.github.io/zh/vue/button/)
+- [@_nu/react-native-button](https://nu-system.github.io/zh/react-native/button/)

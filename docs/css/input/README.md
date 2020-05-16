@@ -12,13 +12,14 @@
 [jsdelivr-badge]: https://data.jsdelivr.com/v1/package/npm/@_nu/css-input/badge
 [jsdelivr-url]: https://www.jsdelivr.com/package/npm/@_nu/css-input
 
-## Install
+
+## 安装
 
 ```
 $ yarn add @_nu/css-input
 ```
 
-## Tree
+## 目录结构
 
 ```bash
 @_nu/css-input/
@@ -35,7 +36,7 @@ lib
         └── small.css        // small input
 ```
 
-## Core API
+## 核心接口
 
 | Selector        |           Function |
 | :-------------- | -----------------: |
@@ -52,9 +53,9 @@ lib
 </label>
 ```
 
-For the sake of flexibility these two ways are equivalent.
+为了灵活性这两个写法是等价的。
 
-## Skins API
+## 皮肤接口
 
 | Selector       | Function         |           skin |
 | :------------- | ---------------- | -------------: |
@@ -66,7 +67,7 @@ For the sake of flexibility these two ways are equivalent.
 | .\_block       | block input      |    `block.css` |
 | .\_line        | line of disabled |     `line.css` |
 
-All the skin api is base on the core api.
+所有的皮肤选择器都是在有核心接口选择器的前提之下的。
 
 ## More
 

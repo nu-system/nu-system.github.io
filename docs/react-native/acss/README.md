@@ -71,7 +71,7 @@ It looks wired in first sight what we use abbreviation instead of the full name.
 
 1. Only Initials: `aic` means `alignItems: center`;
 2. Direct digital connection: `fw700` means `fontWidth:700`;
-4. `p` means `percent`: `w100p` means `width:'100%'`;
+3. `p` means `percent`: `w100p` means `width:'100%'`;
 
 ```JSX
 <View mb={16} bc="#4c5fe2" aic>
@@ -231,9 +231,9 @@ const styleMap = {
 };
 ```
 
-Pure, simple, natural. 
+Pure, simple, natural.
 
-As you can see that is all the code we create blew. 
+As you can see that is all the code we create blew.
 
 We just did a little but can help you a lot when create style in react native.
 

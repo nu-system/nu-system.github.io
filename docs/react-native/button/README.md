@@ -11,30 +11,30 @@
 [git-url]: https://github.com/nu-system/react-native-button
 [git-badge]: https://img.shields.io/github/stars/nu-system/react-native-button.svg?style=social
 
-Button of react native.
+这是 NU 「 no-ui 」 组件库系统 nu-system，按钮组件 React native 实现。
 
 ![示意图](demo.png)
 
-## Install
+## 怎么用？
 
 ```bash
 npm i @_nu/react-native-button
 ```
 
-## Custom
+## 二次封装
 
-Choosing `@_nu/react-native-button` means you are choosing a whole set of button solutions.
+选择 `NuButton` 意味着你选择的是一整套按钮解决方案。
 
-Because different projects have different skins, secondary encapsulation is required in real projects.
+因为不同的项目有不同的皮肤，在实际项目中使用需要二次封装。
 
-The default is `bootstrap` skin.
+这里默认采用的是 bootstrap 皮肤。
 
 ```JSX
 import React from 'react';
 import NuButton, {createNuButtonTheme} from '@_nu/react-native-button';
 
 /**
- * creacte default button theme
+ * 创建默认按钮主题
  */
 createNuButtonTheme({
   levelColors: {
@@ -48,7 +48,7 @@ createNuButtonTheme({
 });
 
 /**
- * creacte test button theme
+ * 创建 test 按钮主题
  */
 createNuButtonTheme({
     name:'test',
@@ -65,17 +65,17 @@ createNuButtonTheme({
 export default NuButton;
 ```
 
-## Use
+## 使用
 
 ```JSX
 import Button from "./components/Button";
 
-const Page=()=>{    
+const Page=()=>{
     return (
      <div>
-        <Button variant="ghost" size="large">一个大的幽灵按钮</Button>                
+        <Button variant="ghost" size="large">一个大的幽灵按钮</Button>
         <Button theme="test" variant="ghost" size="large">一个大的幽灵主按钮</Button>
-     </div>     
+     </div>
     );
 };
 
@@ -86,36 +86,36 @@ export default Page;
 
 ### NuButton
 
-| props   | type | default | function |
-|:-----|:-----:|:-----:|:-----:|
-| theme |  'string' | 'default' | 按钮主题 |
-| disabled |  boolean | - | 不可用按钮 |
-| loading |  boolean | - | loading按钮 |
-| capsule |  boolean | - | 圆角按钮|
-| circle |  boolean | - | 正圆按钮 |
-| level | 'default', 'primary', 'secondary', 'warning', 'danger', 'success' | `default` | 按钮等级 |
-| variant | 'fill', 'ghost', 'link' | `fill` | 按钮变体 |
-| size | \['large', 'default', 'middle', 'small' \] or `number` | `default` | 按钮大小 |
-| before | 'element','function' | `null` | 放到文字之前 |
-| after | 'element','function' | `null` | 放到文字之后 |
+| props    |                               类型                                |  默认值   |     功能     |
+| :------- | :---------------------------------------------------------------: | :-------: | :----------: |
+| theme    |                             'string'                              | 'default' |   按钮主题   |
+| disabled |                              boolean                              |     -     |  不可用按钮  |
+| loading  |                              boolean                              |     -     | loading 按钮 |
+| capsule  |                              boolean                              |     -     |   圆角按钮   |
+| circle   |                              boolean                              |     -     |   正圆按钮   |
+| level    | 'default', 'primary', 'secondary', 'warning', 'danger', 'success' | `default` |   按钮等级   |
+| variant  |                      'fill', 'ghost', 'link'                      |  `fill`   |   按钮变体   |
+| size     |      \['large', 'default', 'middle', 'small' \] or `number`       | `default` |   按钮大小   |
+| before   |                       'element','function'                        |  `null`   | 放到文字之前 |
+| after    |                       'element','function'                        |  `null`   | 放到文字之后 |
 
-*note*: although 'size' can be 'number' interface is provided, this is not recommended. Your use of this method means that the button style you define cannot be reused.
+_注_: 虽然提供了 `size` 可以为 `number` 的接口，但是这个是非常不推荐使用的。你使用这种方式，意味着你定义的这个按钮样式是没法被人复用的。
 
-### createNuButtonTheme 
+### createNuButtonTheme
 
-| prop   | type | default | function |
-|:-----|:-----:|:-----:|:-----:|
-| `name` |  `string` | `default` | 主题名称 |
-| `defaultProps` |  `Object`| 见下面 | 默认属性 |
-| `levelColors` |  `object` | 见下面 | 按钮主色列表 |
-| `Wrap` |  `func node` | 见下面 | 按钮容器对象 |
-| `WrapAndroid` |  `func node` | 见下面 | 安卓按钮容器对象 |
-| `Content` |  `func node` | 见下面 | 内容器 |
-| `Txt` |  `func node` | 见下面 | 文本容器 |
-| `Loader` |  `func node` | 见下面 | 加载对象 |
-| `wrapStyle` |  `object` | 见下面 | 主容器样式 |
-| `contentStyle` |  `object` | 见下面 | 内容器样式 |
-| `textStyle` |  `object` | 见下面 | 文本容器样式 |
+| 参数           |    类型     |  默认值   |       功能       |
+| :------------- | :---------: | :-------: | :--------------: |
+| `name`         |  `string`   | `default` |     主题名称     |
+| `defaultProps` |  `Object`   |  见下面   |     默认属性     |
+| `levelColors`  |  `object`   |  见下面   |   按钮主色列表   |
+| `Wrap`         | `func node` |  见下面   |   按钮容器对象   |
+| `WrapAndroid`  | `func node` |  见下面   | 安卓按钮容器对象 |
+| `Content`      | `func node` |  见下面   |      内容器      |
+| `Txt`          | `func node` |  见下面   |     文本容器     |
+| `Loader`       | `func node` |  见下面   |     加载对象     |
+| `wrapStyle`    |  `object`   |  见下面   |    主容器样式    |
+| `contentStyle` |  `object`   |  见下面   |    内容器样式    |
+| `textStyle`    |  `object`   |  见下面   |   文本容器样式   |
 
 ### `defaultProps`
 
@@ -126,11 +126,11 @@ defaultProps: {
 }
 ```
 
-default props on button
+这是默认会添加到按钮上的属性值。
 
 ### `Wrap, Content, Txt, Loader`
 
-All of them got the same API and use, you have to return a object of `node`.
+这四个对象拥有相同的 API 和使用方法，必须返回一个 `node` 对象。
 
 ```JSX
 {
@@ -156,13 +156,13 @@ All of them got the same API and use, you have to return a object of `node`.
 }
 ```
 
-- level: level of button
-- variant: style of button
-- wrapStyle: wrap style 
-- contentStyle: content style
-- textStyle:  text style
+- level: 当下按钮的等级
+- variant: 当下按钮的变体
+- wrapStyle: 计算之后的主容器样式
+- contentStyle: 计算之后的内容器样式
+- textStyle: 计算之后的文本样式
 
-#### Stract
+#### 组件结构
 
 ```JSX
 <Wrap>
@@ -172,7 +172,7 @@ All of them got the same API and use, you have to return a object of `node`.
 </Wrap>
 ```
 
-when loading
+当 loading 的时候
 
 ```JSX
 <Wrap>
@@ -184,7 +184,7 @@ when loading
 
 ### Api `wrapStyle` ,`contentStyle`, `textStyle`
 
-All of them got the same API and use.
+这三个对象拥有相同的 API 和使用方法。
 
 ```JSX
 {
@@ -252,18 +252,17 @@ All of them got the same API and use.
 }
 ```
 
-All bool properties except 'default' are actually rendered by merging with the 'default' style and then rendering through 'customStyle'.
+除了 `default` 之外的所有 bool 属性，都会在实际渲染的时候和 `default` 样式合并然后经过 `customStyle` 再渲染。
 
 #### customStyle
 
-You must return the style object.
+必须要返回 style 对象。
 
-- level: level of button
-- variant: style of button
-- style: style
+- level: 当下按钮的等级
+- variant: 当下按钮的变体
+- style: 当下计算好的样式
 
-
-Define any bool props
+你甚至可以自定义任何 bool 属性。
 
 ```JSX
 {
@@ -294,14 +293,14 @@ const levelColors= {
 
 ## FAQ
 
-### Add Icon
+### 添加图标
 
 ```JSX
 <Button before={<ActivityIndicator animating={true} color={'red'}/>}>图标在我左边</Button>
 <Button after={<ActivityIndicator animating={true} color={'red'}/>}>图标在我右边</Button>
 ```
 
-### Multiline text
+### 多行文本
 
 ```JSX
 <Button>{({textStyle}) => {
@@ -314,11 +313,10 @@ const levelColors= {
 }}</Button>
 ```
 
-
-### Gradient background
+### 渐变背景
 
 ```JSX
-{    
+{
     name:'test',
     Content: function ({children, style, level, variant}) {
         /* 修改 fill danger 按钮为渐变背景  */

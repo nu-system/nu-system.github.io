@@ -11,15 +11,15 @@
 [git-url]: https://github.com/nu-system/react-native-grid
 [git-badge]: https://img.shields.io/github/stars/nu-system/react-native-grid.svg?style=social
 
-Grid of react native
+这是 NU 「 no-ui 」 组件库系统 nu-system，Grid 组件 React-native 实现。
 
-## Install
+## 怎么用？
 
 ```bash
 yarn add @_nu/react-native-grid
 ```
 
-### Custom
+### 二次封装
 
 ```JSX
 import React from 'react';
@@ -35,7 +35,7 @@ export default Grid;
 export {Row, Col, Wrap};
 ```
 
-### Use
+### 使用
 
 ```JSX
 import React from 'react';
@@ -76,20 +76,18 @@ export default function App() {
 
 ![demo](demo.png)
 
-
 ### Api `Grid`
 
-| props   |      type      |       default      |  function |
-|:----------|:-------------:|:-------------:|------:|
-| gridNum |  number | `6` | 列数 |
-| gutterInside |  number | `12` |  列之间的间距 |
-| gutterOutSide | number  |  `16` | 列距离屏幕边缘的间距 |
-
+| props         |  类型  | 默认值 |                 功能 |
+| :------------ | :----: | :----: | -------------------: |
+| gridNum       | number |  `6`   |                 列数 |
+| gutterInside  | number |  `12`  |         列之间的间距 |
+| gutterOutSide | number |  `16`  | 列距离屏幕边缘的间距 |
 
 ### Api `Col`
 
-| props   |      type      |       default      |  function |
-|:----------|:-------------:|:-------------:|------:|
-| span |  number | `1` | 所占的列数 |
-| offset |  number | `0` |  偏移的列数 |
-| widthToInt | bool  |  `false` | 是否单位采用整数，默认是采用百分比 |
+| props      |  类型  | 默认值  |                               功能 |
+| :--------- | :----: | :-----: | ---------------------------------: |
+| span       | number |   `1`   |                         所占的列数 |
+| offset     | number |   `0`   |                         偏移的列数 |
+| widthToInt |  bool  | `false` | 是否单位采用整数，默认是采用百分比 |

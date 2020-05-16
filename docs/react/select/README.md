@@ -20,16 +20,16 @@
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
    ></iframe>
 
-## Install
+## 安装
 
 ```
 yarn add @_nu/react-select @_nu/css-select
 ```
 
-- [@\_nu/react-select](https://nu-system.github.io/react/select/): Login only
-- [@\_nu/css-select](https://nu-system.github.io/css/select/): UI Just
+- [@\_nu/react-select](https://nu-system.github.io/react/select/): 逻辑组件
+- [@\_nu/css-select](https://nu-system.github.io/css/select/): 样式组件
 
-### Custom
+### 二次封装
 
 ```JSX
 /* @components/select/index.js */
@@ -47,7 +47,7 @@ Select.defaultProps.classNameBase = "";
 export default Select;
 ```
 
-### Use
+### 项目使用
 
 ```JSX
 import Select from "./components/Select";
@@ -89,11 +89,11 @@ const Page=()=>{
 export default Page;
 ```
 
-Or go `node_modules/@_nu/react-select/demo` for more detail.
+或者去 `node_modules/@_nu/react-select/demo` 查看更多细节.
 
-## API
+## 接口
 
-| Prop             |               type               | Default  |         Function          |
+| 属性             |               type               |  默认值  |           功能            |
 | :--------------- | :------------------------------: | :------: | :-----------------------: |
 | children         |       string &#124; Array        | '&nbsp;' |         children          |
 | className        |       string &#124; Array        | '&nbsp;' |         className         |
@@ -101,6 +101,6 @@ Or go `node_modules/@_nu/react-select/demo` for more detail.
 | disabled         |             boolean              |  false   | disabled status of button |
 | ComponentWrap    | string &#124; func &#124; object | 'label'  |          wrapper          |
 
-## More
+## 更多阅读
 
 - [nu-system](https://nu-system.github.io/)

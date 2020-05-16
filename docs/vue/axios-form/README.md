@@ -15,29 +15,32 @@ $ yarn add @_nu/vue-axios-form
 
 ```vue
 <template>
-    <div>
-        <NuAjaxForm
-            action="//www.mocky.io/v2/5cee2090300000013a6e98c9?mocky-delay=1000ms"
-            @onSuccess="handelSuccess"
-        >
-            <p>click the button below will send a request and get a respones after 1000ms</p>
-            <button type="submit">click and send a request</button>
-            <span slot="success">request success</span>
-            <span slot="loading">loading...</span>
-            <span slot="error">error</span>
-        </NuAjaxForm>
-    </div>
+  <div>
+    <NuAjaxForm
+      action="//www.mocky.io/v2/5cee2090300000013a6e98c9?mocky-delay=1000ms"
+      @onSuccess="handelSuccess"
+    >
+      <p>
+        click the button below will send a request and get a respones after
+        1000ms
+      </p>
+      <button type="submit">click and send a request</button>
+      <span slot="success">request success</span>
+      <span slot="loading">loading...</span>
+      <span slot="error">error</span>
+    </NuAjaxForm>
+  </div>
 </template>
 <script>
-    import NuAjaxForm from "@_nu/vue-axios-form"    
-    export default {
-        components: { NuAjaxForm },
-        methods: {
-            handelSuccess(response) {
-                console.log('handelSuccess', response);
-            }
-        }
+import NuAjaxForm from "@_nu/vue-axios-form";
+export default {
+  components: { NuAjaxForm },
+  methods: {
+    handelSuccess(response) {
+      console.log("handelSuccess", response);
     }
+  }
+};
 </script>
 ```
 
@@ -49,16 +52,16 @@ $ yarn add @_nu/vue-axios-form
 
 ## Api
 
-| props   |      类型      | 默认值  | 介绍 |
-|:----------|:-------------|:------:|------:|
-| [:defaultSubmit](#defaultSubmit) |  Boolean | false | 是否初始化的时候就发送 request 请求 |
-| [:status](#status) |  string | null | request status |
-| [:action](#action) |  String | - | server URL that will be used for the request |
-| :method | String | 'get' | request method  |
-| :params | Object | null | URL parameters to be sent with the request |
-| :config | Object | null | [axios](https://github.com/axios/axios) config |
-| @onSuccess | Function | return response | callback when request get response |
-| @onError | Function | return error | callback when request error |
+| props                            | 类型     |     默认值      |                                           介绍 |
+| :------------------------------- | :------- | :-------------: | ---------------------------------------------: |
+| [:defaultSubmit](#defaultSubmit) | Boolean  |      false      |            是否初始化的时候就发送 request 请求 |
+| [:status](#status)               | string   |      null       |                                 request status |
+| [:action](#action)               | String   |        -        |   server URL that will be used for the request |
+| :method                          | String   |      'get'      |                                 request method |
+| :params                          | Object   |      null       |     URL parameters to be sent with the request |
+| :config                          | Object   |      null       | [axios](https://github.com/axios/axios) config |
+| @onSuccess                       | Function | return response |             callback when request get response |
+| @onError                         | Function |  return error   |                    callback when request error |
 
 ### defaultSubmit
 
@@ -70,12 +73,12 @@ $ yarn add @_nu/vue-axios-form
 
 ### status
 
-```jsx 
+```jsx
 <NuAjaxForm status="placeholder">
-    <span slot="placeholder">placeholder</span>
-    <span slot="success">request success</span>
-    <span slot="loading">loading...</span>
-    <span slot="error">error</span>
+  <span slot="placeholder">placeholder</span>
+  <span slot="success">request success</span>
+  <span slot="loading">loading...</span>
+  <span slot="error">error</span>
 </NuAjaxForm>
 ```
 
@@ -90,9 +93,9 @@ status 名称是什么，NuAjaxForm 内部相同名称的 slot 会显示。
 所以在这个事例中只有 `slot="placeholder"` 的 dom 会输出。
 
 ```jsx
-<NuAjaxForm ref="axioForm" />
+<NuAjaxForm ref="axioForm" />;
 
-this.$refs.axioForm.changeStatus('placeholder');
+this.$refs.axioForm.changeStatus("placeholder");
 ```
 
 也可以在外面通过触发子组件的 changeStatus 方法来手动更新 status 的值。
@@ -106,18 +109,17 @@ this.$refs.axioForm.changeStatus('placeholder');
 这里的所有事件都基于表单的 submit 事件，只要表单的 submit 事件被触发，整个 request 流程就会重新触发。
 
 ```jsx
-<NuAjaxForm ref="axioForm" />
+<NuAjaxForm ref="axioForm" />;
 
 this.$refs.axioForm.submit();
 ```
 
 所以你可以通过 ref 触发子组件的 submit 事件来触发 requset 请求。
 
-
 ```jsx
 <NuAjaxForm ref="axioForm">
-    <button type="submit">click and send a request</button>
+  <button type="submit">click and send a request</button>
 </NuAjaxForm>
 ```
 
-也可以通过在 NuAjaxForm 里面放一个  `[type="submit"]` 的按钮，然后点击这个按钮触发 requset 请求。
+也可以通过在 NuAjaxForm 里面放一个 `[type="submit"]` 的按钮，然后点击这个按钮触发 requset 请求。

@@ -11,8 +11,7 @@
 [git-url]: https://github.com/nu-system/react-img
 [git-badge]: https://img.shields.io/github/stars/nu-system/react-img.svg?style=social
 
-Enhance vanilla image of the responsive and ability on error.
-
+增强 `img` 标签的自适应和错误占位能力。
 
 <iframe
      src="https://codesandbox.io/embed/nu-react-img-ibg01?fontsize=14&hidenavigation=1&theme=dark"
@@ -26,7 +25,7 @@ Enhance vanilla image of the responsive and ability on error.
   <img alt="Edit nu-react-img" src="https://codesandbox.io/static/img/play-codesandbox.svg">
 </a>
 
-## how to use
+## 使用
 
 ```JSX
 import React from 'react'
@@ -59,22 +58,22 @@ export default Demo;
 
 ## Vanilla Img Api
 
-| props   | type | default | function |
-|:-----|:-----:|:-----:|:-----:|
-| src | string | required | img src |
-| alt | string | required | img alt |
-| width | string, number | required | img width |
+| props  |      类型      |  默认值  |    功能    |
+| :----- | :------------: | :------: | :--------: |
+| src    |     string     | required |  img src   |
+| alt    |     string     | required |  img alt   |
+| width  | string, number | required | img width  |
 | height | string, number | required | img height |
 
 Just the `img` api but the `width` and `height` is required.
 
 ## Enhance Api
 
-| props   | type | default | function |
-|:-----|:-----:|:-----:|:-----:|
-| errorBg | base64Url, color | 8*8 base64 transparent png | img load error |
-| circle | bool | false | img `border-radius:100%` |
-| responsive | bool,'x','y' | false | img is responsive |
+| props      |       类型       |           默认值            |           功能           |
+| :--------- | :--------------: | :-------------------------: | :----------------------: |
+| errorBg    | base64Url, color | 8\*8 base64 transparent png |     图片加载失败显示     |
+| circle     |       bool       |            false            | img `border-radius:100%` |
+| responsive |   bool,'x','y'   |            false            |      图片是否自适应      |
 
 ### `responsive`
 

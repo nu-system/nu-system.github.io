@@ -4,6 +4,7 @@
 | --------------- | ------------------------------ | ------ | ----------------------- |
 | [![npm package][npm-badge]][npm-url] | [![npm downloads][npm-downloads]][npm-url] | [![jsdelivr][jsdelivr-badge]][jsdelivr-url] | [![github][git-badge]][git-url] |
 
+
 [npm-badge]: https://img.shields.io/npm/v/@_nu/css-toast.svg
 [npm-url]: https://www.npmjs.org/package/@_nu/css-toast
 [npm-downloads]: https://img.shields.io/npm/dw/@_nu/css-toast
@@ -12,14 +13,14 @@
 [jsdelivr-badge]: https://data.jsdelivr.com/v1/package/npm/@_nu/css-toast/badge
 [jsdelivr-url]: https://www.jsdelivr.com/package/npm/@_nu/css-toast
 
-CSS toast component.
+纯 CSS toast 组件。
 
 <iframe height="400" style="width: 100%;" scrolling="no" title="nu-toast" src="//codepen.io/ziven27/embed/mZyprq/?height=265&theme-id=0&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/ziven27/pen/mZyprq/'>nu-toast</a> by ziven27
   (<a href='https://codepen.io/ziven27'>@ziven27</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
-## Install?
+## 怎么用?
 
 ```bash
 yarn add @_nu/css-toast
@@ -33,39 +34,44 @@ yarn add @_nu/css-toast
 
 ```
 @_nu/css-toast/css
-├── core.css           // Core
+├── core.css           // 核心样式
 └── skins
-    └── bootstrap.css  // skin of bootstrap
+    └── bootstrap.css  // 借用 bootstrap alert 的样式
 ```
 
-## Dom
+因为组件只有最基础的交互样式，所以在实际使用需要根据设计需求进行二次样式封装。
+
+## Dom 结构
 
 ```HTML
 <div class="nu_toast">
   <div class="nu_toast_in">
-    <!-- here text -->
+    <!-- 这是放toast文字的地方 -->
   </div>
 </div>
 ```
 
+为了拓展性这边约定需要创建两层 dom 并且名称为 `nu_toast` 和 `nu_toast_in`。
 
 ## Api
 
-| Selector   |   Function   |
-|:----------|-------------:|
-| `.nu_toast._open` |  show or hide |
-| `.nu_dialog._[skins]` | skin of toast |
+| 选择器                |           功能 |
+| :-------------------- | -------------: |
+| `.nu_toast._open`     | 是否显示 toast |
+| `.nu_dialog._[skins]` |   toast 的皮肤 |
 
-For the design system, we recommend that the UI is convergent, so it is recommended that only '_success', '_warning', '_danger' be implemented.
+这边约定用 `_open` 来控制 toast 的显示隐藏。
 
-Of course, if you have custom requirements, it is recommended to use bootstrap color scheme.
+对于设计系统我们推荐 UI 是收敛的，所以建议只需要实现 `_success`,`_warning`,`_danger` 即可。
+
+当然如果你有自定义需求，建议采用 bootstrap 的颜色方案：
 
 `_priamry`,`_secondary`,`_success`,`_warning`,`_danger`,`_info`,`_light`,`_dark`。
 
-## Custom animation?
+## 如何添加动效?
 
 ```css
-.nu_toast{
+.nu_toast {
   visibility: hidden;
   opacity: 0;
   transform: translate(0, -10px);
@@ -79,12 +85,12 @@ Of course, if you have custom requirements, it is recommended to use bootstrap c
 }
 ```
 
-## Custom skin ？
+## 如何添加皮肤 ？
 
 ```css
 .nu_toast {
-  border-radius: .25rem;
-  padding: .75rem 1.25rem;
+  border-radius: 0.25rem;
+  padding: 0.75rem 1.25rem;
   color: #004085;
   background-color: #cce5ff;
   border: 1px solid #b8daff;
@@ -111,4 +117,4 @@ Of course, if you have custom requirements, it is recommended to use bootstrap c
 
 ## Logic Only
 
-- [nu-react-toast](/react/toast/)
+- [nu-react-toast](https://nu-system.github.io/react/toast/)

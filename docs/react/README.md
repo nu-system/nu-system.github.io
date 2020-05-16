@@ -4,43 +4,43 @@ title: Intro
 
 ## What?
 
-'react-[component]' is mainly responsible for the Login Only section. Try not to be showy in this, just do the logic part.
+`react-[component]` 主要负责 Login Only 部分 。这里面**尽量**不要出现展示性的样式，只做逻辑的部分。
 
-If you are using a CSS solution, create an additional 'CSS -[component]' component for the corresponding presentation style and the corresponding skin.
+如果你是采用的 CSS 的方案，那么对应的展示性样式和对应的皮肤，请额外创建 `css-[component]` 组件。
 
-If you're using a css-in-js solution, you need to define your UI interface and skin extensions within the component.
+如果你采用的是 CSS-in-js 的方案，需要在组件内定义好你的 UI 接口，和皮肤拓展方式。
 
-## How to start
+## 开始
 
 ```bash
 $ yarn global add @_nu/cli
-$ nu-cli # and select react
+$ nu-cli # 选择 react
 ```
-It will create a master component for you.
 
-After finish your can go [nu-system](https://github.com/organizations/nu-system/repositories/new) github and create new repository. 
+会在你的当前目录创建一个母版仓库，你直接写就好了。
 
-And push your component.
+然后去 [nu-system](https://github.com/organizations/nu-system/repositories/new) github 上创建一个新的仓库。
+然后把你写的组件提交上去即可。
 
-## Builder
+## 构建
 
-`react-[component]`  build with [nwb](https://github.com/insin/nwb/blob/master/docs/guides/ReactComponents.md#developing-react-components-and-libraries-with-nwb) 
+`react-[component]` 目前是以 [nwb](https://github.com/insin/nwb/blob/master/docs/guides/ReactComponents.md#developing-react-components-and-libraries-with-nwb) 作为打包工具。
 
 ## Tree
 
 ```bash
 [component]
-├── README.md         
-├── package.json      
-├── nwb.config.js     
-├── es                
+├── README.md         // 介绍你的组件
+├── package.json      // 组件配置
+├── nwb.config.js     // nwb 配置文件
+├── es                // build esmodule目录
 │   └── index.js
-├── lib               
+├── lib               // build 目录
 │   └── index.js
-└── src               
-    └── index.js      
+└── src               // 原始代码文件夹
+    └── index.js      // react 组件入口文件
 ```
 
 ## Contribution
 
-Fork [react-button](https://github.com/nu-system/react-button) as master。
+Fork [react-button](https://github.com/nu-system/react-button) 这个作为组件模版，使用里面配置，删除原始代码，然后创建你自己的组件即可。

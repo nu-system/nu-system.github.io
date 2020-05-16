@@ -20,13 +20,13 @@
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
    ></iframe>
 
-## How
+## 安装
 
 ```
 $ yarn add @_nu/css-select
 ```
 
-## Tree
+## 目录
 
 ```
 @_nu/css-select/lib
@@ -36,12 +36,13 @@ lib
     └── default.css   // default style
 ```
 
-## API
+## 接口
 
-| Selector  |       Function |
-| :-------- | -------------: |
-| .nu_hello | style of hello |
+| Selector            |           Function |
+| :------------------ | -----------------: |
+| .nu_hello           |     style of hello |
 
-## More
+
+## 更多
 
 - [nu-system](https://nu-system.github.io/)

@@ -5,7 +5,7 @@
 | [![npm package][npm-badge]][npm-url] | [![npm downloads][npm-downloads]][npm-url] | [![jsdelivr][jsdelivr-badge]][jsdelivr-url] | [![github][git-badge]][git-url] |
 
 
-JS Dialog.
+弹窗组件。
 
 [npm-badge]: https://img.shields.io/npm/v/@_nu/js-dialog.svg
 [npm-url]: https://www.npmjs.org/package/@_nu/js-dialog
@@ -15,21 +15,23 @@ JS Dialog.
 [jsdelivr-badge]: https://data.jsdelivr.com/v1/package/npm/@_nu/js-dialog/badge
 [jsdelivr-url]: https://www.jsdelivr.com/package/npm/@_nu/js-dialog
 
+## 做了什么？
 
-## What？
+`@_nu/js-dialog` 只做了以下两件事情。
 
-`@_nu/js-dialog` Only two things were done:
+1. 弹窗显示和隐藏的时候切换了一个，控制状态的 class `_open`;
+2. 弹窗显示和隐藏的时候切换了 `body` 的滚动状态;
 
-1. A class '_open' control state is switched between popover display and hide;
-2. The scrolling state of 'body' is switched when popover shows and hides;
+`@_nu/js-dialog` 本身不会输出任何样式，对应的 Dom 结构和相应的 class 均来自于 [css-dialog](https://nu-system.github.io/css/dialog/)。
 
-`@ _nu/js - dialog` itself does not output any style, the corresponding Dom structure and the corresponding class are from the [CSS-dialog](https://nu-system.github.io/css/dialog/).
-
-## How？
+## 怎么用？
 
 ```
 $ npm i @_nu/js-dialog @_nu/css-dialog
 ```
+
+1. @\_nu/js-dialog 为逻辑组件
+2. @\_nu/css-dialog 为样式组件
 
 ```HTML
 <!doctype html>
@@ -38,11 +40,11 @@ $ npm i @_nu/js-dialog @_nu/css-dialog
         <link rel="stylesheet" href="../../../node_modules/@_nu/css-dialog/css/core.css">
         <!-- 弹窗居中显示 -->
         <link rel="stylesheet" href="../../../node_modules/@_nu/css-dialog/css/position/middle.css">
-        <!-- 
+        <!--
             <link rel="stylesheet" href="node_modules/@_nu/css-dialog/css/position/top.css">
             <link rel="stylesheet" href="node_modules/@_nu/css-dialog/css/position/right.css">
             <link rel="stylesheet" href="node_modules/@_nu/css-dialog/css/position/bottom.css">
-            <link rel="stylesheet" href="node_modules/@_nu/css-dialog/css/position/left.css"> 
+            <link rel="stylesheet" href="node_modules/@_nu/css-dialog/css/position/left.css">
         -->
     </head>
     <body>
@@ -86,9 +88,9 @@ $ npm i @_nu/js-dialog @_nu/css-dialog
 ```JS
 var _api= new NuDialog({
     // [string] dom 对象选择器，内部选择器为 document.querySelector
-    sel: null,  
+    sel: null,
     // [string] 用于控制弹窗的显示隐藏
-    openClass: '_open', 
+    openClass: '_open',
     // [string] 弹窗内部有这个clas，点击会触发弹窗关闭逻辑
     closeClass: 'j_close',
     // [boolean] 初始化的时候是否显示弹窗

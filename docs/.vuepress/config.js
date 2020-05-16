@@ -1,14 +1,14 @@
 module.exports = {
   locales: {
     "/": {
-      lang: "en-US",
-      title: "NU-system",
-      description: "💪 A master components library without ui dependencies",
-    },
-    "/zh/": {
       lang: "zh-CN",
       title: "NU-system",
       description: "💪 一个无 UI 依赖的母版组件库系统",
+    },
+    "/en/": {
+      lang: "en-US",
+      title: "NU-system",
+      description: "💪 A master components library without ui dependencies",
     },
   },
   ga: "UA-142729357-1",
@@ -24,12 +24,16 @@ module.exports = {
     smoothScroll: true,
     locales: {
       "/": {
-        label: "English",
-        selectText: "Languages",
-        ariaLabel: "Select language",
-        editLinkText: "Edit this page on GitHub",
-        lastUpdated: "Last Updated",
+        label: "简体中文",
+        selectText: "Language",
+        ariaLabel: "Language",
+        editLinkText: "在 GitHub 上编辑此页",
+        lastUpdated: "上次更新",
         nav: [
+          {
+            text: "简介",
+            link: "/intro/",
+          },
           {
             text: "HTML",
             items: [
@@ -73,19 +77,6 @@ module.exports = {
             ],
           },
           {
-            text: "JS",
-            items: [
-              {
-                text: "Intro",
-                link: "/js/",
-              },
-              {
-                text: "Dialog",
-                link: "/js/dialog/",
-              },
-            ],
-          },
-          {
             text: "React",
             items: [
               {
@@ -111,6 +102,19 @@ module.exports = {
               {
                 text: "Select",
                 link: "/react/select/",
+              }
+            ],
+          },
+          {
+            text: "JS",
+            items: [
+              {
+                text: "Intro",
+                link: "/js/",
+              },
+              {
+                text: "Dialog",
+                link: "/js/dialog/",
               },
             ],
           },
@@ -157,77 +161,24 @@ module.exports = {
             ],
           },
         ],
-        sidebar: [
-          {
-            title: "HTML",
-            collapsable: false,
-            children: ["/html/validator/"],
-          },
-          {
-            title: "CSS",
-            collapsable: false,
-            children: [
-              "/css/",
-              "/css/acss/",
-              "/css/button/",
-              "/css/dialog/",
-              "/css/toast/",
-              "/css/select/",
-              "/css/input/",
-            ],
-          },
-          {
-            title: "JS",
-            collapsable: false,
-            children: ["/js/", "/js/dialog/"],
-          },
-          {
-            title: "React",
-            collapsable: false,
-            children: [
-              "/react/",
-              "/react/img/",
-              "/react/button/",
-              "/react/dialog/",
-              "/react/toast/",
-              "/react/select/",
-            ],
-          },
-          {
-            title: "VUE",
-            collapsable: false,
-            children: [
-              "/vue/",
-              "/vue/button/",
-              "/vue/dialog/",
-              "/vue/axios-form/",
-            ],
-          },
-          {
-            title: "React Native",
-            collapsable: false,
-            children: [
-              "/react-native/",
-              "/react-native/button/",
-              "/react-native/acss/",
-              "/react-native/grid/",
-            ],
-          },
-        ],
       },
-      "/zh/": {
-        label: "简体中文",
-        selectText: "选择语言",
-        ariaLabel: "选择语言",
-        editLinkText: "在 GitHub 上编辑此页",
-        lastUpdated: "上次更新",
+      "/en/": {
+        label: "English",
+        selectText: "中文",
+        ariaLabel: "中文",
+        editLinkText: "Edit this page on GitHub",
+        lastUpdated: "Last Updated",
         nav: [
+          {
+            text: "Intro",
+            link: "/intro/",
+          },
           {
             text: "HTML",
             items: [
               {
                 text: "Validator",
-                link: "/zh/html/validator/",
+                link: "/en/html/validator/",
               },
             ],
           },
@@ -236,44 +187,31 @@ module.exports = {
             items: [
               {
                 text: "Intro",
-                link: "/zh/css/",
+                link: "/en/css/",
               },
               {
                 text: "ACSS",
-                link: "/zh/css/acss/",
+                link: "/en/css/acss/",
               },
               {
                 text: "Button",
-                link: "/zh/css/button/",
+                link: "/en/css/button/",
               },
               {
                 text: "Dialog",
-                link: "/zh/css/dialog/",
+                link: "/en/css/dialog/",
               },
               {
                 text: "Toast",
-                link: "/zh/css/toast/",
+                link: "/en/css/toast/",
               },
               {
                 text: "Select",
-                link: "/zh/css/select/",
+                link: "/en/css/select/",
               },
               {
                 text: "Input",
-                link: "/zh/css/input/",
-              },
-            ],
-          },
-          {
-            text: "JS",
-            items: [
-              {
-                text: "Intro",
-                link: "/zh/js/",
-              },
-              {
-                text: "Dialog",
-                link: "/zh/js/dialog/",
+                link: "/en/css/input/",
               },
             ],
           },
@@ -282,27 +220,44 @@ module.exports = {
             items: [
               {
                 text: "Intro",
-                link: "/zh/react/",
+                link: "/en/react/",
               },
               {
                 text: "Button",
-                link: "/zh/react/button/",
+                link: "/en/react/button/",
               },
               {
                 text: "Img",
-                link: "/zh/react/img/",
+                link: "/en/react/img/",
               },
               {
                 text: "Dialog",
-                link: "/zh/react/dialog/",
+                link: "/en/react/dialog/",
               },
               {
                 text: "Toast",
-                link: "/zh/react/toast/",
+                link: "/en/react/toast/",
               },
               {
                 text: "Select",
-                link: "/zh/react/select/",
+                link: "/en/react/select/",
+              },
+              {
+                text: "Input",
+                link: "/en/react/input/",
+              },
+            ],
+          },
+          {
+            text: "JS",
+            items: [
+              {
+                text: "Intro",
+                link: "/en/js/",
+              },
+              {
+                text: "Dialog",
+                link: "/en/js/dialog/",
               },
             ],
           },
@@ -311,19 +266,19 @@ module.exports = {
             items: [
               {
                 text: "Intro",
-                link: "/zh/vue/",
+                link: "/en/vue/",
               },
               {
                 text: "Button",
-                link: "/zh/vue/button/",
+                link: "/en/vue/button/",
               },
               {
                 text: "Dialog",
-                link: "/zh/vue/dialog/",
+                link: "/en/vue/dialog/",
               },
               {
                 text: "Axios-form",
-                link: "/zh/vue/axios-form/",
+                link: "/en/vue/axios-form/",
               },
             ],
           },
@@ -332,76 +287,20 @@ module.exports = {
             items: [
               {
                 text: "Intro",
-                link: "/zh/react-native/",
+                link: "/en/react-native/",
               },
               {
                 text: "Button",
-                link: "/zh/react-native/button/",
+                link: "/en/react-native/button/",
               },
               {
                 text: "Acss",
-                link: "/zh/react-native/acss/",
+                link: "/en/react-native/acss/",
               },
               {
                 text: "Grid",
-                link: "/zh/react-native/grid/",
+                link: "/en/react-native/grid/",
               },
-            ],
-          },
-        ],
-        sidebar: [
-          {
-            title: "HTML",
-            collapsable: false,
-            children: ["/zh/html/validator/"],
-          },
-          {
-            title: "CSS",
-            collapsable: false,
-            children: [
-              "/zh/css/",
-              "/zh/css/acss/",
-              "/zh/css/button/",
-              "/zh/css/dialog/",
-              "/zh/css/toast/",
-              "/zh/css/select/",
-              "/zh/css/input/",
-            ],
-          },
-          {
-            title: "JS",
-            collapsable: false,
-            children: ["/zh/js/", "/zh/js/dialog/"],
-          },
-          {
-            title: "React",
-            collapsable: false,
-            children: [
-              "/zh/react/",
-              "/zh/react/img/",
-              "/zh/react/button/",
-              "/zh/react/dialog/",
-              "/zh/react/toast/",
-            ],
-          },
-          {
-            title: "VUE",
-            collapsable: false,
-            children: [
-              "/zh/vue/",
-              "/zh/vue/button/",
-              "/zh/vue/dialog/",
-              "/zh/vue/axios-form/",
-            ],
-          },
-          {
-            title: "React Native",
-            collapsable: false,
-            children: [
-              "/zh/react-native/",
-              "/zh/react-native/button/",
-              "/zh/react-native/acss/",
-              "/zh/react-native/grid/",
             ],
           },
         ],

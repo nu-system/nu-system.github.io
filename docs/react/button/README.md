@@ -1,8 +1,9 @@
 # Button
 
-[![npm package][npm-badge]][npm-url]
-[![npm downloads][npm-downloads]][npm-url]
-[![github][git-badge]][git-url]
+| npm package| npm downloads |  github |
+| --------------- | ------------------------------ | ------ | ----------------------- |
+| [![npm package][npm-badge]][npm-url] | [![npm downloads][npm-downloads]][npm-url] | [![github][git-badge]][git-url] |
+
 
 [npm-badge]: https://img.shields.io/npm/v/@_nu/react-button.svg
 [npm-url]: https://www.npmjs.org/package/@_nu/react-button
@@ -10,20 +11,21 @@
 [git-url]: https://github.com/nu-system/react-button
 [git-badge]: https://img.shields.io/github/stars/nu-system/react-button.svg?style=social
 
-No UI dependency button of react.
+没有 UI 依赖的按钮组件.
 
 <iframe src="https://codesandbox.io/embed/throbbing-leftpad-juijc?autoresize=1&fontsize=14&hidenavigation=1&module=%2Fsrc%2Fcomponents%2FButton.js" title="throbbing-leftpad-juijc" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 
-## Install
+
+## 安装
 
 ```
 yarn add @_nu/react-button @_nu/css-button
 ```
 
-- [@\_nu/react-button](https://nu-system.github.io/react/button/): Login only
-- [@\_nu/css-button](https://nu-system.github.io/css/button/): UI Just
+- [@\_nu/react-button](https://nu-system.github.io/react/button/): 逻辑组件
+- [@\_nu/css-button](https://nu-system.github.io/css/button/): 样式组件
 
-### Custom
+### 二次封装
 
 ```JSX
 /* @components/Button/index.js */
@@ -35,7 +37,7 @@ import './style.css'; // custome style
 export default Button;
 ```
 
-### Use
+### 使用
 
 ```JSX
 import React, { useState } from 'react';
@@ -65,7 +67,7 @@ export default Page;
 
 ## Api
 
-| Prop             |               type               | Default  |         Function          |
+| 属性             |               类型               |  默认值  |           功能            |
 | :--------------- | :------------------------------: | :------: | :-----------------------: |
 | children         |       string &#124; Array        | '&nbsp;' |         children          |
 | className        |       string &#124; Array        | '&nbsp;' |         className         |
@@ -92,11 +94,19 @@ export default Page;
 <a class="nu_btn _fill _primary" href="." title="hello">hello</a>
 ```
 
-## Custom style？
+## ClassName 处理
 
-Go to [@\_nu/css-button](https://nu-system.github.io/css/button/)
+```JSX
+<Button className="_primary _fill _ghost _primary">hello</Button>
+<Button className={['_primary','_fill','_ghost','_primary','','',null]}>hello</Button>
+```
 
-## test
+## 如何修改样式？
+
+查看样式组件 [@\_nu/css-button](https://nu-system.github.io/zh/css/button/)
+
+
+## 测试
 
 ```
 // How to start
