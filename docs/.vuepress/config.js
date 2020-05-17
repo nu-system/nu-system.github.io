@@ -102,6 +102,10 @@ module.exports = {
               {
                 text: "Select",
                 link: "/react/select/",
+              },
+              {
+                text: "Avatar",
+                link: "/react/avatar/",
               }
             ],
           },
@@ -241,11 +245,7 @@ module.exports = {
               {
                 text: "Select",
                 link: "/en/react/select/",
-              },
-              {
-                text: "Input",
-                link: "/en/react/input/",
-              },
+              }
             ],
           },
           {
