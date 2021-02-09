@@ -8,8 +8,8 @@
 [npm-badge]: https://img.shields.io/npm/v/@_nu/css-toast.svg
 [npm-url]: https://www.npmjs.org/package/@_nu/css-toast
 [npm-downloads]: https://img.shields.io/npm/dw/@_nu/css-toast
-[git-url]: https://github.com/nu-system/css-toast
-[git-badge]: https://img.shields.io/github/stars/nu-system/css-toast.svg?style=social
+[git-url]: https://github.com/nu-system/react
+[git-badge]: https://img.shields.io/github/stars/nu-system/react.svg?style=social
 [jsdelivr-badge]: https://data.jsdelivr.com/v1/package/npm/@_nu/css-toast/badge
 [jsdelivr-url]: https://www.jsdelivr.com/package/npm/@_nu/css-toast
 
